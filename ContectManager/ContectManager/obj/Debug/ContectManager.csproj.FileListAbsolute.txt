@@ -1,0 +1,107 @@
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\ContectManager\ContectManager\bin\Debug\ContectManager.exe.config
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\ContectManager\ContectManager\bin\Debug\ContectManager.exe
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\ContectManager\ContectManager\bin\Debug\ContectManager.pdb
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\ContectManager\ContectManager\obj\Debug\ContectManager.csprojAssemblyReference.cache
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Menue.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\ContectManager\ContectManager\obj\Debug\ContectManager.Properties.Resources.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.GenerateResource.cache
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.CoreCompileInputs.cache
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\ContectManager\ContectManager\obj\Debug\ContectManager.exe
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\ContectManager\ContectManager\obj\Debug\ContectManager.pdb
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\ContectManager\ContectManager\obj\Debug\ContectManager.Form_MitarbeiterMenue.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Suche.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\ContectManager\ContectManager\obj\Debug\ContectManager.Form_KundeReg.resources
+C:\Pro_Semesterarbeit\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.exe.config
+C:\Pro_Semesterarbeit\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.exe
+C:\Pro_Semesterarbeit\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.pdb
+C:\Pro_Semesterarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.AssemblyReference.cache
+C:\Pro_Semesterarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_KundeReg.resources
+C:\Pro_Semesterarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Suche.resources
+C:\Pro_Semesterarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Menue.resources
+C:\Pro_Semesterarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Properties.Resources.resources
+C:\Pro_Semesterarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.GenerateResource.cache
+C:\Pro_Semesterarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.CoreCompileInputs.cache
+C:\Pro_Semesterarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.exe
+C:\Pro_Semesterarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.pdb
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Git Fabian\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csprojAssemblyReference.cache
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Git Fabian\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_KundeReg.resources
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Git Fabian\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Suche.resources
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Git Fabian\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_MitarbeiterMenue.resources
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Git Fabian\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Menue.resources
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Git Fabian\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Properties.Resources.resources
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Git Fabian\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.GenerateResource.cache
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Git Fabian\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.CoreCompileInputs.cache
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Git Fabian\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.exe
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Git Fabian\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.pdb
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Git Fabian\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_MitarbeiterReg.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_KundeReg.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_MitarbeiterReg.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Suche.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Menue.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Properties.Resources.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.GenerateResource.cache
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.CoreCompileInputs.cache
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.exe
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.pdb
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.exe.config
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.exe
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.pdb
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.AssemblyReference.cache
+E:\HF\Programming_Foundation1\Semesterprojekt\Github\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.exe.config
+E:\HF\Programming_Foundation1\Semesterprojekt\Github\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.exe
+E:\HF\Programming_Foundation1\Semesterprojekt\Github\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.pdb
+E:\HF\Programming_Foundation1\Semesterprojekt\Github\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csprojAssemblyReference.cache
+E:\HF\Programming_Foundation1\Semesterprojekt\Github\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_KundeReg.resources
+E:\HF\Programming_Foundation1\Semesterprojekt\Github\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_MitarbeiterReg.resources
+E:\HF\Programming_Foundation1\Semesterprojekt\Github\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Suche.resources
+E:\HF\Programming_Foundation1\Semesterprojekt\Github\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Menue.resources
+E:\HF\Programming_Foundation1\Semesterprojekt\Github\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Properties.Resources.resources
+E:\HF\Programming_Foundation1\Semesterprojekt\Github\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.GenerateResource.cache
+E:\HF\Programming_Foundation1\Semesterprojekt\Github\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.CoreCompileInputs.cache
+E:\HF\Programming_Foundation1\Semesterprojekt\Github\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.exe
+E:\HF\Programming_Foundation1\Semesterprojekt\Github\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.pdb
+E:\HF\Programming_Foundation1\Semesterprojekt\Github\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Login.resources
+C:\Pro_Semesterarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_MitarbeiterReg.resources
+C:\Pro_Semesterarbeit\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Login.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.exe.config
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.exe
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.pdb
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.AssemblyReference.cache
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_KundeReg.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_MitarbeiterReg.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Suche.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Menue.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Login.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Properties.Resources.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.GenerateResource.cache
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.CoreCompileInputs.cache
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.exe
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.pdb
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester - Kopie\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.exe.config
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester - Kopie\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.exe
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester - Kopie\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.pdb
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester - Kopie\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.AssemblyReference.cache
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester - Kopie\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_KundeReg.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester - Kopie\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_MitarbeiterReg.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester - Kopie\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Suche.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester - Kopie\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Menue.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester - Kopie\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Login.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester - Kopie\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Properties.Resources.resources
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester - Kopie\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.GenerateResource.cache
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester - Kopie\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.CoreCompileInputs.cache
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester - Kopie\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.exe
+C:\Users\fabian.tavani\Dropbox\HF\Schulstoff\Programmieren\2. Semester - Kopie\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.pdb
+E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.exe.config
+E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.exe
+E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.pdb
+E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csprojAssemblyReference.cache
+E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_KundeReg.resources
+E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_MitarbeiterReg.resources
+E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Suche.resources
+E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Menue.resources
+E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Login.resources
+E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Properties.Resources.resources
+E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.GenerateResource.cache
+E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.CoreCompileInputs.cache
+E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.exe
+E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.pdb

@@ -1,0 +1,10 @@
+C:\Users\Daniel.Zoller\source\repos\Vererbung\Unterrichtseinheit_13\bin\Debug\Unterrichtseinheit_13.exe.config
+C:\Users\Daniel.Zoller\source\repos\Vererbung\Unterrichtseinheit_13\bin\Debug\Unterrichtseinheit_13.exe
+C:\Users\Daniel.Zoller\source\repos\Vererbung\Unterrichtseinheit_13\bin\Debug\Unterrichtseinheit_13.pdb
+C:\Users\Daniel.Zoller\source\repos\Vererbung\Unterrichtseinheit_13\obj\Debug\Unterrichtseinheit_13.csproj.AssemblyReference.cache
+C:\Users\Daniel.Zoller\source\repos\Vererbung\Unterrichtseinheit_13\obj\Debug\Unterrichtseinheit_13.Form1.resources
+C:\Users\Daniel.Zoller\source\repos\Vererbung\Unterrichtseinheit_13\obj\Debug\Unterrichtseinheit_13.Properties.Resources.resources
+C:\Users\Daniel.Zoller\source\repos\Vererbung\Unterrichtseinheit_13\obj\Debug\Unterrichtseinheit_13.csproj.GenerateResource.cache
+C:\Users\Daniel.Zoller\source\repos\Vererbung\Unterrichtseinheit_13\obj\Debug\Unterrichtseinheit_13.csproj.CoreCompileInputs.cache
+C:\Users\Daniel.Zoller\source\repos\Vererbung\Unterrichtseinheit_13\obj\Debug\Unterrichtseinheit_13.exe
+C:\Users\Daniel.Zoller\source\repos\Vererbung\Unterrichtseinheit_13\obj\Debug\Unterrichtseinheit_13.pdb
