@@ -105,3 +105,17 @@ E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projekta
 E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.CoreCompileInputs.cache
 E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.exe
 E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.pdb
+C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.exe.config
+C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.exe
+C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.pdb
+C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.AssemblyReference.cache
+C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_KundeReg.resources
+C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_MitarbeiterReg.resources
+C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Suche.resources
+C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Menue.resources
+C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Login.resources
+C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Properties.Resources.resources
+C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.GenerateResource.cache
+C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.CoreCompileInputs.cache
+C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.exe
+C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.pdb
