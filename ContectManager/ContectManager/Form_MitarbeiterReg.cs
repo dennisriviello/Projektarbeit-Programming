@@ -36,7 +36,7 @@ namespace ContectManager
         //Variable "ausgewählter Mitarbeiter" initialisieren damit sie in Form abgeändert werden kann
         private int SelectedMA;
 
-        private string AddEmployeeOrTrainee(string type)
+        private void AddEmployeeOrTrainee(string type)
         {
             if(type == "Mitarbeiter")
             {
@@ -218,8 +218,7 @@ namespace ContectManager
                 Controller.MitarbeiterID++;
                 ClearForm();
             }
-            
-            return null;
+           // return null;
         }
 
         private void CmdAddEmployee_Click(object sender, EventArgs e) // Beschreibung in der Methode
@@ -593,6 +592,9 @@ namespace ContectManager
                 {
                     //zu löschenden Mitarbeiter in Variable schreiben
                     SelectedMA = LsbOutputMA.SelectedIndex;
+
+                    //aktuellene Mitarbeiternummer exportieren
+                    Controller.ExportCounter();
 
                     //ausgewählten Mitarbeiter aus Liste Mitarbeiter löschen
                     Controller.DeleteSelected("Mitarbeiter", SelectedMA);

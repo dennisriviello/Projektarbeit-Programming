@@ -136,3 +136,18 @@ C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt
 C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Prg 2\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.CoreCompileInputs.cache
 C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Prg 2\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.exe
 C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Prg 2\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.pdb
+C:\Pro_Semesterarbeit\ProjektarbeitV2\ContectManager\ContectManager\bin\Debug\ContectManager.exe.config
+C:\Pro_Semesterarbeit\ProjektarbeitV2\ContectManager\ContectManager\bin\Debug\ContectManager.exe
+C:\Pro_Semesterarbeit\ProjektarbeitV2\ContectManager\ContectManager\bin\Debug\ContectManager.pdb
+C:\Pro_Semesterarbeit\ProjektarbeitV2\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.AssemblyReference.cache
+C:\Pro_Semesterarbeit\ProjektarbeitV2\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Dashboard.resources
+C:\Pro_Semesterarbeit\ProjektarbeitV2\ContectManager\ContectManager\obj\Debug\ContectManager.Form_KundeReg.resources
+C:\Pro_Semesterarbeit\ProjektarbeitV2\ContectManager\ContectManager\obj\Debug\ContectManager.Form_MitarbeiterReg.resources
+C:\Pro_Semesterarbeit\ProjektarbeitV2\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Suche.resources
+C:\Pro_Semesterarbeit\ProjektarbeitV2\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Menue.resources
+C:\Pro_Semesterarbeit\ProjektarbeitV2\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Login.resources
+C:\Pro_Semesterarbeit\ProjektarbeitV2\ContectManager\ContectManager\obj\Debug\ContectManager.Properties.Resources.resources
+C:\Pro_Semesterarbeit\ProjektarbeitV2\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.GenerateResource.cache
+C:\Pro_Semesterarbeit\ProjektarbeitV2\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.CoreCompileInputs.cache
+C:\Pro_Semesterarbeit\ProjektarbeitV2\ContectManager\ContectManager\obj\Debug\ContectManager.exe
+C:\Pro_Semesterarbeit\ProjektarbeitV2\ContectManager\ContectManager\obj\Debug\ContectManager.pdb
