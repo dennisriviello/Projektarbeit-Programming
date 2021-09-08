@@ -384,6 +384,24 @@ namespace ContectManager
             TxtMitarbeiterID.Text = Controller.MitarbeiterID.ToString();
         }
 
+        private void ChkTrainee_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ChkTrainee.Checked)
+            {
+                LblCurrentYear.Visible = true;
+                LblApprenticeYears.Visible = true;
+                TxtApprenticeYears.Visible = true;
+                TxtCurrentYear.Visible = true;
+            }
+            else
+            {
+                LblCurrentYear.Visible = false;
+                LblApprenticeYears.Visible = false;
+                TxtApprenticeYears.Visible = false;
+                TxtCurrentYear.Visible = false;
+            }
+            
+        }
     }
 
     

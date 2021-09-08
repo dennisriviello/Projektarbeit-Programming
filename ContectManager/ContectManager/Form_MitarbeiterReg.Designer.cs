@@ -85,6 +85,11 @@
             this.LblMaID = new System.Windows.Forms.Label();
             this.TxtMitarbeiterID = new System.Windows.Forms.TextBox();
             this.grpBoxMa = new System.Windows.Forms.GroupBox();
+            this.ChkTrainee = new System.Windows.Forms.CheckBox();
+            this.TxtApprenticeYears = new System.Windows.Forms.TextBox();
+            this.TxtCurrentYear = new System.Windows.Forms.TextBox();
+            this.LblCurrentYear = new System.Windows.Forms.Label();
+            this.LblApprenticeYears = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.NumManagementLevel)).BeginInit();
             this.grpBoxMa.SuspendLayout();
             this.SuspendLayout();
@@ -104,7 +109,7 @@
             this.ChkActive.Checked = true;
             this.ChkActive.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ChkActive.Location = new System.Drawing.Point(389, 30);
-            this.ChkActive.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ChkActive.Margin = new System.Windows.Forms.Padding(2);
             this.ChkActive.Name = "ChkActive";
             this.ChkActive.Size = new System.Drawing.Size(15, 14);
             this.ChkActive.TabIndex = 12;
@@ -126,7 +131,7 @@
             this.TxtResidence.Size = new System.Drawing.Size(168, 23);
             this.TxtResidence.TabIndex = 15;
             this.TxtResidence.Text = "Musterhausen";
-            this.TxtResidence.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TxtResidence.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // LblPLZ
             // 
@@ -144,7 +149,7 @@
             this.TxtZipcode.Size = new System.Drawing.Size(169, 23);
             this.TxtZipcode.TabIndex = 13;
             this.TxtZipcode.Text = "8570";
-            this.TxtZipcode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TxtZipcode.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // LblAddr
             // 
@@ -162,7 +167,7 @@
             this.TxtAdress.Size = new System.Drawing.Size(169, 23);
             this.TxtAdress.TabIndex = 14;
             this.TxtAdress.Text = "Musterstrasse 20a";
-            this.TxtAdress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TxtAdress.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // TxtEMail
             // 
@@ -171,7 +176,7 @@
             this.TxtEMail.Size = new System.Drawing.Size(169, 23);
             this.TxtEMail.TabIndex = 16;
             this.TxtEMail.Text = "max.muster@gail.com";
-            this.TxtEMail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TxtEMail.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // TxtFaxWork
             // 
@@ -208,7 +213,7 @@
             "weiblich",
             "andere"});
             this.CmbGender.Location = new System.Drawing.Point(127, 160);
-            this.CmbGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CmbGender.Margin = new System.Windows.Forms.Padding(2);
             this.CmbGender.Name = "CmbGender";
             this.CmbGender.Size = new System.Drawing.Size(100, 24);
             this.CmbGender.TabIndex = 5;
@@ -227,7 +232,7 @@
             // 
             this.DtpBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DtpBirthday.Location = new System.Drawing.Point(127, 187);
-            this.DtpBirthday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DtpBirthday.Margin = new System.Windows.Forms.Padding(2);
             this.DtpBirthday.Name = "DtpBirthday";
             this.DtpBirthday.Size = new System.Drawing.Size(100, 23);
             this.DtpBirthday.TabIndex = 6;
@@ -411,7 +416,7 @@
             this.TxtNationalaty.Size = new System.Drawing.Size(169, 23);
             this.TxtNationalaty.TabIndex = 17;
             this.TxtNationalaty.Text = "Schweizer";
-            this.TxtNationalaty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TxtNationalaty.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // LblEintritt
             // 
@@ -453,7 +458,7 @@
             // 
             this.DtpQuitdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DtpQuitdate.Location = new System.Drawing.Point(390, 300);
-            this.DtpQuitdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DtpQuitdate.Margin = new System.Windows.Forms.Padding(2);
             this.DtpQuitdate.Name = "DtpQuitdate";
             this.DtpQuitdate.Size = new System.Drawing.Size(168, 23);
             this.DtpQuitdate.TabIndex = 22;
@@ -462,7 +467,7 @@
             // 
             this.DtpEntrydate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DtpEntrydate.Location = new System.Drawing.Point(390, 271);
-            this.DtpEntrydate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DtpEntrydate.Margin = new System.Windows.Forms.Padding(2);
             this.DtpEntrydate.Name = "DtpEntrydate";
             this.DtpEntrydate.Size = new System.Drawing.Size(168, 23);
             this.DtpEntrydate.TabIndex = 21;
@@ -486,7 +491,7 @@
             "90",
             "100"});
             this.CmbEmploymentlevel.Location = new System.Drawing.Point(389, 217);
-            this.CmbEmploymentlevel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CmbEmploymentlevel.Margin = new System.Windows.Forms.Padding(2);
             this.CmbEmploymentlevel.Name = "CmbEmploymentlevel";
             this.CmbEmploymentlevel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CmbEmploymentlevel.Size = new System.Drawing.Size(169, 24);
@@ -509,7 +514,7 @@
             "HR Finanzen",
             "HR Mitarbeiter"});
             this.CmbRole.Location = new System.Drawing.Point(389, 243);
-            this.CmbRole.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CmbRole.Margin = new System.Windows.Forms.Padding(2);
             this.CmbRole.Name = "CmbRole";
             this.CmbRole.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CmbRole.Size = new System.Drawing.Size(169, 24);
@@ -520,7 +525,7 @@
             // 
             this.lblOutput.AutoSize = true;
             this.lblOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOutput.Location = new System.Drawing.Point(5, 393);
+            this.lblOutput.Location = new System.Drawing.Point(5, 419);
             this.lblOutput.Name = "lblOutput";
             this.lblOutput.Size = new System.Drawing.Size(143, 17);
             this.lblOutput.TabIndex = 111;
@@ -528,8 +533,8 @@
             // 
             // CmdAddEmployee
             // 
-            this.CmdAddEmployee.Location = new System.Drawing.Point(8, 600);
-            this.CmdAddEmployee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CmdAddEmployee.Location = new System.Drawing.Point(8, 626);
+            this.CmdAddEmployee.Margin = new System.Windows.Forms.Padding(2);
             this.CmdAddEmployee.Name = "CmdAddEmployee";
             this.CmdAddEmployee.Size = new System.Drawing.Size(116, 40);
             this.CmdAddEmployee.TabIndex = 24;
@@ -557,7 +562,7 @@
             "Informatik",
             "Produktion"});
             this.CmbDepartment.Location = new System.Drawing.Point(389, 189);
-            this.CmbDepartment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CmbDepartment.Margin = new System.Windows.Forms.Padding(2);
             this.CmbDepartment.Name = "CmbDepartment";
             this.CmbDepartment.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CmbDepartment.Size = new System.Drawing.Size(169, 24);
@@ -566,8 +571,8 @@
             // 
             // CmdDelEmployee
             // 
-            this.CmdDelEmployee.Location = new System.Drawing.Point(278, 601);
-            this.CmdDelEmployee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CmdDelEmployee.Location = new System.Drawing.Point(278, 627);
+            this.CmdDelEmployee.Margin = new System.Windows.Forms.Padding(2);
             this.CmdDelEmployee.Name = "CmdDelEmployee";
             this.CmdDelEmployee.Size = new System.Drawing.Size(91, 40);
             this.CmdDelEmployee.TabIndex = 26;
@@ -577,8 +582,8 @@
             // 
             // CmdMenue
             // 
-            this.CmdMenue.Location = new System.Drawing.Point(484, 601);
-            this.CmdMenue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CmdMenue.Location = new System.Drawing.Point(484, 627);
+            this.CmdMenue.Margin = new System.Windows.Forms.Padding(2);
             this.CmdMenue.Name = "CmdMenue";
             this.CmdMenue.Size = new System.Drawing.Size(114, 40);
             this.CmdMenue.TabIndex = 27;
@@ -589,7 +594,7 @@
             // NumManagementLevel
             // 
             this.NumManagementLevel.Location = new System.Drawing.Point(389, 327);
-            this.NumManagementLevel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NumManagementLevel.Margin = new System.Windows.Forms.Padding(2);
             this.NumManagementLevel.Maximum = new decimal(new int[] {
             5,
             0,
@@ -605,15 +610,15 @@
             this.LsbOutputMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LsbOutputMA.FormattingEnabled = true;
             this.LsbOutputMA.ItemHeight = 16;
-            this.LsbOutputMA.Location = new System.Drawing.Point(8, 409);
+            this.LsbOutputMA.Location = new System.Drawing.Point(8, 435);
             this.LsbOutputMA.Name = "LsbOutputMA";
             this.LsbOutputMA.Size = new System.Drawing.Size(590, 148);
             this.LsbOutputMA.TabIndex = 28;
             // 
             // CmdEditEmployee
             // 
-            this.CmdEditEmployee.Location = new System.Drawing.Point(142, 600);
-            this.CmdEditEmployee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CmdEditEmployee.Location = new System.Drawing.Point(142, 626);
+            this.CmdEditEmployee.Margin = new System.Windows.Forms.Padding(2);
             this.CmdEditEmployee.Name = "CmdEditEmployee";
             this.CmdEditEmployee.Size = new System.Drawing.Size(108, 41);
             this.CmdEditEmployee.TabIndex = 25;
@@ -638,7 +643,7 @@
             // TxtMitarbeiterID
             // 
             this.TxtMitarbeiterID.Location = new System.Drawing.Point(127, 28);
-            this.TxtMitarbeiterID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtMitarbeiterID.Margin = new System.Windows.Forms.Padding(2);
             this.TxtMitarbeiterID.Name = "TxtMitarbeiterID";
             this.TxtMitarbeiterID.ReadOnly = true;
             this.TxtMitarbeiterID.Size = new System.Drawing.Size(100, 23);
@@ -646,6 +651,11 @@
             // 
             // grpBoxMa
             // 
+            this.grpBoxMa.Controls.Add(this.LblApprenticeYears);
+            this.grpBoxMa.Controls.Add(this.LblCurrentYear);
+            this.grpBoxMa.Controls.Add(this.TxtCurrentYear);
+            this.grpBoxMa.Controls.Add(this.TxtApprenticeYears);
+            this.grpBoxMa.Controls.Add(this.ChkTrainee);
             this.grpBoxMa.Controls.Add(this.LblMaID);
             this.grpBoxMa.Controls.Add(this.TxtMitarbeiterID);
             this.grpBoxMa.Controls.Add(this.lbl_Vorname);
@@ -697,16 +707,65 @@
             this.grpBoxMa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBoxMa.Location = new System.Drawing.Point(23, 12);
             this.grpBoxMa.Name = "grpBoxMa";
-            this.grpBoxMa.Size = new System.Drawing.Size(575, 354);
+            this.grpBoxMa.Size = new System.Drawing.Size(575, 392);
             this.grpBoxMa.TabIndex = 125;
             this.grpBoxMa.TabStop = false;
             this.grpBoxMa.Text = "Datenverwaltung";
+            // 
+            // ChkTrainee
+            // 
+            this.ChkTrainee.AutoSize = true;
+            this.ChkTrainee.Location = new System.Drawing.Point(484, 358);
+            this.ChkTrainee.Name = "ChkTrainee";
+            this.ChkTrainee.Size = new System.Drawing.Size(85, 21);
+            this.ChkTrainee.TabIndex = 125;
+            this.ChkTrainee.Text = "Lerneder";
+            this.ChkTrainee.UseVisualStyleBackColor = true;
+            this.ChkTrainee.CheckedChanged += new System.EventHandler(this.ChkTrainee_CheckedChanged);
+            // 
+            // TxtApprenticeYears
+            // 
+            this.TxtApprenticeYears.Location = new System.Drawing.Point(127, 356);
+            this.TxtApprenticeYears.Name = "TxtApprenticeYears";
+            this.TxtApprenticeYears.Size = new System.Drawing.Size(100, 23);
+            this.TxtApprenticeYears.TabIndex = 126;
+            this.TxtApprenticeYears.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TxtApprenticeYears.Visible = false;
+            // 
+            // TxtCurrentYear
+            // 
+            this.TxtCurrentYear.Location = new System.Drawing.Point(390, 356);
+            this.TxtCurrentYear.Name = "TxtCurrentYear";
+            this.TxtCurrentYear.Size = new System.Drawing.Size(88, 23);
+            this.TxtCurrentYear.TabIndex = 127;
+            this.TxtCurrentYear.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TxtCurrentYear.Visible = false;
+            // 
+            // LblCurrentYear
+            // 
+            this.LblCurrentYear.AutoSize = true;
+            this.LblCurrentYear.Location = new System.Drawing.Point(256, 359);
+            this.LblCurrentYear.Name = "LblCurrentYear";
+            this.LblCurrentYear.Size = new System.Drawing.Size(101, 17);
+            this.LblCurrentYear.TabIndex = 128;
+            this.LblCurrentYear.Text = "Aktuelles Jahr:";
+            this.LblCurrentYear.Visible = false;
+            // 
+            // LblApprenticeYears
+            // 
+            this.LblApprenticeYears.AutoSize = true;
+            this.LblApprenticeYears.Location = new System.Drawing.Point(14, 359);
+            this.LblApprenticeYears.Name = "LblApprenticeYears";
+            this.LblApprenticeYears.Size = new System.Drawing.Size(77, 17);
+            this.LblApprenticeYears.TabIndex = 129;
+            this.LblApprenticeYears.Text = "Lehrjahre: ";
+            this.LblApprenticeYears.Visible = false;
             // 
             // Form_MitarbeiterReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(629, 671);
+            this.ClientSize = new System.Drawing.Size(612, 676);
             this.Controls.Add(this.grpBoxMa);
             this.Controls.Add(this.CmdEditEmployee);
             this.Controls.Add(this.LsbOutputMA);
@@ -714,7 +773,7 @@
             this.Controls.Add(this.CmdDelEmployee);
             this.Controls.Add(this.CmdAddEmployee);
             this.Controls.Add(this.lblOutput);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_MitarbeiterReg";
             this.Text = "Form_MitarbeiterReg";
             ((System.ComponentModel.ISupportInitialize)(this.NumManagementLevel)).EndInit();
@@ -782,5 +841,10 @@
         private System.Windows.Forms.Label LblMaID;
         private System.Windows.Forms.TextBox TxtMitarbeiterID;
         private System.Windows.Forms.GroupBox grpBoxMa;
+        private System.Windows.Forms.Label LblApprenticeYears;
+        private System.Windows.Forms.Label LblCurrentYear;
+        private System.Windows.Forms.TextBox TxtCurrentYear;
+        private System.Windows.Forms.TextBox TxtApprenticeYears;
+        private System.Windows.Forms.CheckBox ChkTrainee;
     }
 }

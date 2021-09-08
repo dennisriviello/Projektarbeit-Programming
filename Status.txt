@@ -1,15 +1,9 @@
 Was funktioniert noch nicht?
 --------------------------------
-
-- Suche und Filtermöglichkeiten
-- Kunden Formular analog Mitarbeiter gestalten
+- Suche bei Lehrlingen!
 - Eingabevalidierungen
-- 
+- Dashboard View (grob aufgebaut, funktioniert noch nicht)
 
-
-Optional
-----------
-
-- Multi User Login (Text Datei wird nur 1 User eingelesen) 
-- Dashboard View
 - Import von Kontakten im CSV oder VCard Format
+ 
+

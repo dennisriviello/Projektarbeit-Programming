@@ -84,3 +84,12 @@ MB: Endzeit der Bearbeitung  : 07.09.2021 20:24:02| 130:Herr;Max;Muster;26.08.19
 MB: Startzeit der Bearbeitung: 07.09.2021 20:26:17| 127:Herr;Max;Muster;26.08.1990 13:54:00;männlich;Dr.;071456789;0716123456;Musterstrasse 20a;8570;Musterhausen;076456789;076456789;max.muster@gail.com;True;127;Informatik;123.123.123;Schweizer;26.01.2021 13:54:00;07.09.2021 16:43:20;80;IT Service Desk;5
 MB: Endzeit der Bearbeitung  : 07.09.2021 20:26:24| 127:Herr;Max;Muster;26.08.1990 13:54:00;männlich;Dr.;071456789;0716123456;Musterstrasse 20a;8570;Musterhausen;076456789;076456789;max.muster@gail.com;True;127;Informatik;123.123.123;Schweizer;26.01.2021 13:54:00;07.09.2021 16:43:20;80;IT Programmierer;5
 -----
+KE: Zeit der Erstellung      : 08.09.2021 08:49:19| Herr; Hans; Nötig; 08.09.2021 08:49:17; andere; Professor; ; ; ; ; ; ; ; ; True; ; ; 
+-----
+KE: Zeit der Erstellung      : 08.09.2021 08:52:07| Herr; Peter; Muster; 08.09.2021 08:51:13; männlich; Professor; 0717501515; ; Auenstrasse 6; 9451; Kriessern; 0717551212; ; peter.muster@gmail.com; True; Billig AG; Staatsstrasse 5; C
+-----
+KB: Startzeit der Bearbeitung: 08.09.2021 08:52:11| Herr;Peter;Muster;08.09.2021 08:51:13;männlich;Professor;0717501515;;Auenstrasse 6;9451;Kriessern;0717551212;;peter.muster@gmail.com;True;Billig AG;Staatsstrasse 5;C
+KB: Endzeit der Bearbeitung  : 08.09.2021 08:52:19| Herr;Peter;Muster;08.09.2021 08:51:13;männlich;Professor;0717501515;;Auenstrasse 6;9451;Kriessern;0717551212;;peter.muster@gmail.com;True;Billig AG;Staatsstrasse 5;C
+-----
+ME: Zeit der Erstellung      : 08.09.2021 09:38:44| 135; Herr; Dennis; Riviello; 26.08.1990 13:54:00; männlich; ; 071638265; ; Beispielstrasse 10; 9451; Beispielort; ; 0715345525; dennis.riviello@gmail.com; True; Informatik; 111.111.111; Schweizer; 26.01.2021 13:54:00; 08.09.2021 09:37:41; 100; IT Service Desk; 0
+-----

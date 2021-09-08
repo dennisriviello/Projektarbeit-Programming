@@ -52,7 +52,7 @@ namespace ContectManager
             this.cmd_Menue.Name = "cmd_Menue";
             this.cmd_Menue.Size = new System.Drawing.Size(119, 48);
             this.cmd_Menue.TabIndex = 3;
-            this.cmd_Menue.Text = "zurück zum Menue";
+            this.cmd_Menue.Text = "zurück zum Menü";
             this.cmd_Menue.UseVisualStyleBackColor = true;
             this.cmd_Menue.Click += new System.EventHandler(this.cmd_Menue_Click);
             // 
@@ -173,26 +173,62 @@ namespace ContectManager
             // 
             this.CmbCustomer.FormattingEnabled = true;
             this.CmbCustomer.Items.AddRange(new object[] {
-            "Vorname",
-            "Nachname"});
+            "Firstname",
+            "Lastname",
+            "Salutation",
+            "Gender",
+            "Title",
+            "Telwork",
+            "Faxwork",
+            "Adress",
+            "Zipcode",
+            "Residence",
+            "Telprivate",
+            "Telmobile",
+            "Email",
+            "Active",
+            "Companyname",
+            "Companyadress",
+            "Customertype"});
             this.CmbCustomer.Location = new System.Drawing.Point(182, 97);
             this.CmbCustomer.Name = "CmbCustomer";
             this.CmbCustomer.Size = new System.Drawing.Size(94, 21);
             this.CmbCustomer.TabIndex = 19;
-            this.CmbCustomer.Text = "Vorname";
+            this.CmbCustomer.Text = "Firstname";
             this.CmbCustomer.Visible = false;
             // 
             // CmbTrainee
             // 
             this.CmbTrainee.FormattingEnabled = true;
             this.CmbTrainee.Items.AddRange(new object[] {
-            "Vorname",
-            "Nachname"});
+            "EmployeeID",
+            "Firstname",
+            "Lastname",
+            "Salutation",
+            "Gender",
+            "Title",
+            "Telwork",
+            "Faxwork",
+            "Adress",
+            "Zipcode",
+            "Residence",
+            "Telprivate",
+            "Telmobile",
+            "Email",
+            "Active",
+            "Department",
+            "Ahvnumber",
+            "Nationality",
+            "Employmentlevel",
+            "Role",
+            "Managementlevel",
+            "Apprenticeshipyears",
+            "Currentyear"});
             this.CmbTrainee.Location = new System.Drawing.Point(340, 97);
             this.CmbTrainee.Name = "CmbTrainee";
             this.CmbTrainee.Size = new System.Drawing.Size(94, 21);
             this.CmbTrainee.TabIndex = 20;
-            this.CmbTrainee.Text = "MitarbeiterID";
+            this.CmbTrainee.Text = "EmployeeID";
             this.CmbTrainee.Visible = false;
             // 
             // TxtEmployee

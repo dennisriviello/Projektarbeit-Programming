@@ -16,8 +16,7 @@ namespace ContectManager
 {
     class Controller
     {
-        //Variabeln welche mit mit selektierten oder allgemein mit der MitarbeiterID zu tun haben
-        
+        //Variabeln welche mit mit selektierten oder allgemein mit der MitarbeiterID zu tun haben  
         public static int MitarbeiterID;
         
         //Variabeln für das Logfile
@@ -25,7 +24,7 @@ namespace ContectManager
         public static string HistoryNew;
         private static string Trennzeichen = "-----";
         private static string HistoryExport;
-        public static string MutationsTyp;
+        //public static string MutationsTyp;
         private static string GeloeschterMitarbeiter;
         private static string GeloeschterKunde;
 
@@ -161,6 +160,10 @@ namespace ContectManager
             formatter.Serialize(stream, Model.Mitarbeiter);
             stream.Close();
         }
+
+        //public static System.IO.FileStream OpenFileFromPath(string path, System.IO.FileMode mode);
+
+        //public static System.IO.Stream OpenFile();
 
         public static void WriteLog(string typ) //In der Funktion beschrieben
         {

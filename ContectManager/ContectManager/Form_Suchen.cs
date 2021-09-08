@@ -31,17 +31,21 @@ namespace ContectManager
 
         private void CmdSuchen_Click(object sender, EventArgs e)
         {
-            //Test Github
-
                 var Mitarbeiter = Model.Mitarbeiter;
                 var Kunden = Model.Kunden;
-            //var Lehrling = Model.Lehrling;
+                //var Lernender = Model.Trainee;
 
             if (RadEmployee.Checked)
-                {
+            {
                 LstOutput.Items.Clear();
                 SetSelectedEmployee(CmbEmployee.Text, TxtEmployee.Text);
-                }
+            }
+            else if (RadCustomer.Checked)
+            {
+                LstOutput.Items.Clear();
+                SetSelectedCustomer(CmbCustomer.Text, TxtCustomer.Text);
+            }
+
 
                
         }
@@ -314,6 +318,28 @@ namespace ContectManager
                     }
                     break;
 
+                // Erweiterung für Lernende
+                /*
+                case "Apprenticeshipyears":
+                    foreach (var mitarbeiter in Model.Mitarbeiter)
+                    {
+                        if (mitarbeiter.Role.ToString() == value)
+                        {
+                            LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                        }
+                    }
+                    break;
+
+                case "Currentyear":
+                    foreach (var mitarbeiter in Model.Mitarbeiter)
+                    {
+                        if (mitarbeiter.ManagementLevel.ToString() == value)
+                        {
+                            LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                        }
+                    }
+                    break;
+                */
 
                 default:
                         Console.WriteLine("Nothing");
@@ -323,6 +349,200 @@ namespace ContectManager
             return null;
         }
 
+        public string SetSelectedCustomer(string cat, string value)
+        {
+
+            switch (cat)
+            {
+                case "Salutation":
+                    foreach (var kunde in Model.Kunden)
+                    {
+                        if (kunde.Salutation == value)
+                        {
+                            LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                        }
+                    }
+                    break;
+
+
+                case "Firstname":
+                    foreach (var kunde in Model.Kunden)
+                    {
+                        if (kunde.Firstname == value)
+                        {
+                            LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                        }
+                    }
+                    break;
+
+
+                case "Lastname":
+                    foreach (var kunde in Model.Kunden)
+                    {
+                        if (kunde.Lastname == value)
+                        {
+                            LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                        }
+                    }
+                    break;
+
+
+
+                case "Gender":
+                    foreach (var kunde in Model.Kunden)
+                    {
+                        if (kunde.Gender.ToString() == value)
+                        {
+                            LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                        }
+                    }
+                    break;
+
+                case "Title":
+                    foreach (var kunde in Model.Kunden)
+                    {
+                        if (kunde.Title.ToString() == value)
+                        {
+                            LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                        }
+                    }
+                    break;
+
+                case "Telwork":
+                    foreach (var kunde in Model.Kunden)
+                    {
+                        if (kunde.TelWork.ToString() == value)
+                        {
+                            LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                        }
+                    }
+                    break;
+
+
+                case "Faxwork":
+                    foreach (var kunde in Model.Kunden)
+                    {
+                        if (kunde.FaxWork.ToString() == value)
+                        {
+                            LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                        }
+                    }
+                    break;
+
+
+
+                case "Adress":
+                    foreach (var kunde in Model.Kunden)
+                    {
+                        if (kunde.Adress.ToString() == value)
+                        {
+                            LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                        }
+                    }
+                    break;
+
+
+                case "Zipcode":
+                    foreach (var kunde in Model.Kunden)
+                    {
+                        if (kunde.Zipcode.ToString() == value)
+                        {
+                            LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                        }
+                    }
+                    break;
+
+                case "Residence":
+                    foreach (var kunde in Model.Kunden)
+                    {
+                        if (kunde.Residence.ToString() == value)
+                        {
+                            LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                        }
+                    }
+                    break;
+
+                case "Telprivate":
+                    foreach (var kunde in Model.Kunden)
+                    {
+                        if (kunde.TelPrivate.ToString().Contains(value))
+                        {
+                            LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                        }
+                    }
+                    break;
+
+                case "Telmobile":
+                    foreach (var kunde in Model.Kunden)
+                    {
+                        if (kunde.TelMobile.ToString() == value)
+                        {
+                            LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                        }
+                    }
+                    break;
+
+
+                case "Email":
+                    foreach (var kunde in Model.Kunden)
+                    {
+                        if (kunde.EMail.ToString() == value)
+                        {
+                            LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                        }
+                    }
+                    break;
+
+                case "Active":
+                    foreach (var kunde in Model.Kunden)
+                    {
+                        if (kunde.Active.ToString() == value)
+                        {
+                            LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                        }
+                    }
+                    break;
+
+
+                case "Companyname":
+                    foreach (var kunde in Model.Kunden)
+                    {
+                        if (kunde.CompanyName.ToString() == value)
+                        {
+                            LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                        }
+                    }
+                    break;
+
+
+                case "Companyadress":
+                    foreach (var kunde in Model.Kunden)
+                    {
+                        if (kunde.CompanyAdress.ToString() == value)
+                        {
+                            LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                        }
+                    }
+                    break;
+
+                case "Customertype":
+                    foreach (var kunde in Model.Kunden)
+                    {
+                        if (kunde.CustomerType.ToString() == value)
+                        {
+                            LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                        }
+                    }
+                    break;
+
+
+                default:
+                    Console.WriteLine("Nothing");
+                    break;
+            }
+
+            return null;
+        }
 
     }
 }

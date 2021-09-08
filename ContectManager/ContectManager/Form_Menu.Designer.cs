@@ -36,6 +36,7 @@ namespace ContectManager
             this.LblNamen = new System.Windows.Forms.Label();
             this.LblContactManager = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cmd_DashboardMenue = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +65,7 @@ namespace ContectManager
             // cmd_InformationenMenue
             // 
             this.cmd_InformationenMenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmd_InformationenMenue.Location = new System.Drawing.Point(84, 244);
+            this.cmd_InformationenMenue.Location = new System.Drawing.Point(84, 245);
             this.cmd_InformationenMenue.Name = "cmd_InformationenMenue";
             this.cmd_InformationenMenue.Size = new System.Drawing.Size(186, 39);
             this.cmd_InformationenMenue.TabIndex = 2;
@@ -85,7 +86,7 @@ namespace ContectManager
             // LblNamen
             // 
             this.LblNamen.AutoSize = true;
-            this.LblNamen.Location = new System.Drawing.Point(37, 303);
+            this.LblNamen.Location = new System.Drawing.Point(37, 387);
             this.LblNamen.Name = "LblNamen";
             this.LblNamen.Size = new System.Drawing.Size(285, 13);
             this.LblNamen.TabIndex = 4;
@@ -110,11 +111,23 @@ namespace ContectManager
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // cmd_DashboardMenue
+            // 
+            this.cmd_DashboardMenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmd_DashboardMenue.Location = new System.Drawing.Point(84, 310);
+            this.cmd_DashboardMenue.Name = "cmd_DashboardMenue";
+            this.cmd_DashboardMenue.Size = new System.Drawing.Size(186, 39);
+            this.cmd_DashboardMenue.TabIndex = 7;
+            this.cmd_DashboardMenue.Text = "Dashboard";
+            this.cmd_DashboardMenue.UseVisualStyleBackColor = true;
+            this.cmd_DashboardMenue.Click += new System.EventHandler(this.cmd_DashboardMenue_Click);
+            // 
             // Form_Menue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 329);
+            this.ClientSize = new System.Drawing.Size(376, 413);
+            this.Controls.Add(this.cmd_DashboardMenue);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LblContactManager);
             this.Controls.Add(this.LblNamen);
@@ -141,6 +154,7 @@ namespace ContectManager
         private System.Windows.Forms.Label LblNamen;
         private System.Windows.Forms.Label LblContactManager;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button cmd_DashboardMenue;
     }
 }
 

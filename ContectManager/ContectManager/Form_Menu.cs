@@ -50,5 +50,12 @@ namespace ContectManager
             Form_Login fLogin = new Form_Login();
             fLogin.ShowDialog();
         }
+
+        private void cmd_DashboardMenue_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form_Dashboard fDashboard = new Form_Dashboard();
+            fDashboard.ShowDialog();
+        }
     }
 }
