@@ -137,5 +137,8 @@
   <ItemGroup>
     <None Include="LogoContactManager_75px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Klassen Person\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -2,74 +2,77 @@ Erster Buchstabe Bezeichung: M = Mitarbeiter | L = Lehrling | K = Kunde
 Zweiter Buchstabe Bezeichung: B = Bearbeitet | G = Gelöscht | E = Erstellt
 
 
-ME: Zeit der Erstellung      : 08.09.2021 15:40:49| 100; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 15:40:47; 80; IT Service Desk; 0
+ME: Zeit der Erstellung      : 08.09.2021 18:27:02| 100; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; False; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 18:26:20; 80; IT Service Desk; 0
 -----
-ME: Zeit der Erstellung      : 08.09.2021 15:40:50| 101; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 15:40:47; ; ; 0
+ME: Zeit der Erstellung      : 08.09.2021 18:27:18| 101; asdf; asdf; asdf; 26.08.1990 13:54:00; asdf; dsf; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 18:26:20; ; ; 0
 -----
-ME: Zeit der Erstellung      : 08.09.2021 15:40:50| 102; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 15:40:47; ; ; 0
+ME: Zeit der Erstellung      : 08.09.2021 18:27:37| 102; sdf; asdf; sd; 26.08.1990 13:54:00; asdfdsf; sdf; wef; wef; ; ; ; desf; wef; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 18:26:20; ; ; 0
 -----
-ME: Zeit der Erstellung      : 08.09.2021 15:40:50| 103; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 15:40:47; ; ; 0
+LE: Zeit der Erstellung      : 08.09.2021 18:27:48| 103; asdf; asdf; cxv; 26.08.1990 13:54:00; cxv; asedf; wef<FE; ; ; ; ; sedf; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 18:26:20; ; ; 0; ; 
 -----
-ME: Zeit der Erstellung      : 08.09.2021 15:40:50| 104; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 15:40:47; ; ; 0
+LB: Startzeit der Bearbeitung: 08.09.2021 18:28:00| 103:asdf;asdf;cxv;26.08.1990 13:54:00;cxv;asedf;wef<FE;;;;;sedf;;;True;103;;;;26.01.2021 13:54:00;08.09.2021 18:26:20;;;0;;
+LB: Endzeit der Bearbeitung  : 08.09.2021 18:28:09| 103:asdf;SDFG;cxv;26.08.1990 13:54:00;cxv;asedf;wef<FE;;;;;sdfsd;;;True;103;;;;26.01.2021 13:54:00;08.09.2021 18:26:20;;;0;; 
 -----
-ME: Zeit der Erstellung      : 08.09.2021 15:40:51| 105; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 15:40:47; ; ; 0
+MG: Zeit der Löschung        : 08.09.2021 19:24:56| 101; asdf; asdf; asdf; 26.08.1990 13:54:00; asdf; dsf; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 18:26:20; ; ; 0
 -----
-LE: Zeit der Erstellung      : 08.09.2021 15:40:53| 106; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 15:40:47; ; ; 0; ; 
+MG: Zeit der Löschung        : 08.09.2021 19:24:59| 102; sdf; asdf; sd; 26.08.1990 13:54:00; asdfdsf; sdf; wef; wef; ; ; ; desf; wef; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 18:26:20; ; ; 0
 -----
-LE: Zeit der Erstellung      : 08.09.2021 15:40:53| 107; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 15:40:47; ; ; 0; ; 
+ME: Zeit der Erstellung      : 08.09.2021 19:25:18| 103; Herr; Andreas; Häne; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 19:24:50; 80; IT Service Desk; 0
 -----
-LE: Zeit der Erstellung      : 08.09.2021 15:40:53| 108; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 15:40:47; ; ; 0; ; 
+LE: Zeit der Erstellung      : 08.09.2021 19:28:22| 104; Herr; Joel; Schlegel; 26.08.1990 13:54:00; männlich; Boss; 0719559595; 0719559595; Schulstrasse 1; 9536; Schwarzenbach; 0719559595; 0719559595; joel.schlegel@gmail.com; True; Mechanik; 2555.1988302; Schweiz; 26.01.2021 13:54:00; 08.09.2021 19:24:50; 100; Product Manager; 3; ; 
 -----
-LE: Zeit der Erstellung      : 08.09.2021 15:40:53| 109; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 15:40:47; ; ; 0; ; 
+ME: Zeit der Erstellung      : 08.09.2021 19:30:05| 104; Herr; Nördig; Hans; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 19:29:49; 80; IT Service Desk; 0
 -----
-LE: Zeit der Erstellung      : 08.09.2021 15:40:54| 110; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 15:40:47; ; ; 0; ; 
+ME: Zeit der Erstellung      : 08.09.2021 19:30:31| 105; ; Nolldi; Sacklaus; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 19:29:49; ; ; 0
 -----
-MB: Startzeit der Bearbeitung: 08.09.2021 15:41:16| 103:;;;26.08.1990 13:54:00;;;;;;;;;;;True;103;;;;26.01.2021 13:54:00;08.09.2021 15:40:47;;;0
-MB: Endzeit der Bearbeitung  : 08.09.2021 15:41:18| 103:;;;26.08.1990 13:54:00;;;;;;;;;;;True;103;;;;26.01.2021 13:54:00;08.09.2021 15:40:47;;;0
+LE: Zeit der Erstellung      : 08.09.2021 19:31:17| 106; fgd; sdfgsdf; sdfg; 26.08.1990 13:54:00; sdfg; drfg; sdfg; ASF; sdfg; sdf; sdfg; sdfg; sdfg<SD; sdfg; False; sdfg; FDG; sdfg; 26.01.2021 13:54:00; 08.09.2021 19:29:49; sadyfg; sdfg; 3; dfg; fghfg
 -----
-MB: Startzeit der Bearbeitung: 08.09.2021 15:41:21| 103:;;;26.08.1990 13:54:00;;;;;;;;;;;True;103;;;;26.01.2021 13:54:00;08.09.2021 15:40:47;;;0
-MB: Endzeit der Bearbeitung  : 08.09.2021 15:41:25| 103:;ppppp;;26.08.1990 13:54:00;;;;;;;;;;;True;103;;;;26.01.2021 13:54:00;08.09.2021 15:40:47;;;0
+KE: Zeit der Erstellung      : 08.09.2021 19:31:35| Herr; Hans; Nötig; 08.09.2021 19:31:29; andere; Professor; ; ; ; ; ; ; ; ; True; ; ; 
 -----
-LG: Zeit der Löschung        : 08.09.2021 15:41:32| 110; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 15:40:47; ; ; 0; ; 
+KE: Zeit der Erstellung      : 08.09.2021 19:31:48| Herr; Hanshans; Nötignötig; 08.09.2021 19:31:39; andere; Professor; sdfg; ; ; ; ; fdg; dsfg; ; True; ; ; 
 -----
-LE: Zeit der Erstellung      : 08.09.2021 15:41:34| 110; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 15:40:47; ; ; 0; ; 
+KE: Zeit der Erstellung      : 08.09.2021 19:32:05| Herr; Sack; Laus; 08.09.2021 19:31:51; andere; Professor; ; ; ; ; ; ; ; ; True; ; ; 
 -----
-LG: Zeit der Löschung        : 08.09.2021 15:41:38| 110; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 15:40:47; ; ; 0; ; 
+KE: Zeit der Erstellung      : 08.09.2021 19:32:29| Herr; Grussig; Wetter; 08.09.2021 19:32:12; andere; Professor; ; ; ; ; ; ; ; ; False; ; ; 
 -----
-LE: Zeit der Erstellung      : 08.09.2021 15:41:44| 111; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 15:40:47; ; ; 0; ; 
+KE: Zeit der Erstellung      : 08.09.2021 19:32:46| Herr; Kei; Ahnig; 08.09.2021 19:32:32; andere; Professor; ; ; ; ; ; ; ; ; False; ; ; 
 -----
-MG: Zeit der Löschung        : 08.09.2021 15:41:52| 105; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 15:40:47; ; ; 0
+KE: Zeit der Erstellung      : 08.09.2021 19:33:03| Herr; Nöd; Aktiv; 08.09.2021 19:32:52; andere; Professor; ; ; ; ; ; ; ; ; True; ; ; 
 -----
-ME: Zeit der Erstellung      : 08.09.2021 15:41:54| 112; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 15:40:47; ; ; 0
+KB: Startzeit der Bearbeitung: 08.09.2021 19:33:06| Herr;Nöd;Aktiv;08.09.2021 19:32:52;andere;Professor;;;;;;;;;True;;;
+KB: Endzeit der Bearbeitung  : 08.09.2021 19:33:08| Herr;Nöd;Aktiv;08.09.2021 19:32:52;andere;Professor;;;;;;;;;False;;;
 -----
-LE: Zeit der Erstellung      : 08.09.2021 15:41:57| 113; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 15:40:47; ; ; 0; ; 
+MG: Zeit der Löschung        : 08.09.2021 19:34:35| 104; Herr; Nördig; Hans; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 19:29:49; 80; IT Service Desk; 0
 -----
-LG: Zeit der Löschung        : 08.09.2021 15:42:01| 113; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 15:40:47; ; ; 0; ; 
+LB: Startzeit der Bearbeitung: 08.09.2021 19:35:30| 106:fgd;sdfgsdf;sdfg;26.08.1990 13:54:00;sdfg;drfg;sdfg;ASF;sdfg;sdf;sdfg;sdfg;sdfg<SD;sdfg;False;106;sdfg;FDG;sdfg;26.01.2021 13:54:00;08.09.2021 19:29:49;sadyfg;sdfg;3;dfg;fghfg
+LB: Endzeit der Bearbeitung  : 08.09.2021 19:35:42| 106:fgd;sdfgsdf;sdfg;26.08.1990 13:54:00;sdfg;drfg;sdfg;ASF;sdfg;sdf;sdfg;sdfg;sdfg<SD;sdfg;False;106;sdfg;FDG;sdfg;26.01.2021 13:54:00;08.09.2021 19:29:49;sadyfg;sdfg;3;5; 2019
 -----
-LE: Zeit der Erstellung      : 08.09.2021 15:42:04| 114; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 15:40:47; ; ; 0; ; 
+KG: Zeit der Löschung        : 08.09.2021 19:36:56| Herr; Hanshans; Nötignötig; 08.09.2021 19:31:39; andere; Professor; sdfg; ; ; ; ; fdg; dsfg; ; True; ; ; 
 -----
-LB: Startzeit der Bearbeitung: 08.09.2021 15:42:37| 107:;;;26.08.1990 13:54:00;;;;;;;;;;;True;107;;;;26.01.2021 13:54:00;08.09.2021 15:40:47;;;0;;
-LB: Endzeit der Bearbeitung  : 08.09.2021 15:42:40| 107:;123;;26.08.1990 13:54:00;;;;;;;;;;;True;107;;;;26.01.2021 13:54:00;08.09.2021 15:40:47;;;0;; 
+KB: Startzeit der Bearbeitung: 08.09.2021 19:37:44| Herr;Grussig;Wetter;08.09.2021 19:32:12;andere;Professor;;;;;;;;;False;;;
+KB: Endzeit der Bearbeitung  : 08.09.2021 19:37:51| Herr;Grussig;Wetter;08.09.2021 19:32:12;andere;Professor;;;;;;087985;;;False;;;
 -----
-MB: Startzeit der Bearbeitung: 08.09.2021 15:43:53| 102:;;;26.08.1990 13:54:00;;;;;;;;;;;True;102;;;;26.01.2021 13:54:00;08.09.2021 15:40:47;;;0
-MB: Endzeit der Bearbeitung  : 08.09.2021 15:43:58| 102:;Fabian;;26.08.1990 13:54:00;;;;;;;;;;;True;102;;;;26.01.2021 13:54:00;08.09.2021 15:40:47;;;0
+ME: Zeit der Erstellung      : 08.09.2021 19:39:32| 106; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 19:39:29; 80; IT Service Desk; 0
 -----
-LB: Startzeit der Bearbeitung: 08.09.2021 15:44:05| 108:;;;26.08.1990 13:54:00;;;;;;;;;;;True;108;;;;26.01.2021 13:54:00;08.09.2021 15:40:47;;;0;;
-LB: Endzeit der Bearbeitung  : 08.09.2021 15:44:11| 108:;Fabian;tt;26.08.1990 13:54:00;;;;;;;;;;;True;108;;;;26.01.2021 13:54:00;08.09.2021 15:40:47;;;0;; 
+ME: Zeit der Erstellung      : 08.09.2021 19:39:48| 106; Herr; Andreas; dsfsdf; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 19:39:36; 80; IT Service Desk; 0
 -----
-KE: Zeit der Erstellung      : 08.09.2021 15:44:41| Herr; Hans; Nötig; 08.09.2021 15:44:40; andere; Professor; ; ; ; ; ; ; ; ; True; ; ; 
+ME: Zeit der Erstellung      : 08.09.2021 19:39:53| 106; Herr; Max; fdgasdf; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 19:39:50; 80; IT Service Desk; 0
 -----
-KE: Zeit der Erstellung      : 08.09.2021 15:44:49| Herr; Hans; Aunötig; 08.09.2021 15:44:43; andere; Professor; ; ; ; ; ; ; ; ; True; ; ; 
+ME: Zeit der Erstellung      : 08.09.2021 19:40:08| 106; Herr; Andreas; sedfsadefef; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 19:39:58; 80; IT Service Desk; 0
 -----
-MB: Startzeit der Bearbeitung: 08.09.2021 15:46:58| 102:;Fabian;;26.08.1990 13:54:00;;;;;;;;;;;True;102;;;;26.01.2021 13:54:00;08.09.2021 15:40:47;;;0
-MB: Endzeit der Bearbeitung  : 08.09.2021 15:47:00| 102:;Fabian;;26.08.1990 13:54:00;;;;;;;;;;;False;102;;;;26.01.2021 13:54:00;08.09.2021 15:40:47;;;0
+ME: Zeit der Erstellung      : 08.09.2021 19:56:06| 106; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 19:56:04; 80; IT Service Desk; 0
 -----
-MB: Startzeit der Bearbeitung: 08.09.2021 15:47:01| 100:Herr;Max;Muster;26.08.1990 13:54:00;männlich;Dr.;071456789;0716123456;Musterstrasse 20a;8570;Musterhausen;076456789;076456789;max.muster@gail.com;True;100;Informatik;123.123.123;Schweizer;26.01.2021 13:54:00;08.09.2021 15:40:47;80;IT Service Desk;0
-MB: Endzeit der Bearbeitung  : 08.09.2021 15:47:04| 100:Herr;Max;Muster;26.08.1990 13:54:00;männlich;Dr.;071456789;0716123456;Musterstrasse 20a;8570;Musterhausen;076456789;076456789;max.muster@gail.com;False;100;Informatik;123.123.123;Schweizer;26.01.2021 13:54:00;08.09.2021 15:40:47;80;IT Service Desk;0
+MG: Zeit der Löschung        : 08.09.2021 20:25:23| 106; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 19:39:29; 80; IT Service Desk; 0
 -----
-LB: Startzeit der Bearbeitung: 08.09.2021 15:47:07| 108:;Fabian;tt;26.08.1990 13:54:00;;;;;;;;;;;True;108;;;;26.01.2021 13:54:00;08.09.2021 15:40:47;;;0;;
-LB: Endzeit der Bearbeitung  : 08.09.2021 15:47:09| 108:;Fabian;tt;26.08.1990 13:54:00;;;;;;;;;;;False;108;;;;26.01.2021 13:54:00;08.09.2021 15:40:47;;;0;; 
+MG: Zeit der Löschung        : 08.09.2021 20:25:28| 106; Herr; Andreas; dsfsdf; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 19:39:36; 80; IT Service Desk; 0
 -----
-KB: Startzeit der Bearbeitung: 08.09.2021 15:47:17| Herr;Hans;Aunötig;08.09.2021 15:44:43;andere;Professor;;;;;;;;;True;;;
-KB: Endzeit der Bearbeitung  : 08.09.2021 15:47:18| Herr;Hans;Aunötig;08.09.2021 15:44:43;andere;Professor;;;;;;;;;False;;;
+MG: Zeit der Löschung        : 08.09.2021 20:25:31| 106; Herr; Max; fdgasdf; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 19:39:50; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 08.09.2021 20:25:34| 106; Herr; Andreas; sedfsadefef; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 19:39:58; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 08.09.2021 20:25:41| 106; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 19:56:04; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 08.09.2021 20:25:49| 106; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 20:25:47; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 08.09.2021 20:27:38| 106; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 20:27:35; 80; IT Service Desk; 0
 -----

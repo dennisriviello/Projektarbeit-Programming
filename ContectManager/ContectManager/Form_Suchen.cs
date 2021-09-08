@@ -30,25 +30,37 @@ namespace ContectManager
         }
 
         private void CmdSuchen_Click(object sender, EventArgs e)
-        {
-                var Mitarbeiter = Model.Mitarbeiter;
-                var Kunden = Model.Kunden;
-                var Lernender = Model.Lehrlinge;
+        {   try
+            {
+                if (TxtEmployee.Text != "" || TxtCustomer.Text != "" || TxtTrainee.Text != "")
+                {
+                    var Mitarbeiter = Model.Mitarbeiter;
+                    var Kunden = Model.Kunden;
+                    var Lernender = Model.Lehrlinge;
+                    bool exist = false;
 
-            if (RadEmployee.Checked)
-            {
-                LstOutput.Items.Clear();
-                SetSelectedEmployee(CmbEmployee.Text, TxtEmployee.Text);
+                    if (RadEmployee.Checked)
+                    {
+                        LstOutput.Items.Clear();
+                        SetSelectedEmployee(CmbEmployee.Text, TxtEmployee.Text, exist);
+                    }
+                    else if (RadCustomer.Checked)
+                    {
+                        LstOutput.Items.Clear();
+                        SetSelectedCustomer(CmbCustomer.Text, TxtCustomer.Text, exist);
+                    }
+                    else if (RadTrainee.Checked)
+                    {
+                        LstOutput.Items.Clear();
+                        SetSelectedTrainee(CmbTrainee.Text, TxtTrainee.Text, exist);
+                    }
+                }
+                else
+                    MessageBox.Show("Bitte geben Sie etwas in das Suchfeld ein!", "Eingabe falsch",MessageBoxButtons.OK ,MessageBoxIcon.Warning);
             }
-            else if (RadCustomer.Checked)
+            catch (Exception)
             {
-                LstOutput.Items.Clear();
-                SetSelectedCustomer(CmbCustomer.Text, TxtCustomer.Text);
-            }
-            else if (RadTrainee.Checked)
-            {
-                LstOutput.Items.Clear();
-                SetSelectedTrainee(CmbTrainee.Text, TxtTrainee.Text);
+                MessageBox.Show("Kein gültiger Wert");
             }
 
 
@@ -92,7 +104,7 @@ namespace ContectManager
             TxtTrainee.Visible = true;
         }
 
-        public string SetSelectedEmployee(string cat, string value)
+        public string SetSelectedEmployee(string cat, string value, bool exist)
         {
             
                 switch (cat)
@@ -101,11 +113,15 @@ namespace ContectManager
                     case "EmployeeID":
                         foreach (var mitarbeiter in Model.Mitarbeiter)
                         {
+                            
                             if (mitarbeiter.MitarbeiterID == Convert.ToInt32(value)) 
                             {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname + mitarbeiter.EntryDate + mitarbeiter.QuitDate);
-                            }
+                            exist = true;
+                            }  
                         }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                         break;
 
 
@@ -115,30 +131,40 @@ namespace ContectManager
                         if (mitarbeiter.Salutation == value)
                         {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
+
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
 
                 case "Firstname":
                         foreach (var mitarbeiter in Model.Mitarbeiter)
                         {
-                            if (mitarbeiter.Firstname == value)
+                            if (mitarbeiter.Firstname.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                             {
                                 LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                                exist = true;
                             }
                         }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
 
                     case "Lastname":
                         foreach (var mitarbeiter in Model.Mitarbeiter)
                         {
-                            if (mitarbeiter.Lastname == value)
+                            if (mitarbeiter.Lastname.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                             {
                                 LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                                exist = true;
                             }
                         }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
 
@@ -146,11 +172,14 @@ namespace ContectManager
                 case "Gender":
                     foreach (var mitarbeiter in Model.Mitarbeiter)
                     {
-                        if (mitarbeiter.Gender.ToString() == value)
+                        if (mitarbeiter.Gender.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
                 case "Title":
@@ -159,8 +188,11 @@ namespace ContectManager
                         if (mitarbeiter.Title.ToString() == value)
                         {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
                 case "Telwork":
@@ -169,8 +201,11 @@ namespace ContectManager
                         if (mitarbeiter.TelWork.ToString() == value)
                         {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
 
@@ -180,8 +215,11 @@ namespace ContectManager
                         if (mitarbeiter.FaxWork.ToString() == value)
                         {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
 
@@ -189,11 +227,14 @@ namespace ContectManager
                 case "Adress":
                     foreach (var mitarbeiter in Model.Mitarbeiter)
                     {
-                        if (mitarbeiter.Adress.ToString() == value)
+                        if (mitarbeiter.Adress.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
 
@@ -203,18 +244,24 @@ namespace ContectManager
                         if (mitarbeiter.Zipcode.ToString() == value)
                         {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
                 case "Residence":
                     foreach (var mitarbeiter in Model.Mitarbeiter)
                     {
-                        if (mitarbeiter.Residence.ToString() == value)
+                        if (mitarbeiter.Residence.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
                 case "Telprivate":
@@ -223,8 +270,11 @@ namespace ContectManager
                         if (mitarbeiter.TelPrivate.ToString() == value)
                         {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
                 case "Telmobile":
@@ -233,19 +283,25 @@ namespace ContectManager
                         if (mitarbeiter.TelMobile.ToString() == value)
                         {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
 
                 case "Email":
                     foreach (var mitarbeiter in Model.Mitarbeiter)
                     {
-                        if (mitarbeiter.EMail.ToString() == value)
+                        if (mitarbeiter.EMail.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
                 case "Active":
@@ -254,18 +310,24 @@ namespace ContectManager
                         if (mitarbeiter.Active.ToString() == value)
                         {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
                 case "Department":
                     foreach (var mitarbeiter in Model.Mitarbeiter)
                     {
-                        if (mitarbeiter.Department.ToString() == value)
+                        if (mitarbeiter.Department.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
 
@@ -275,8 +337,11 @@ namespace ContectManager
                         if (mitarbeiter.AHVNumber.ToString() == value)
                         {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
 
@@ -284,11 +349,14 @@ namespace ContectManager
                 case "Nationality":
                     foreach (var mitarbeiter in Model.Mitarbeiter)
                     {
-                        if (mitarbeiter.Nationality.ToString() == value)
+                        if (mitarbeiter.Nationality.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
 
@@ -298,19 +366,25 @@ namespace ContectManager
                         if (mitarbeiter.EmploymentLevel.ToString() == value)
                         {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
 
                 case "Role":
                     foreach (var mitarbeiter in Model.Mitarbeiter)
                     {
-                        if (mitarbeiter.Role.ToString() == value)
+                        if (mitarbeiter.Role.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
                 case "Managementlevel":
@@ -319,8 +393,11 @@ namespace ContectManager
                         if (mitarbeiter.ManagementLevel.ToString() == value)
                         {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Mitarbeiter gefunden");
                     break;
 
                 default:
@@ -331,7 +408,7 @@ namespace ContectManager
             return null;
         }
 
-        public string SetSelectedCustomer(string cat, string value)
+        public string SetSelectedCustomer(string cat, string value, bool exist)
         {
 
             switch (cat)
@@ -339,33 +416,43 @@ namespace ContectManager
                 case "Salutation":
                     foreach (var kunde in Model.Kunden)
                     {
-                        if (kunde.Salutation == value)
+                        if (kunde.Salutation.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                            exist = true;
                         }
+                        
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Kunde gefunden");
                     break;
 
 
                 case "Firstname":
                     foreach (var kunde in Model.Kunden)
                     {
-                        if (kunde.Firstname == value)
+                        if (kunde.Firstname.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Kunde gefunden");
                     break;
 
 
                 case "Lastname":
                     foreach (var kunde in Model.Kunden)
                     {
-                        if (kunde.Lastname == value)
+                        if (kunde.Lastname.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Kunde gefunden");
                     break;
 
 
@@ -373,19 +460,23 @@ namespace ContectManager
                 case "Gender":
                     foreach (var kunde in Model.Kunden)
                     {
-                        if (kunde.Gender.ToString() == value)
+                        if (kunde.Gender.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Kunde gefunden");
                     break;
 
                 case "Title":
                     foreach (var kunde in Model.Kunden)
                     {
-                        if (kunde.Title.ToString() == value)
+                        if (kunde.Title.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                            exist = true;
                         }
                     }
                     break;
@@ -396,8 +487,11 @@ namespace ContectManager
                         if (kunde.TelWork.ToString() == value)
                         {
                             LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Kunde gefunden");
                     break;
 
 
@@ -407,8 +501,11 @@ namespace ContectManager
                         if (kunde.FaxWork.ToString() == value)
                         {
                             LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Kunde gefunden");
                     break;
 
 
@@ -416,11 +513,14 @@ namespace ContectManager
                 case "Adress":
                     foreach (var kunde in Model.Kunden)
                     {
-                        if (kunde.Adress.ToString() == value)
+                        if (kunde.Adress.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Kunde gefunden");
                     break;
 
 
@@ -430,18 +530,24 @@ namespace ContectManager
                         if (kunde.Zipcode.ToString() == value)
                         {
                             LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Kunde gefunden");
                     break;
 
                 case "Residence":
                     foreach (var kunde in Model.Kunden)
                     {
-                        if (kunde.Residence.ToString() == value)
+                        if (kunde.Residence.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Kunde gefunden");
                     break;
 
                 case "Telprivate":
@@ -450,8 +556,11 @@ namespace ContectManager
                         if (kunde.TelPrivate.ToString().Contains(value))
                         {
                             LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Kunde gefunden");
                     break;
 
                 case "Telmobile":
@@ -460,19 +569,25 @@ namespace ContectManager
                         if (kunde.TelMobile.ToString() == value)
                         {
                             LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Kunde gefunden");
                     break;
 
 
                 case "Email":
                     foreach (var kunde in Model.Kunden)
                     {
-                        if (kunde.EMail.ToString() == value)
+                        if (kunde.EMail.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Kunde gefunden");
                     break;
 
                 case "Active":
@@ -481,30 +596,39 @@ namespace ContectManager
                         if (kunde.Active.ToString() == value)
                         {
                             LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Kunde gefunden");
                     break;
 
 
                 case "Companyname":
                     foreach (var kunde in Model.Kunden)
                     {
-                        if (kunde.CompanyName.ToString() == value)
+                        if (kunde.CompanyName.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Kunde gefunden");
                     break;
 
 
                 case "Companyadress":
                     foreach (var kunde in Model.Kunden)
                     {
-                        if (kunde.CompanyAdress.ToString() == value)
+                        if (kunde.CompanyAdress.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Kunde gefunden");
                     break;
 
                 case "Customertype":
@@ -513,8 +637,11 @@ namespace ContectManager
                         if (kunde.CustomerType.ToString() == value)
                         {
                             LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Kunde gefunden");
                     break;
 
 
@@ -526,7 +653,7 @@ namespace ContectManager
             return null;
         }
 
-        public string SetSelectedTrainee(string cat, string value)
+        public string SetSelectedTrainee(string cat, string value, bool exist)
         {
             switch (cat)
             {
@@ -537,41 +664,53 @@ namespace ContectManager
                         if (lehrling.MitarbeiterID == Convert.ToInt32(value))
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
 
                 case "Salutation":
                     foreach (var lehrling in Model.Lehrlinge)
                     {
-                        if (lehrling.Salutation == value)
+                        if (lehrling.Salutation.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
 
                 case "Firstname":
                     foreach (var lehrling in Model.Lehrlinge)
                     {
-                        if (lehrling.Firstname == value)
+                        if (lehrling.Firstname.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
 
                 case "Lastname":
                     foreach (var lehrling in Model.Lehrlinge)
                     {
-                        if (lehrling.Lastname == value)
+                        if (lehrling.Lastname.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
 
@@ -579,21 +718,27 @@ namespace ContectManager
                 case "Gender":
                     foreach (var lehrling in Model.Lehrlinge)
                     {
-                        if (lehrling.Gender.ToString() == value)
+                        if (lehrling.Gender.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
                 case "Title":
                     foreach (var lehrling in Model.Lehrlinge)
                     {
-                        if (lehrling.Title.ToString() == value)
+                        if (lehrling.Title.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
                 case "Telwork":
@@ -602,8 +747,11 @@ namespace ContectManager
                         if (lehrling.TelWork.ToString() == value)
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
 
@@ -613,8 +761,11 @@ namespace ContectManager
                         if (lehrling.FaxWork.ToString() == value)
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
 
@@ -622,11 +773,14 @@ namespace ContectManager
                 case "Adress":
                     foreach (var lehrling in Model.Lehrlinge)
                     {
-                        if (lehrling.Adress.ToString() == value)
+                        if (lehrling.Adress.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
 
@@ -636,18 +790,24 @@ namespace ContectManager
                         if (lehrling.Zipcode.ToString() == value)
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
                 case "Residence":
                     foreach (var lehrling in Model.Lehrlinge)
                     {
-                        if (lehrling.Residence.ToString() == value)
+                        if (lehrling.Residence.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
                 case "Telprivate":
@@ -656,8 +816,11 @@ namespace ContectManager
                         if (lehrling.TelPrivate.ToString() == value)
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
                 case "Telmobile":
@@ -666,19 +829,25 @@ namespace ContectManager
                         if (lehrling.TelMobile.ToString() == value)
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
 
                 case "Email":
                     foreach (var lehrling in Model.Lehrlinge)
                     {
-                        if (lehrling.EMail.ToString() == value)
+                        if (lehrling.EMail.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
                 case "Active":
@@ -687,18 +856,24 @@ namespace ContectManager
                         if (lehrling.Active.ToString() == value)
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
                 case "Department":
                     foreach (var lehrling in Model.Lehrlinge)
                     {
-                        if (lehrling.Department.ToString() == value)
+                        if (lehrling.Department.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
 
@@ -708,8 +883,11 @@ namespace ContectManager
                         if (lehrling.AHVNumber.ToString() == value)
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
 
@@ -717,11 +895,14 @@ namespace ContectManager
                 case "Nationality":
                     foreach (var lehrling in Model.Lehrlinge)
                     {
-                        if (lehrling.Nationality.ToString() == value)
+                        if (lehrling.Nationality.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
 
@@ -731,19 +912,25 @@ namespace ContectManager
                         if (lehrling.EmploymentLevel.ToString() == value)
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
 
                 case "Role":
                     foreach (var lehrling in Model.Lehrlinge)
                     {
-                        if (lehrling.Role.ToString() == value)
+                        if (lehrling.Role.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
                 case "Managementlevel":
@@ -752,8 +939,11 @@ namespace ContectManager
                         if (lehrling.ManagementLevel.ToString() == value)
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
                 case "Apprenticeshipyears":
@@ -762,8 +952,11 @@ namespace ContectManager
                         if (lehrling.Role.ToString() == value)
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
 
                 case "Currentyear":
@@ -772,8 +965,11 @@ namespace ContectManager
                         if (lehrling.ManagementLevel.ToString() == value)
                         {
                             LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                            exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Lehrling gefunden");
                     break;
               
 

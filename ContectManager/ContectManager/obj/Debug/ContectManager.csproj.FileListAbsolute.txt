@@ -121,3 +121,18 @@ C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager
 C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.pdb
 E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Dashboard.resources
 C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Dashboard.resources
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Prg 2\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.exe.config
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Prg 2\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.exe
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Prg 2\Projektarbeit-Programming\ContectManager\ContectManager\bin\Debug\ContectManager.pdb
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Prg 2\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csprojAssemblyReference.cache
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Prg 2\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Dashboard.resources
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Prg 2\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_KundeReg.resources
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Prg 2\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_MitarbeiterReg.resources
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Prg 2\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Suche.resources
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Prg 2\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Menue.resources
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Prg 2\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Login.resources
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Prg 2\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Properties.Resources.resources
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Prg 2\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.GenerateResource.cache
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Prg 2\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.csproj.CoreCompileInputs.cache
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Prg 2\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.exe
+C:\Users\schle\Dropbox\Mein PC (LAPTOP-GG49HJPA)\Desktop\ZBW\Programming\Projekt Arbeit\Prg 2\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.pdb
