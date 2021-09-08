@@ -26,7 +26,8 @@ namespace ContectManager
         //Liste(Array) Mitarbeiter erstellen - Objekte sind Employees
         public static List<Employee> Mitarbeiter = new List<Employee>();
 
-
+        //Liste(Array) Lehrlinge erstellen - Objekte sind Trainee
+        public static List<Trainee> Lehrlinge = new List<Trainee>();
 
     }
 }

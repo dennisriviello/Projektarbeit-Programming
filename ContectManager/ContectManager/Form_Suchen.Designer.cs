@@ -48,9 +48,10 @@ namespace ContectManager
             // 
             // cmd_Menue
             // 
-            this.cmd_Menue.Location = new System.Drawing.Point(364, 305);
+            this.cmd_Menue.Location = new System.Drawing.Point(546, 469);
+            this.cmd_Menue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmd_Menue.Name = "cmd_Menue";
-            this.cmd_Menue.Size = new System.Drawing.Size(119, 48);
+            this.cmd_Menue.Size = new System.Drawing.Size(178, 74);
             this.cmd_Menue.TabIndex = 3;
             this.cmd_Menue.Text = "zurück zum Menü";
             this.cmd_Menue.UseVisualStyleBackColor = true;
@@ -58,10 +59,9 @@ namespace ContectManager
             // 
             // CmdSuchen
             // 
-            this.CmdSuchen.Location = new System.Drawing.Point(9, 300);
-            this.CmdSuchen.Margin = new System.Windows.Forms.Padding(2);
+            this.CmdSuchen.Location = new System.Drawing.Point(14, 462);
             this.CmdSuchen.Name = "CmdSuchen";
-            this.CmdSuchen.Size = new System.Drawing.Size(114, 53);
+            this.CmdSuchen.Size = new System.Drawing.Size(171, 82);
             this.CmdSuchen.TabIndex = 6;
             this.CmdSuchen.Text = "Suchen";
             this.CmdSuchen.UseVisualStyleBackColor = true;
@@ -71,8 +71,7 @@ namespace ContectManager
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(86, 23);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(129, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(320, 25);
             this.label1.TabIndex = 9;
@@ -83,21 +82,18 @@ namespace ContectManager
             this.groupBox1.Controls.Add(this.RadTrainee);
             this.groupBox1.Controls.Add(this.RadEmployee);
             this.groupBox1.Controls.Add(this.RadCustomer);
-            this.groupBox1.Location = new System.Drawing.Point(14, 50);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(21, 77);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(469, 42);
+            this.groupBox1.Size = new System.Drawing.Size(704, 65);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             // 
             // RadTrainee
             // 
             this.RadTrainee.AutoSize = true;
-            this.RadTrainee.Location = new System.Drawing.Point(326, 17);
-            this.RadTrainee.Margin = new System.Windows.Forms.Padding(2);
+            this.RadTrainee.Location = new System.Drawing.Point(489, 26);
             this.RadTrainee.Name = "RadTrainee";
-            this.RadTrainee.Size = new System.Drawing.Size(62, 17);
+            this.RadTrainee.Size = new System.Drawing.Size(83, 24);
             this.RadTrainee.TabIndex = 2;
             this.RadTrainee.Text = "Lehrling";
             this.RadTrainee.UseVisualStyleBackColor = true;
@@ -107,10 +103,9 @@ namespace ContectManager
             // 
             this.RadEmployee.AutoSize = true;
             this.RadEmployee.Checked = true;
-            this.RadEmployee.Location = new System.Drawing.Point(15, 17);
-            this.RadEmployee.Margin = new System.Windows.Forms.Padding(2);
+            this.RadEmployee.Location = new System.Drawing.Point(22, 26);
             this.RadEmployee.Name = "RadEmployee";
-            this.RadEmployee.Size = new System.Drawing.Size(74, 17);
+            this.RadEmployee.Size = new System.Drawing.Size(102, 24);
             this.RadEmployee.TabIndex = 0;
             this.RadEmployee.TabStop = true;
             this.RadEmployee.Text = "Mitarbeiter";
@@ -120,10 +115,9 @@ namespace ContectManager
             // RadCustomer
             // 
             this.RadCustomer.AutoSize = true;
-            this.RadCustomer.Location = new System.Drawing.Point(168, 17);
-            this.RadCustomer.Margin = new System.Windows.Forms.Padding(2);
+            this.RadCustomer.Location = new System.Drawing.Point(252, 26);
             this.RadCustomer.Name = "RadCustomer";
-            this.RadCustomer.Size = new System.Drawing.Size(56, 17);
+            this.RadCustomer.Size = new System.Drawing.Size(73, 24);
             this.RadCustomer.TabIndex = 1;
             this.RadCustomer.Text = "Kunde";
             this.RadCustomer.UseVisualStyleBackColor = true;
@@ -132,10 +126,10 @@ namespace ContectManager
             // LstOutput
             // 
             this.LstOutput.FormattingEnabled = true;
-            this.LstOutput.Location = new System.Drawing.Point(8, 162);
-            this.LstOutput.Margin = new System.Windows.Forms.Padding(2);
+            this.LstOutput.ItemHeight = 20;
+            this.LstOutput.Location = new System.Drawing.Point(12, 249);
             this.LstOutput.Name = "LstOutput";
-            this.LstOutput.Size = new System.Drawing.Size(475, 108);
+            this.LstOutput.Size = new System.Drawing.Size(710, 164);
             this.LstOutput.TabIndex = 15;
             // 
             // CmbEmployee
@@ -163,9 +157,10 @@ namespace ContectManager
             "Employmentlevel",
             "Role",
             "Managementlevel"});
-            this.CmbEmployee.Location = new System.Drawing.Point(29, 97);
+            this.CmbEmployee.Location = new System.Drawing.Point(44, 149);
+            this.CmbEmployee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CmbEmployee.Name = "CmbEmployee";
-            this.CmbEmployee.Size = new System.Drawing.Size(94, 21);
+            this.CmbEmployee.Size = new System.Drawing.Size(139, 28);
             this.CmbEmployee.TabIndex = 17;
             this.CmbEmployee.Text = "EmployeeID";
             // 
@@ -190,9 +185,10 @@ namespace ContectManager
             "Companyname",
             "Companyadress",
             "Customertype"});
-            this.CmbCustomer.Location = new System.Drawing.Point(182, 97);
+            this.CmbCustomer.Location = new System.Drawing.Point(273, 149);
+            this.CmbCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CmbCustomer.Name = "CmbCustomer";
-            this.CmbCustomer.Size = new System.Drawing.Size(94, 21);
+            this.CmbCustomer.Size = new System.Drawing.Size(139, 28);
             this.CmbCustomer.TabIndex = 19;
             this.CmbCustomer.Text = "Firstname";
             this.CmbCustomer.Visible = false;
@@ -224,44 +220,42 @@ namespace ContectManager
             "Managementlevel",
             "Apprenticeshipyears",
             "Currentyear"});
-            this.CmbTrainee.Location = new System.Drawing.Point(340, 97);
+            this.CmbTrainee.Location = new System.Drawing.Point(510, 149);
+            this.CmbTrainee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CmbTrainee.Name = "CmbTrainee";
-            this.CmbTrainee.Size = new System.Drawing.Size(94, 21);
+            this.CmbTrainee.Size = new System.Drawing.Size(139, 28);
             this.CmbTrainee.TabIndex = 20;
             this.CmbTrainee.Text = "EmployeeID";
             this.CmbTrainee.Visible = false;
             // 
             // TxtEmployee
             // 
-            this.TxtEmployee.Location = new System.Drawing.Point(29, 123);
-            this.TxtEmployee.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtEmployee.Location = new System.Drawing.Point(44, 189);
             this.TxtEmployee.Name = "TxtEmployee";
-            this.TxtEmployee.Size = new System.Drawing.Size(94, 20);
+            this.TxtEmployee.Size = new System.Drawing.Size(139, 26);
             this.TxtEmployee.TabIndex = 21;
             // 
             // TxtCustomer
             // 
-            this.TxtCustomer.Location = new System.Drawing.Point(182, 123);
-            this.TxtCustomer.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtCustomer.Location = new System.Drawing.Point(273, 189);
             this.TxtCustomer.Name = "TxtCustomer";
-            this.TxtCustomer.Size = new System.Drawing.Size(94, 20);
+            this.TxtCustomer.Size = new System.Drawing.Size(139, 26);
             this.TxtCustomer.TabIndex = 22;
             this.TxtCustomer.Visible = false;
             // 
             // TxtTrainee
             // 
-            this.TxtTrainee.Location = new System.Drawing.Point(340, 123);
-            this.TxtTrainee.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtTrainee.Location = new System.Drawing.Point(510, 189);
             this.TxtTrainee.Name = "TxtTrainee";
-            this.TxtTrainee.Size = new System.Drawing.Size(94, 20);
+            this.TxtTrainee.Size = new System.Drawing.Size(139, 26);
             this.TxtTrainee.TabIndex = 23;
             this.TxtTrainee.Visible = false;
             // 
             // Form_Suche
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(504, 395);
+            this.ClientSize = new System.Drawing.Size(756, 608);
             this.Controls.Add(this.TxtTrainee);
             this.Controls.Add(this.TxtCustomer);
             this.Controls.Add(this.TxtEmployee);
@@ -273,7 +267,9 @@ namespace ContectManager
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CmdSuchen);
             this.Controls.Add(this.cmd_Menue);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form_Suche";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Informationen suchen/filtern";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

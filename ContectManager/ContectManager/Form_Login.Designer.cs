@@ -42,7 +42,8 @@
             // 
             this.LblContactManager.AutoSize = true;
             this.LblContactManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblContactManager.Location = new System.Drawing.Point(77, 9);
+            this.LblContactManager.Location = new System.Drawing.Point(116, 14);
+            this.LblContactManager.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblContactManager.Name = "LblContactManager";
             this.LblContactManager.Size = new System.Drawing.Size(162, 24);
             this.LblContactManager.TabIndex = 0;
@@ -52,7 +53,8 @@
             // 
             this.LblUsername.AutoSize = true;
             this.LblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblUsername.Location = new System.Drawing.Point(38, 79);
+            this.LblUsername.Location = new System.Drawing.Point(57, 122);
+            this.LblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblUsername.Name = "LblUsername";
             this.LblUsername.Size = new System.Drawing.Size(94, 15);
             this.LblUsername.TabIndex = 2;
@@ -62,7 +64,8 @@
             // 
             this.LblPassword.AutoSize = true;
             this.LblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPassword.Location = new System.Drawing.Point(38, 119);
+            this.LblPassword.Location = new System.Drawing.Point(57, 183);
+            this.LblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblPassword.Name = "LblPassword";
             this.LblPassword.Size = new System.Drawing.Size(60, 15);
             this.LblPassword.TabIndex = 3;
@@ -70,18 +73,20 @@
             // 
             // TxtUsername
             // 
-            this.TxtUsername.Location = new System.Drawing.Point(133, 78);
+            this.TxtUsername.Location = new System.Drawing.Point(200, 120);
+            this.TxtUsername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtUsername.Name = "TxtUsername";
-            this.TxtUsername.Size = new System.Drawing.Size(141, 20);
+            this.TxtUsername.Size = new System.Drawing.Size(210, 26);
             this.TxtUsername.TabIndex = 4;
             this.TxtUsername.Text = "admin";
             // 
             // TxtPassword
             // 
-            this.TxtPassword.Location = new System.Drawing.Point(133, 118);
+            this.TxtPassword.Location = new System.Drawing.Point(200, 182);
+            this.TxtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.PasswordChar = '*';
-            this.TxtPassword.Size = new System.Drawing.Size(141, 20);
+            this.TxtPassword.Size = new System.Drawing.Size(210, 26);
             this.TxtPassword.TabIndex = 5;
             this.TxtPassword.Text = "admin";
             this.TxtPassword.TextChanged += new System.EventHandler(this.TxtPassword_TextChanged);
@@ -89,9 +94,10 @@
             // CmdLogin
             // 
             this.CmdLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmdLogin.Location = new System.Drawing.Point(41, 164);
+            this.CmdLogin.Location = new System.Drawing.Point(62, 252);
+            this.CmdLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CmdLogin.Name = "CmdLogin";
-            this.CmdLogin.Size = new System.Drawing.Size(91, 30);
+            this.CmdLogin.Size = new System.Drawing.Size(136, 46);
             this.CmdLogin.TabIndex = 6;
             this.CmdLogin.Text = "Login";
             this.CmdLogin.UseVisualStyleBackColor = true;
@@ -100,9 +106,10 @@
             // CmdExit
             // 
             this.CmdExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmdExit.Location = new System.Drawing.Point(181, 164);
+            this.CmdExit.Location = new System.Drawing.Point(272, 252);
+            this.CmdExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CmdExit.Name = "CmdExit";
-            this.CmdExit.Size = new System.Drawing.Size(93, 30);
+            this.CmdExit.Size = new System.Drawing.Size(140, 46);
             this.CmdExit.TabIndex = 7;
             this.CmdExit.Text = "Exit";
             this.CmdExit.UseVisualStyleBackColor = true;
@@ -112,7 +119,8 @@
             // 
             this.LblLogin.AutoSize = true;
             this.LblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLogin.Location = new System.Drawing.Point(89, 33);
+            this.LblLogin.Location = new System.Drawing.Point(134, 51);
+            this.LblLogin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblLogin.Name = "LblLogin";
             this.LblLogin.Size = new System.Drawing.Size(139, 15);
             this.LblLogin.TabIndex = 8;
@@ -120,9 +128,9 @@
             // 
             // Form_Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(319, 219);
+            this.ClientSize = new System.Drawing.Size(478, 337);
             this.Controls.Add(this.LblLogin);
             this.Controls.Add(this.CmdExit);
             this.Controls.Add(this.CmdLogin);
@@ -131,7 +139,9 @@
             this.Controls.Add(this.LblPassword);
             this.Controls.Add(this.LblUsername);
             this.Controls.Add(this.LblContactManager);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form_Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ">";
             this.ResumeLayout(false);
             this.PerformLayout();

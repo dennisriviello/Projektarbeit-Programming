@@ -9,6 +9,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace ContectManager
 {
+    [Serializable]
     public class Trainee : Employee
     {
         public string ApprenticeshipYears { get; set; }
@@ -33,10 +34,7 @@ namespace ContectManager
         
         }
 
-        public override string GetData()
-        {
-            return base.GetData() + ";" + ApprenticeshipYears + ";" + CurrentYear;
-        }
+       
 
     }
 }

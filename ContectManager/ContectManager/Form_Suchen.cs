@@ -33,7 +33,7 @@ namespace ContectManager
         {
                 var Mitarbeiter = Model.Mitarbeiter;
                 var Kunden = Model.Kunden;
-                //var Lernender = Model.Trainee;
+                var Lernender = Model.Lehrlinge;
 
             if (RadEmployee.Checked)
             {
@@ -45,9 +45,14 @@ namespace ContectManager
                 LstOutput.Items.Clear();
                 SetSelectedCustomer(CmbCustomer.Text, TxtCustomer.Text);
             }
+            else if (RadTrainee.Checked)
+            {
+                LstOutput.Items.Clear();
+                SetSelectedTrainee(CmbTrainee.Text, TxtTrainee.Text);
+            }
 
 
-               
+
         }
 
         private void RadCustomer_CheckedChanged(object sender, EventArgs e)
@@ -318,29 +323,6 @@ namespace ContectManager
                     }
                     break;
 
-                // Erweiterung für Lernende
-                /*
-                case "Apprenticeshipyears":
-                    foreach (var mitarbeiter in Model.Mitarbeiter)
-                    {
-                        if (mitarbeiter.Role.ToString() == value)
-                        {
-                            LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
-                        }
-                    }
-                    break;
-
-                case "Currentyear":
-                    foreach (var mitarbeiter in Model.Mitarbeiter)
-                    {
-                        if (mitarbeiter.ManagementLevel.ToString() == value)
-                        {
-                            LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
-                        }
-                    }
-                    break;
-                */
-
                 default:
                         Console.WriteLine("Nothing");
                         break;
@@ -541,6 +523,264 @@ namespace ContectManager
                     break;
             }
 
+            return null;
+        }
+
+        public string SetSelectedTrainee(string cat, string value)
+        {
+            switch (cat)
+            {
+
+                case "EmployeeID":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.MitarbeiterID == Convert.ToInt32(value))
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+
+                case "Salutation":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.Salutation == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+
+                case "Firstname":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.Firstname == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+
+                case "Lastname":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.Lastname == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+
+
+                case "Gender":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.Gender.ToString() == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+                case "Title":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.Title.ToString() == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+                case "Telwork":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.TelWork.ToString() == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+
+                case "Faxwork":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.FaxWork.ToString() == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+
+
+                case "Adress":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.Adress.ToString() == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+
+                case "Zipcode":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.Zipcode.ToString() == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+                case "Residence":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.Residence.ToString() == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+                case "Telprivate":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.TelPrivate.ToString() == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+                case "Telmobile":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.TelMobile.ToString() == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+
+                case "Email":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.EMail.ToString() == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+                case "Active":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.Active.ToString() == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+                case "Department":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.Department.ToString() == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+
+                case "Ahvnumber":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.AHVNumber.ToString() == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+
+
+                case "Nationality":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.Nationality.ToString() == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+
+                case "Employmentlevel":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.EmploymentLevel.ToString() == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+
+                case "Role":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.Role.ToString() == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+                case "Managementlevel":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.ManagementLevel.ToString() == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+                case "Apprenticeshipyears":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.Role.ToString() == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+
+                case "Currentyear":
+                    foreach (var lehrling in Model.Lehrlinge)
+                    {
+                        if (lehrling.ManagementLevel.ToString() == value)
+                        {
+                            LstOutput.Items.Add(lehrling.MitarbeiterID + ": " + lehrling.Firstname + " " + lehrling.Lastname);
+                        }
+                    }
+                    break;
+              
+
+                default:
+                    Console.WriteLine("Nothing");
+                    break;
+            }
             return null;
         }
 

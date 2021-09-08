@@ -57,5 +57,12 @@ namespace ContectManager
             Form_Dashboard fDashboard = new Form_Dashboard();
             fDashboard.ShowDialog();
         }
+
+        private void cmdClose_Click(object sender, EventArgs e)
+        {
+            //Applikation schliessen
+            this.Close();
+            Application.Exit();
+        }
     }
 }

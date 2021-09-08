@@ -120,3 +120,4 @@ C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager
 C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.exe
 C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.pdb
 E:\HF\Programming_Foundation1\Semesterprojekt\Projektarbeit-Programming\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Dashboard.resources
+C:\HF_ProgrammingProjekt\Projektarbeit-Programming\ContectManager\ContectManager\obj\Debug\ContectManager.Form_Dashboard.resources

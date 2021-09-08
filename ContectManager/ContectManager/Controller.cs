@@ -27,12 +27,15 @@ namespace ContectManager
         //public static string MutationsTyp;
         private static string GeloeschterMitarbeiter;
         private static string GeloeschterKunde;
+        private static string GeloeschterLehrling;
 
         //Variabeln für Pfäde
         public static string Counter;
         public static string MitarbeiterDB;
         public static string KundenDB;
+        public static string LehrlingDB;
         public static string LogFile;
+
 
         public static void FirstUseCheck() //Kommentar in Funktion
         {
@@ -50,6 +53,7 @@ namespace ContectManager
             MitarbeiterDB = sFilePath + "mitarbeiter.dat";
             KundenDB = sFilePath + "kunden.dat";
             LogFile = sFilePath + "logfile.txt";
+            LehrlingDB = sFilePath + "lehrlinge.dat";
 
 
             // Falls der Pfad bzw. der Ordner nicht existiert true
@@ -62,6 +66,7 @@ namespace ContectManager
                 using (StreamWriter w = File.AppendText(Counter)) ;
                 using (StreamWriter w = File.AppendText(MitarbeiterDB)) ;
                 using (StreamWriter w = File.AppendText(KundenDB)) ;
+                using (StreamWriter w = File.AppendText(LehrlingDB)) ;
                 using (StreamWriter w = File.AppendText(LogFile)) ;
 
                 //Schreibt den Counter mit dem Wert 100 in das counter.txt - da noch leer
@@ -83,6 +88,9 @@ namespace ContectManager
             }
             else
             {
+        
+
+
                 //Lädt das mitarbeiter.dat-File in die Liste (Employee) Mitarbeiter
                 // wenn das File Daten enthält
                 if (new FileInfo(MitarbeiterDB).Length >0)
@@ -90,6 +98,20 @@ namespace ContectManager
                     LoadDataMa();
                 }
 
+               
+                //Lädt das kunden.dat-File in die Liste (Customer) Kunden
+                // wenn das File Daten enthält
+                if (new FileInfo(KundenDB).Length > 0)
+                {
+                    LoadDataCu();
+                }
+
+                //Lädt das lehrling.dat-File in die Liste (Trainee) Lehrlinge
+                // wenn das File Daten enthält
+                if (new FileInfo(LehrlingDB).Length > 0)
+                {
+                    LoadDataTr();
+                }
 
                 //Lädt aktuellen Counter = MitarbeiterID
                 // wenn das File Daten enthält
@@ -98,13 +120,6 @@ namespace ContectManager
                     ImportCounter();
                 }
 
-                //Lädt das kunden.dat-File in die Liste (Customer) Kunden
-                // wenn das File Daten enthält
-                if (new FileInfo(KundenDB).Length > 0)
-                {
-                    LoadDataCu();
-                }
-                
 
             }
         }
@@ -133,17 +148,7 @@ namespace ContectManager
             Stream readstream = new FileStream(KundenDB, FileMode.Open, FileAccess.Read);
             Model.Kunden = (List<Customer>)formatter.Deserialize(readstream);
             readstream.Close();
-            //MaListToLsbOutput();
         }
-
-        public static void LoadDataMa() //Ladet/Deserialisiert die binären Daten vom mitarbeiter.dat in die Liste Mitarbeiter
-        {
-            BinaryFormatter formatter = new BinaryFormatter();
-            Stream readstream = new FileStream(MitarbeiterDB, FileMode.Open, FileAccess.Read);
-            Model.Mitarbeiter = (List<Employee>)formatter.Deserialize(readstream);
-            readstream.Close();
-        }
-
         public static void WriteDataCu() //Schreibt/Serialisiert Daten binär ins kunden.dat
         {
             BinaryFormatter formatter = new BinaryFormatter();
@@ -153,11 +158,32 @@ namespace ContectManager
             stream.Close();
         }
 
+        public static void LoadDataMa() //Ladet/Deserialisiert die binären Daten vom mitarbeiter.dat in die Liste Mitarbeiter
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            Stream readstream = new FileStream(MitarbeiterDB, FileMode.Open, FileAccess.Read);
+            Model.Mitarbeiter = (List<Employee>)formatter.Deserialize(readstream);
+            readstream.Close();
+        }
         public static void WriteDataMa() //Schreibt/Serialisiert Daten binär ins mitarbeiter.dat
         {
             BinaryFormatter formatter = new BinaryFormatter();
             Stream stream = new FileStream(MitarbeiterDB, FileMode.Create, FileAccess.Write);
             formatter.Serialize(stream, Model.Mitarbeiter);
+            stream.Close();
+        }
+        public static void LoadDataTr() //Ladet/Deserialisiert die binären Daten vom lehrlinge.dat in die Liste Mitarbeiter
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            Stream readstream = new FileStream(LehrlingDB, FileMode.Open, FileAccess.Read);
+            Model.Lehrlinge = (List<Trainee>)formatter.Deserialize(readstream);
+            readstream.Close();
+        }
+        public static void WriteDataTr() //Schreibt/Serialisiert Daten binär ins mitarbeiter.dat
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            Stream stream = new FileStream(LehrlingDB, FileMode.Create, FileAccess.Write);
+            formatter.Serialize(stream, Model.Lehrlinge);
             stream.Close();
         }
 
@@ -168,6 +194,8 @@ namespace ContectManager
         public static void WriteLog(string typ) //In der Funktion beschrieben
         {
             string Typ = typ;
+
+            //Mitarbeiter Logfile Types
             if (Typ == "MaErstellt")
             {
                 HistoryExport = HistoryNew + "\r\n" + Trennzeichen;
@@ -184,6 +212,7 @@ namespace ContectManager
                 HistoryExport = History + "\r\n" + HistoryNew + "\r\n" + Trennzeichen;
             }
 
+            //Kunde Logfile Types
             if (Typ == "CuErstellt")
             {
                 HistoryExport = HistoryNew + "\r\n" + Trennzeichen;
@@ -196,6 +225,25 @@ namespace ContectManager
             }
 
             if (Typ=="CuBearbeitet")
+            {
+                HistoryExport = History + "\r\n" + HistoryNew + "\r\n" + Trennzeichen;
+
+            }
+
+            //Lehrling Logfile Types
+
+            if (Typ == "TrErstellt")
+            {
+                HistoryExport = HistoryNew + "\r\n" + Trennzeichen;
+            }
+
+            if (Typ == "TrGeloescht")
+            {
+                HistoryExport = GeloeschterLehrling + "\r\n" + Trennzeichen;
+
+            }
+
+            if (Typ == "TrBearbeitet")
             {
                 HistoryExport = History + "\r\n" + HistoryNew + "\r\n" + Trennzeichen;
 
@@ -301,6 +349,60 @@ namespace ContectManager
                 {
                     MessageBox.Show("Mitarbeiter nicht gelöscht!");
                 }
+
+
+            }
+
+            if (Typ == "Lehrling")
+            {
+                DialogResult dialogResult = MessageBox.Show("Sind Sie sicher?", "Lehrling löschen", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    GeloeschterLehrling =
+                      "LG: " +
+                      "Zeit der Löschung        : " +
+                      DateTime.Now.ToString() + "| " +
+                      Model.Lehrlinge[SelectedData].MitarbeiterID + "; " +
+                      Model.Lehrlinge[SelectedData].Salutation + "; " +
+                      Model.Lehrlinge[SelectedData].Firstname + "; " +
+                      Model.Lehrlinge[SelectedData].Lastname + "; " +
+                      Model.Lehrlinge[SelectedData].Birthday + "; " +
+                      Model.Lehrlinge[SelectedData].Gender + "; " +
+                      Model.Lehrlinge[SelectedData].Title + "; " +
+                      Model.Lehrlinge[SelectedData].TelWork + "; " +
+                      Model.Lehrlinge[SelectedData].FaxWork + "; " +
+                      Model.Lehrlinge[SelectedData].Adress + "; " +
+                      Model.Lehrlinge[SelectedData].Zipcode + "; " +
+                      Model.Lehrlinge[SelectedData].Residence + "; " +
+                      Model.Lehrlinge[SelectedData].TelPrivate + "; " +
+                      Model.Lehrlinge[SelectedData].TelMobile + "; " +
+                      Model.Lehrlinge[SelectedData].EMail + "; " +
+                      Model.Lehrlinge[SelectedData].Active + "; " +
+                      Model.Lehrlinge[SelectedData].Department + "; " +
+                      Model.Lehrlinge[SelectedData].AHVNumber + "; " +
+                      Model.Lehrlinge[SelectedData].Nationality + "; " +
+                      Model.Lehrlinge[SelectedData].EntryDate + "; " +
+                      Model.Lehrlinge[SelectedData].QuitDate + "; " +
+                      Model.Lehrlinge[SelectedData].EmploymentLevel + "; " +
+                      Model.Lehrlinge[SelectedData].Role + "; " +
+                      Model.Lehrlinge[SelectedData].ManagementLevel + "; " +
+                      Model.Lehrlinge[selectedData].ApprenticeshipYears + "; " +
+                      Model.Lehrlinge[selectedData].CurrentYear;
+
+                    MessageBox.Show(
+                    "Lehrling: " +
+                    Model.Lehrlinge[selectedData].MitarbeiterID + " " +
+                    Model.Lehrlinge[SelectedData].Firstname + " " +
+                    Model.Lehrlinge[SelectedData].Lastname + " wurde gelöscht!");
+
+                    Model.Lehrlinge.RemoveAt(SelectedData);
+                }
+                else if (dialogResult == DialogResult.No) // Falls abgebrochen wird (verklickt z.B.)
+                {
+                    MessageBox.Show("Lehrling nicht gelöscht!");
+                }
+
+
             }
 
 

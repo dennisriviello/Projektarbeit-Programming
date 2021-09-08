@@ -80,9 +80,10 @@ namespace ContectManager
             // CmdDelCustomer
             // 
             this.CmdDelCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmdDelCustomer.Location = new System.Drawing.Point(267, 538);
+            this.CmdDelCustomer.Location = new System.Drawing.Point(400, 828);
+            this.CmdDelCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CmdDelCustomer.Name = "CmdDelCustomer";
-            this.CmdDelCustomer.Size = new System.Drawing.Size(117, 42);
+            this.CmdDelCustomer.Size = new System.Drawing.Size(176, 65);
             this.CmdDelCustomer.TabIndex = 43;
             this.CmdDelCustomer.Text = "Kunde\r\nlöschen";
             this.CmdDelCustomer.UseVisualStyleBackColor = true;
@@ -91,9 +92,10 @@ namespace ContectManager
             // CmdEditCustomer
             // 
             this.CmdEditCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmdEditCustomer.Location = new System.Drawing.Point(145, 538);
+            this.CmdEditCustomer.Location = new System.Drawing.Point(218, 828);
+            this.CmdEditCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CmdEditCustomer.Name = "CmdEditCustomer";
-            this.CmdEditCustomer.Size = new System.Drawing.Size(117, 42);
+            this.CmdEditCustomer.Size = new System.Drawing.Size(176, 65);
             this.CmdEditCustomer.TabIndex = 42;
             this.CmdEditCustomer.Text = "Kunde\r\nbearbeiten";
             this.CmdEditCustomer.UseVisualStyleBackColor = true;
@@ -103,7 +105,8 @@ namespace ContectManager
             // 
             this.lbl_Vorname.AutoSize = true;
             this.lbl_Vorname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Vorname.Location = new System.Drawing.Point(38, 83);
+            this.lbl_Vorname.Location = new System.Drawing.Point(57, 128);
+            this.lbl_Vorname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Vorname.Name = "lbl_Vorname";
             this.lbl_Vorname.Size = new System.Drawing.Size(69, 17);
             this.lbl_Vorname.TabIndex = 0;
@@ -113,7 +116,8 @@ namespace ContectManager
             // 
             this.lbl_Nachname.AutoSize = true;
             this.lbl_Nachname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Nachname.Location = new System.Drawing.Point(28, 109);
+            this.lbl_Nachname.Location = new System.Drawing.Point(42, 168);
+            this.lbl_Nachname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Nachname.Name = "lbl_Nachname";
             this.lbl_Nachname.Size = new System.Drawing.Size(80, 17);
             this.lbl_Nachname.TabIndex = 1;
@@ -122,27 +126,30 @@ namespace ContectManager
             // TxtFirstname
             // 
             this.TxtFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFirstname.Location = new System.Drawing.Point(127, 80);
+            this.TxtFirstname.Location = new System.Drawing.Point(190, 123);
+            this.TxtFirstname.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtFirstname.Name = "TxtFirstname";
-            this.TxtFirstname.Size = new System.Drawing.Size(100, 23);
+            this.TxtFirstname.Size = new System.Drawing.Size(148, 23);
             this.TxtFirstname.TabIndex = 3;
             this.TxtFirstname.Text = "Hans";
             // 
             // TxtLastname
             // 
             this.TxtLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtLastname.Location = new System.Drawing.Point(127, 106);
+            this.TxtLastname.Location = new System.Drawing.Point(190, 163);
+            this.TxtLastname.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtLastname.Name = "TxtLastname";
-            this.TxtLastname.Size = new System.Drawing.Size(100, 23);
+            this.TxtLastname.Size = new System.Drawing.Size(148, 23);
             this.TxtLastname.TabIndex = 4;
             this.TxtLastname.Text = "Nötig";
             // 
             // CmdAddCustomer
             // 
             this.CmdAddCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmdAddCustomer.Location = new System.Drawing.Point(23, 538);
+            this.CmdAddCustomer.Location = new System.Drawing.Point(34, 828);
+            this.CmdAddCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CmdAddCustomer.Name = "CmdAddCustomer";
-            this.CmdAddCustomer.Size = new System.Drawing.Size(117, 42);
+            this.CmdAddCustomer.Size = new System.Drawing.Size(176, 65);
             this.CmdAddCustomer.TabIndex = 41;
             this.CmdAddCustomer.Text = "Kunde\r\nhinzufuegen";
             this.CmdAddCustomer.UseVisualStyleBackColor = true;
@@ -152,7 +159,8 @@ namespace ContectManager
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 213);
+            this.label2.Location = new System.Drawing.Point(15, 328);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 17);
             this.label2.TabIndex = 8;
@@ -162,7 +170,8 @@ namespace ContectManager
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 187);
+            this.label1.Location = new System.Drawing.Point(16, 288);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 17);
             this.label1.TabIndex = 9;
@@ -171,33 +180,37 @@ namespace ContectManager
             // TxtTelWork
             // 
             this.TxtTelWork.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTelWork.Location = new System.Drawing.Point(127, 212);
+            this.TxtTelWork.Location = new System.Drawing.Point(190, 326);
+            this.TxtTelWork.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtTelWork.Name = "TxtTelWork";
-            this.TxtTelWork.Size = new System.Drawing.Size(100, 23);
+            this.TxtTelWork.Size = new System.Drawing.Size(148, 23);
             this.TxtTelWork.TabIndex = 7;
             // 
             // TxtTelPrivate
             // 
             this.TxtTelPrivate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTelPrivate.Location = new System.Drawing.Point(127, 186);
+            this.TxtTelPrivate.Location = new System.Drawing.Point(190, 286);
+            this.TxtTelPrivate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtTelPrivate.Name = "TxtTelPrivate";
-            this.TxtTelPrivate.Size = new System.Drawing.Size(100, 23);
+            this.TxtTelPrivate.Size = new System.Drawing.Size(148, 23);
             this.TxtTelPrivate.TabIndex = 8;
             // 
             // TxtTelMobile
             // 
             this.TxtTelMobile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTelMobile.Location = new System.Drawing.Point(127, 238);
+            this.TxtTelMobile.Location = new System.Drawing.Point(190, 366);
+            this.TxtTelMobile.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtTelMobile.Name = "TxtTelMobile";
-            this.TxtTelMobile.Size = new System.Drawing.Size(100, 23);
+            this.TxtTelMobile.Size = new System.Drawing.Size(148, 23);
             this.TxtTelMobile.TabIndex = 9;
             // 
             // TxtTitle
             // 
             this.TxtTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTitle.Location = new System.Drawing.Point(127, 28);
+            this.TxtTitle.Location = new System.Drawing.Point(190, 43);
+            this.TxtTitle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtTitle.Name = "TxtTitle";
-            this.TxtTitle.Size = new System.Drawing.Size(100, 23);
+            this.TxtTitle.Size = new System.Drawing.Size(148, 23);
             this.TxtTitle.TabIndex = 1;
             this.TxtTitle.Text = "Professor";
             // 
@@ -205,7 +218,8 @@ namespace ContectManager
             // 
             this.lblKundenID.AutoSize = true;
             this.lblKundenID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKundenID.Location = new System.Drawing.Point(49, 57);
+            this.lblKundenID.Location = new System.Drawing.Point(74, 88);
+            this.lblKundenID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKundenID.Name = "lblKundenID";
             this.lblKundenID.Size = new System.Drawing.Size(58, 17);
             this.lblKundenID.TabIndex = 28;
@@ -215,7 +229,8 @@ namespace ContectManager
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(27, 161);
+            this.label3.Location = new System.Drawing.Point(40, 248);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 17);
             this.label3.TabIndex = 29;
@@ -225,7 +240,8 @@ namespace ContectManager
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(13, 239);
+            this.label6.Location = new System.Drawing.Point(20, 368);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(97, 17);
             this.label6.TabIndex = 30;
@@ -235,7 +251,8 @@ namespace ContectManager
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(67, 31);
+            this.label5.Location = new System.Drawing.Point(100, 48);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(39, 17);
             this.label5.TabIndex = 31;
@@ -244,9 +261,10 @@ namespace ContectManager
             // CmdMenue
             // 
             this.CmdMenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmdMenue.Location = new System.Drawing.Point(479, 538);
+            this.CmdMenue.Location = new System.Drawing.Point(718, 828);
+            this.CmdMenue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CmdMenue.Name = "CmdMenue";
-            this.CmdMenue.Size = new System.Drawing.Size(117, 42);
+            this.CmdMenue.Size = new System.Drawing.Size(176, 65);
             this.CmdMenue.TabIndex = 44;
             this.CmdMenue.Text = "Zurück zum Menü";
             this.CmdMenue.UseVisualStyleBackColor = true;
@@ -255,9 +273,10 @@ namespace ContectManager
             // TxtSalutation
             // 
             this.TxtSalutation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSalutation.Location = new System.Drawing.Point(127, 54);
+            this.TxtSalutation.Location = new System.Drawing.Point(190, 83);
+            this.TxtSalutation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtSalutation.Name = "TxtSalutation";
-            this.TxtSalutation.Size = new System.Drawing.Size(100, 23);
+            this.TxtSalutation.Size = new System.Drawing.Size(148, 23);
             this.TxtSalutation.TabIndex = 2;
             this.TxtSalutation.Text = "Herr";
             // 
@@ -265,17 +284,18 @@ namespace ContectManager
             // 
             this.DtpBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DtpBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DtpBirthday.Location = new System.Drawing.Point(127, 160);
-            this.DtpBirthday.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.DtpBirthday.Location = new System.Drawing.Point(190, 246);
+            this.DtpBirthday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DtpBirthday.Name = "DtpBirthday";
-            this.DtpBirthday.Size = new System.Drawing.Size(100, 23);
+            this.DtpBirthday.Size = new System.Drawing.Size(148, 23);
             this.DtpBirthday.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(26, 135);
+            this.label4.Location = new System.Drawing.Point(39, 208);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 17);
             this.label4.TabIndex = 38;
@@ -289,10 +309,10 @@ namespace ContectManager
             "männlich",
             "weiblich",
             "andere"});
-            this.CmbGender.Location = new System.Drawing.Point(127, 132);
-            this.CmbGender.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.CmbGender.Location = new System.Drawing.Point(190, 203);
+            this.CmbGender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CmbGender.Name = "CmbGender";
-            this.CmbGender.Size = new System.Drawing.Size(100, 24);
+            this.CmbGender.Size = new System.Drawing.Size(148, 24);
             this.CmbGender.TabIndex = 5;
             this.CmbGender.Text = "andere";
             // 
@@ -300,7 +320,8 @@ namespace ContectManager
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(292, 83);
+            this.label7.Location = new System.Drawing.Point(438, 128);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 17);
             this.label7.TabIndex = 45;
@@ -309,32 +330,36 @@ namespace ContectManager
             // TxtAdress
             // 
             this.TxtAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtAdress.Location = new System.Drawing.Point(389, 79);
+            this.TxtAdress.Location = new System.Drawing.Point(584, 122);
+            this.TxtAdress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtAdress.Name = "TxtAdress";
-            this.TxtAdress.Size = new System.Drawing.Size(169, 23);
+            this.TxtAdress.Size = new System.Drawing.Size(252, 23);
             this.TxtAdress.TabIndex = 22;
             // 
             // TxtEMail
             // 
             this.TxtEMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtEMail.Location = new System.Drawing.Point(389, 133);
+            this.TxtEMail.Location = new System.Drawing.Point(584, 205);
+            this.TxtEMail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtEMail.Name = "TxtEMail";
-            this.TxtEMail.Size = new System.Drawing.Size(169, 23);
+            this.TxtEMail.Size = new System.Drawing.Size(252, 23);
             this.TxtEMail.TabIndex = 24;
             // 
             // TxtFaxWork
             // 
             this.TxtFaxWork.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFaxWork.Location = new System.Drawing.Point(127, 264);
+            this.TxtFaxWork.Location = new System.Drawing.Point(190, 406);
+            this.TxtFaxWork.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtFaxWork.Name = "TxtFaxWork";
-            this.TxtFaxWork.Size = new System.Drawing.Size(100, 23);
+            this.TxtFaxWork.Size = new System.Drawing.Size(148, 23);
             this.TxtFaxWork.TabIndex = 10;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(303, 137);
+            this.label8.Location = new System.Drawing.Point(454, 211);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(51, 17);
             this.label8.TabIndex = 41;
@@ -344,7 +369,8 @@ namespace ContectManager
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(32, 265);
+            this.label11.Location = new System.Drawing.Point(48, 408);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(75, 17);
             this.label11.TabIndex = 40;
@@ -354,7 +380,8 @@ namespace ContectManager
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(275, 55);
+            this.label12.Location = new System.Drawing.Point(412, 85);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(84, 17);
             this.label12.TabIndex = 47;
@@ -363,16 +390,18 @@ namespace ContectManager
             // TxtZipcode
             // 
             this.TxtZipcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtZipcode.Location = new System.Drawing.Point(389, 51);
+            this.TxtZipcode.Location = new System.Drawing.Point(584, 78);
+            this.TxtZipcode.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtZipcode.Name = "TxtZipcode";
-            this.TxtZipcode.Size = new System.Drawing.Size(169, 23);
+            this.TxtZipcode.Size = new System.Drawing.Size(252, 23);
             this.TxtZipcode.TabIndex = 21;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(323, 110);
+            this.label13.Location = new System.Drawing.Point(484, 169);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(32, 17);
             this.label13.TabIndex = 49;
@@ -381,9 +410,10 @@ namespace ContectManager
             // TxtResidence
             // 
             this.TxtResidence.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtResidence.Location = new System.Drawing.Point(389, 106);
+            this.TxtResidence.Location = new System.Drawing.Point(584, 163);
+            this.TxtResidence.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtResidence.Name = "TxtResidence";
-            this.TxtResidence.Size = new System.Drawing.Size(169, 23);
+            this.TxtResidence.Size = new System.Drawing.Size(252, 23);
             this.TxtResidence.TabIndex = 23;
             // 
             // ChkActive
@@ -392,8 +422,8 @@ namespace ContectManager
             this.ChkActive.Checked = true;
             this.ChkActive.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ChkActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChkActive.Location = new System.Drawing.Point(389, 30);
-            this.ChkActive.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.ChkActive.Location = new System.Drawing.Point(584, 46);
+            this.ChkActive.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChkActive.Name = "ChkActive";
             this.ChkActive.Size = new System.Drawing.Size(15, 14);
             this.ChkActive.TabIndex = 20;
@@ -403,7 +433,8 @@ namespace ContectManager
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(312, 28);
+            this.label14.Location = new System.Drawing.Point(468, 43);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(42, 17);
             this.label14.TabIndex = 51;
@@ -413,7 +444,8 @@ namespace ContectManager
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(277, 219);
+            this.label15.Location = new System.Drawing.Point(416, 337);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(80, 17);
             this.label15.TabIndex = 57;
@@ -423,7 +455,8 @@ namespace ContectManager
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(254, 192);
+            this.label16.Location = new System.Drawing.Point(381, 295);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(106, 17);
             this.label16.TabIndex = 55;
@@ -432,16 +465,18 @@ namespace ContectManager
             // TxtCompanyAdress
             // 
             this.TxtCompanyAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCompanyAdress.Location = new System.Drawing.Point(389, 188);
+            this.TxtCompanyAdress.Location = new System.Drawing.Point(584, 289);
+            this.TxtCompanyAdress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtCompanyAdress.Name = "TxtCompanyAdress";
-            this.TxtCompanyAdress.Size = new System.Drawing.Size(169, 23);
+            this.TxtCompanyAdress.Size = new System.Drawing.Size(252, 23);
             this.TxtCompanyAdress.TabIndex = 26;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(268, 164);
+            this.label17.Location = new System.Drawing.Point(402, 252);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(90, 17);
             this.label17.TabIndex = 53;
@@ -450,9 +485,10 @@ namespace ContectManager
             // TxtCompanyName
             // 
             this.TxtCompanyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCompanyName.Location = new System.Drawing.Point(389, 161);
+            this.TxtCompanyName.Location = new System.Drawing.Point(584, 248);
+            this.TxtCompanyName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtCompanyName.Name = "TxtCompanyName";
-            this.TxtCompanyName.Size = new System.Drawing.Size(169, 23);
+            this.TxtCompanyName.Size = new System.Drawing.Size(252, 23);
             this.TxtCompanyName.TabIndex = 25;
             // 
             // CmbCustomerType
@@ -465,10 +501,10 @@ namespace ContectManager
             "C",
             "D",
             "E"});
-            this.CmbCustomerType.Location = new System.Drawing.Point(389, 215);
-            this.CmbCustomerType.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.CmbCustomerType.Location = new System.Drawing.Point(584, 331);
+            this.CmbCustomerType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CmbCustomerType.Name = "CmbCustomerType";
-            this.CmbCustomerType.Size = new System.Drawing.Size(169, 24);
+            this.CmbCustomerType.Size = new System.Drawing.Size(252, 24);
             this.CmbCustomerType.TabIndex = 27;
             // 
             // LsbOutputKU
@@ -476,9 +512,10 @@ namespace ContectManager
             this.LsbOutputKU.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LsbOutputKU.FormattingEnabled = true;
             this.LsbOutputKU.ItemHeight = 16;
-            this.LsbOutputKU.Location = new System.Drawing.Point(23, 352);
+            this.LsbOutputKU.Location = new System.Drawing.Point(34, 542);
+            this.LsbOutputKU.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.LsbOutputKU.Name = "LsbOutputKU";
-            this.LsbOutputKU.Size = new System.Drawing.Size(575, 148);
+            this.LsbOutputKU.Size = new System.Drawing.Size(860, 212);
             this.LsbOutputKU.TabIndex = 30;
             // 
             // groupBox1
@@ -520,11 +557,9 @@ namespace ContectManager
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(23, 12);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(34, 18);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(575, 294);
+            this.groupBox1.Size = new System.Drawing.Size(862, 452);
             this.groupBox1.TabIndex = 61;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datenverwaltung";
@@ -533,7 +568,8 @@ namespace ContectManager
             // 
             this.lblOutput.AutoSize = true;
             this.lblOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOutput.Location = new System.Drawing.Point(19, 332);
+            this.lblOutput.Location = new System.Drawing.Point(28, 511);
+            this.lblOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOutput.Name = "lblOutput";
             this.lblOutput.Size = new System.Drawing.Size(125, 17);
             this.lblOutput.TabIndex = 112;
@@ -541,9 +577,9 @@ namespace ContectManager
             // 
             // Form_KundeReg
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(629, 617);
+            this.ClientSize = new System.Drawing.Size(944, 949);
             this.Controls.Add(this.lblOutput);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.LsbOutputKU);
@@ -551,7 +587,9 @@ namespace ContectManager
             this.Controls.Add(this.CmdEditCustomer);
             this.Controls.Add(this.CmdDelCustomer);
             this.Controls.Add(this.CmdAddCustomer);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form_KundeReg";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kunden registrieren";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
