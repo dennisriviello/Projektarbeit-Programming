@@ -131,6 +131,7 @@ namespace ContectManager
                 //Variable MitarbeiterID wird beim Laden des Formulars gesetzt(ausgelesen) falls vorhanden
                 MitarbeiterID = Convert.ToInt32(file.ReadLine());
                 file.Close(); // Zugriff auf File schliessen
+                MitarbeiterID = MitarbeiterID + 1;                            // Hier von Joel geändert für MitarbeiterID 2/2
             }
         }
         

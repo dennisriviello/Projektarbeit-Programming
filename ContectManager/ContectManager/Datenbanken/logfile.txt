@@ -84,3 +84,98 @@ ME: Zeit der Erstellung      : 08.09.2021 21:12:28| 107; Herr; Max; Muster; 26.0
 -----
 MG: Zeit der Löschung        : 08.09.2021 21:12:32| 106; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 20:27:35; 80; IT Service Desk; 0
 -----
+ME: Zeit der Erstellung      : 09.09.2021 11:40:35| 108; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 11:40:31; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 11:40:41| 108; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 11:40:38; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 11:50:50| 108; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 11:50:35; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 12:04:46| 109; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:04:30; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 12:06:27| 110; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:05:07; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 09.09.2021 12:09:47| 108; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 11:40:31; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 09.09.2021 12:10:04| 107; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 21:12:21; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 12:12:36| 112; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:12:31; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 12:26:41| 113; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:26:37; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 12:26:44| 114; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 09.09.2021 12:26:37; ; ; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 12:26:47| 115; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 09.09.2021 12:26:37; ; ; 0
+-----
+MG: Zeit der Löschung        : 09.09.2021 12:26:53| 115; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 09.09.2021 12:26:37; ; ; 0
+-----
+MG: Zeit der Löschung        : 09.09.2021 12:26:57| 114; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 09.09.2021 12:26:37; ; ; 0
+-----
+MG: Zeit der Löschung        : 09.09.2021 12:27:01| 113; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:26:37; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 12:27:08| 116; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 09.09.2021 12:26:37; ; ; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 12:27:13| 117; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:27:10; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 12:27:28| 118; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:27:24; 80; IT Service Desk; 0
+-----
+MB: Startzeit der Bearbeitung: 09.09.2021 12:27:58| 118:Herr;Max;Muster;26.08.1990 13:54:00;männlich;Dr.;071456789;0716123456;Musterstrasse 20a;8570;Musterhausen;076456789;076456789;max.muster@gail.com;True;118;Informatik;123.123.123;Schweizer;26.01.2021 13:54:00;09.09.2021 12:27:24;80;IT Service Desk;0
+MB: Endzeit der Bearbeitung  : 09.09.2021 12:28:00| 118:Herr;Max;Muster;26.08.1990 13:54:00;männlich;Dr.;071456789;0716123456;Musterstrasse 20a;8570;Musterhausen;076456789;076456789;max.muster@gail.com;True;118;Informatik;123.123.123;Schweizer;26.01.2021 13:54:00;09.09.2021 12:27:24;80;IT Service Desk;0
+-----
+MG: Zeit der Löschung        : 09.09.2021 12:28:05| 118; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:27:24; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 12:28:08| 119; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 09.09.2021 12:27:24; ; ; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 12:29:30| 120; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:29:28; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 09.09.2021 12:29:34| 120; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:29:28; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 09.09.2021 12:30:39| 117; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:27:10; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 12:32:25| 123; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:32:23; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 09.09.2021 12:32:33| 123; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:32:23; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 09.09.2021 12:32:35| 108; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 11:50:35; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 09.09.2021 12:32:38| 108; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 11:40:38; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 12:34:33| 124; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:34:29; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 09.09.2021 12:34:37| 109; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:04:30; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 09.09.2021 12:34:40| 105; ; Nolldi; Sacklaus; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 08.09.2021 19:29:49; ; ; 0
+-----
+MG: Zeit der Löschung        : 09.09.2021 12:34:44| 106; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 21:12:02; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 09.09.2021 12:34:46| 113; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:12:31; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 09.09.2021 12:34:49| 110; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:05:07; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 09.09.2021 12:34:51| 100; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; False; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 18:26:20; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 09.09.2021 12:34:54| 103; Herr; Andreas; Häne; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 08.09.2021 19:24:50; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 12:34:57| 125; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 09.09.2021 12:34:29; ; ; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 12:37:46| 126; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:37:20; 80; IT Service Desk; 0
+-----
+MB: Startzeit der Bearbeitung: 09.09.2021 12:38:28| 124:Herr;Max;Muster;26.08.1990 13:54:00;männlich;Dr.;071456789;0716123456;Musterstrasse 20a;8570;Musterhausen;076456789;076456789;max.muster@gail.com;True;124;Informatik;123.123.123;Schweizer;26.01.2021 13:54:00;09.09.2021 12:34:29;80;IT Service Desk;0
+MB: Endzeit der Bearbeitung  : 09.09.2021 12:38:40| 124:Herr;kdsljfhj;Muster;26.08.1990 13:54:00;männlich;Dr.;071456789;0716123456;Musterstrasse 20a;8570;Musterhausen;076456789;076456789;max.muster@gail.com;True;124;Informatik;123.123.123;Schweizer;26.01.2021 13:54:00;09.09.2021 12:34:29;80;IT Service Desk;0
+-----
+MB: Startzeit der Bearbeitung: 09.09.2021 12:38:44| 125:;;;26.08.1990 13:54:00;;;;;;;;;;;True;125;;;;26.01.2021 13:54:00;09.09.2021 12:34:29;;;0
+MB: Endzeit der Bearbeitung  : 09.09.2021 12:38:47| 125:;wrwr;;26.08.1990 13:54:00;;;;;;;;;;;True;125;;;;26.01.2021 13:54:00;09.09.2021 12:34:29;;;0
+-----
+KE: Zeit der Erstellung      : 09.09.2021 12:50:35| Herr; Hans; Nötig; 09.09.2021 12:50:34; andere; Professor; ; ; ; ; ; ; ; ; True; ; ; 
+-----
+KG: Zeit der Löschung        : 09.09.2021 12:50:42| Herr; Grussig; Wetter; 08.09.2021 19:32:12; andere; Professor; ; ; ; ; ; 087985; ; ; False; ; ; 
+-----
+ME: Zeit der Erstellung      : 09.09.2021 12:51:16| 127; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:50:59; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 12:51:35| 128; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; False; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:51:25; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 12:51:53| 129; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; False; ; ; ; 26.01.2021 13:54:00; 09.09.2021 12:51:25; ; ; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 12:51:54| 130; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 09.09.2021 12:51:25; ; ; 0
+-----
+MG: Zeit der Löschung        : 09.09.2021 12:51:59| 124; Herr; kdsljfhj; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:34:29; 80; IT Service Desk; 0
+-----

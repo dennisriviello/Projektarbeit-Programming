@@ -30,7 +30,9 @@ namespace ContectManager
             MaListToLsbOutput();
 
             //MitarbeiterID in Textfeld der Form laden
+            
             TxtMitarbeiterID.Text = Controller.MitarbeiterID.ToString();
+
         }
 
         //Variable "ausgewählter Mitarbeiter" initialisieren damit sie in Form abgeändert werden kann
@@ -594,7 +596,7 @@ namespace ContectManager
                     SelectedMA = LsbOutputMA.SelectedIndex;
 
                     //aktuellene Mitarbeiternummer exportieren
-                    Controller.ExportCounter();
+                    //Controller.ExportCounter();                          //Hier von Joel geändert für MitarbeiterID   1/2
 
                     //ausgewählten Mitarbeiter aus Liste Mitarbeiter löschen
                     Controller.DeleteSelected("Mitarbeiter", SelectedMA);
@@ -767,6 +769,7 @@ namespace ContectManager
             }
 
         }
+
     }
 
     

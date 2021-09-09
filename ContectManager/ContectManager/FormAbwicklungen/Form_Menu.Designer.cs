@@ -159,7 +159,6 @@ namespace ContectManager
             this.Name = "Form_Menue";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ContactManager";
-            this.Load += new System.EventHandler(this.Form_Menue_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

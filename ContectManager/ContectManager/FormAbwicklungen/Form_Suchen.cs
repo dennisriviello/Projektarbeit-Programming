@@ -16,6 +16,7 @@ namespace ContectManager
 {
     public partial class Form_Suche : Form
     {
+        private string[] hinweis = { "Nur Zahlen zur Eingabe erlaubt", "Nur Buchstaben Erlaubt", "Zahlen und Buchstaben erlaubt", "True oder False eingeben" };
         public Form_Suche()
         {
             InitializeComponent();
@@ -30,7 +31,20 @@ namespace ContectManager
         }
 
         private void CmdSuchen_Click(object sender, EventArgs e)
-        {   try
+        {
+            Filtern();
+        }
+        private void Keydown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Filtern();
+            }
+        }
+
+        private void Filtern()
+        {
+            try
             {
                 if (TxtEmployee.Text != "" || TxtCustomer.Text != "" || TxtTrainee.Text != "")
                 {
@@ -56,52 +70,63 @@ namespace ContectManager
                     }
                 }
                 else
-                    MessageBox.Show("Bitte geben Sie etwas in das Suchfeld ein!", "Eingabe falsch",MessageBoxButtons.OK ,MessageBoxIcon.Warning);
+                    MessageBox.Show("Bitte geben Sie etwas in das Suchfeld ein!", "Eingabe falsch", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception)
             {
-                MessageBox.Show("Kein gültiger Wert");
+                MessageBox.Show("Kein gültiger Wert", "Eingabe falsch", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
-
-
         }
-
-        private void RadCustomer_CheckedChanged(object sender, EventArgs e)
-        {
-            CmbTrainee.Visible = false;
-            CmbEmployee.Visible = false;
-
-            TxtTrainee.Visible = false;
-            TxtEmployee.Visible = false;
-
-            CmbCustomer.Visible = true;
-            TxtCustomer.Visible = true;
-        }
-
         private void RadEmployee_CheckedChanged(object sender, EventArgs e)
         {
+            CmbEmployee.SelectedIndex = 0;
             CmbCustomer.Visible = false;
             CmbTrainee.Visible = false;
 
             TxtCustomer.Visible = false;
             TxtTrainee.Visible = false;
+
+            LblCustomer.Visible = false;
+            LblTrainee.Visible = false;
 
 
             CmbEmployee.Visible = true;
             TxtEmployee.Visible = true;
+            LblEmployee.Visible = true;
+        }
+
+        private void RadCustomer_CheckedChanged(object sender, EventArgs e)
+        {
+            CmbCustomer.SelectedIndex = 0;
+            CmbTrainee.Visible = false;
+            CmbEmployee.Visible = false;
+
+            TxtTrainee.Visible = false;
+            TxtEmployee.Visible = false;
+
+            LblEmployee.Visible = false;
+            LblTrainee.Visible = false;
+
+            CmbCustomer.Visible = true;
+            TxtCustomer.Visible = true;
+            // LblCustomer.Visible = true;
         }
 
         private void RadTrainee_CheckedChanged(object sender, EventArgs e)
         {
+            CmbTrainee.SelectedIndex = 0;
             CmbCustomer.Visible = false;
             CmbEmployee.Visible = false;
 
             TxtCustomer.Visible = false;
             TxtEmployee.Visible = false;
 
+            LblEmployee.Visible = false;
+            LblCustomer.Visible = false;
+
             CmbTrainee.Visible = true;
             TxtTrainee.Visible = true;
+            // LblTrainee.Visible = true;
         }
 
         public string SetSelectedEmployee(string cat, string value, bool exist)
@@ -980,5 +1005,75 @@ namespace ContectManager
             return null;
         }
 
+        
+        private void CmbEmployee_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if      (CmbEmployee.SelectedIndex == 0)
+                LblEmployee.Text = hinweis[0];
+            else if (CmbEmployee.SelectedIndex == 1)
+                LblEmployee.Text = hinweis[1];
+            else if (CmbEmployee.SelectedIndex == 2)
+                LblEmployee.Text = hinweis[1];
+            else if (CmbEmployee.SelectedIndex == 3)
+                LblEmployee.Text = hinweis[1];
+            else if (CmbEmployee.SelectedIndex == 4)
+                LblEmployee.Text = hinweis[1];
+            else if (CmbEmployee.SelectedIndex == 5)
+                LblEmployee.Text = hinweis[1];
+            else if (CmbEmployee.SelectedIndex == 6)
+                LblEmployee.Text = hinweis[0];
+            else if (CmbEmployee.SelectedIndex == 7)
+                LblEmployee.Text = hinweis[0];
+            else if (CmbEmployee.SelectedIndex == 8)
+                LblEmployee.Text = hinweis[2];
+            else if (CmbEmployee.SelectedIndex == 9)
+                LblEmployee.Text = hinweis[0];
+            else if (CmbEmployee.SelectedIndex == 10)
+                LblEmployee.Text = hinweis[1];
+            else if (CmbEmployee.SelectedIndex == 11)
+                LblEmployee.Text = hinweis[0];
+            else if (CmbEmployee.SelectedIndex == 12)
+                LblEmployee.Text = hinweis[0];
+            else if (CmbEmployee.SelectedIndex == 13)
+                LblEmployee.Text = hinweis[2];
+            else if (CmbEmployee.SelectedIndex == 14)
+                LblEmployee.Text = hinweis[3];
+            else if (CmbEmployee.SelectedIndex == 15)
+                LblEmployee.Text = hinweis[0];
+            else if (CmbEmployee.SelectedIndex == 16)
+                LblEmployee.Text =  "Zahlen und Punkte erlaubt";
+            else if (CmbEmployee.SelectedIndex == 17)
+                LblEmployee.Text = hinweis[0];
+            else if (CmbEmployee.SelectedIndex == 18)
+                LblEmployee.Text = hinweis[0];
+            else if (CmbEmployee.SelectedIndex == 19)
+                LblEmployee.Text = hinweis[1];
+            else if (CmbEmployee.SelectedIndex == 20)
+                LblEmployee.Text = hinweis[0];
+        }
+
+        private void CmbCustomer_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            if (CmbCustomer.SelectedIndex == 13)
+            {
+                LblCustomer.Text = "'True' oder 'False' eingeben";
+                LblCustomer.Visible = true;
+            }
+            else
+                LblCustomer.Visible = false;
+
+        }
+
+        private void CmbTrainee_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (CmbTrainee.SelectedIndex == 14)
+            {
+                LblTrainee.Text = "'True' oder 'False' eingeben";
+                LblTrainee.Visible = true;
+            }
+            else
+                LblTrainee.Visible = false;
+        }
     }
 }

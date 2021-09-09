@@ -39,11 +39,6 @@ namespace ContectManager
             fSuche.ShowDialog();
         }
 
-        private void Form_Menue_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void CmdLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
