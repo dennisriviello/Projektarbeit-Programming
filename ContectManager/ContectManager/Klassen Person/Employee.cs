@@ -38,7 +38,6 @@ namespace ContectManager
             faxwork, adress, zipcode, residence, telprivate, telmobile, email, active)
 
         {
-
             MitarbeiterID = mitarbeiterID;
             Department = department;
             AHVNumber = ahvnumber;

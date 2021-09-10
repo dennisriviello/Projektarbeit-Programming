@@ -179,3 +179,143 @@ ME: Zeit der Erstellung      : 09.09.2021 12:51:54| 130; ; ; ; 26.08.1990 13:54:
 -----
 MG: Zeit der Löschung        : 09.09.2021 12:51:59| 124; Herr; kdsljfhj; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:34:29; 80; IT Service Desk; 0
 -----
+ME: Zeit der Erstellung      : 09.09.2021 15:30:21| 131; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 15:30:00; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 15:30:31| 132; Herr; Max(/&; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 15:30:24; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 09.09.2021 16:15:53| 133; Herr; Max45; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 16:15:41; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 10.09.2021 13:01:49| 134; Herr; Max452; Muster42; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 13:01:42; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 10.09.2021 13:02:03| 134; Herr; Max452; Muster42; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 13:01:42; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 10.09.2021 13:02:06| 129; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; False; ; ; ; 26.01.2021 13:54:00; 09.09.2021 12:51:25; ; ; 0
+-----
+MG: Zeit der Löschung        : 10.09.2021 13:02:10| 130; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 09.09.2021 12:51:25; ; ; 0
+-----
+MG: Zeit der Löschung        : 10.09.2021 13:02:12| 131; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 15:30:00; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 10.09.2021 13:02:15| 128; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; False; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:51:25; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 10.09.2021 13:02:18| 127; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:50:59; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 10.09.2021 13:02:21| 116; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 09.09.2021 12:26:37; ; ; 0
+-----
+MG: Zeit der Löschung        : 10.09.2021 13:02:23| 119; ; ; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 09.09.2021 12:27:24; ; ; 0
+-----
+MG: Zeit der Löschung        : 10.09.2021 13:02:26| 125; ; wrwr; ; 26.08.1990 13:54:00; ; ; ; ; ; ; ; ; ; ; True; ; ; ; 26.01.2021 13:54:00; 09.09.2021 12:34:29; ; ; 0
+-----
+ME: Zeit der Erstellung      : 10.09.2021 13:25:41| 135; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 13:25:21; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 10.09.2021 13:26:04| 126; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 12:37:20; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 10.09.2021 13:26:07| 132; Herr; Max(/&; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 15:30:24; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 10.09.2021 13:28:08| 136; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 13:27:56; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 10.09.2021 13:39:15| 137; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 0764567896hiu; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 13:39:07; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 10.09.2021 19:05:23| 138; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 19:04:47; 80; IT Service Desk; 0
+-----
+LE: Zeit der Erstellung      : 10.09.2021 19:31:02| 139; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 19:29:11; 80; IT Service Desk; 0; 10; 6
+-----
+ME: Zeit der Erstellung      : 10.09.2021 19:34:19| 140; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 19:33:47; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 10.09.2021 19:35:01| 133; Herr; Max45; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 09.09.2021 16:15:41; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 10.09.2021 19:35:04| 135; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 13:25:21; 80; IT Service Desk; 0
+-----
+ME: Zeit der Erstellung      : 10.09.2021 19:35:06| 141; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 19:34:57; 80; IT Service Desk; 0
+-----
+KE: Zeit der Erstellung      : 10.09.2021 20:01:09| Herra; Hans; Nötig; 10.09.2021 20:00:32; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KE: Zeit der Erstellung      : 10.09.2021 20:01:36| Herr; Hans; Nötig; 10.09.2021 20:01:34; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+ME: Zeit der Erstellung      : 10.09.2021 21:17:21| 142; Herr; Maxx; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Mechanik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 21:17:07; 10; Mech Maschinenführer; 0
+-----
+ME: Zeit der Erstellung      : 10.09.2021 21:20:29| 143; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Mechanik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 21:19:22; 10; Mech Maschinenführer; 0
+-----
+ME: Zeit der Erstellung      : 10.09.2021 21:30:35| 144; Herr; Max; Muster; 31.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Mechanik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 21:30:27; 10; Mech Maschinenführer; 0
+-----
+ME: Zeit der Erstellung      : 10.09.2021 21:48:58| 145; Herr; Maxa; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; False; Mechanik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 21:47:33; 10; Mech Maschinenführer; 0
+-----
+KE: Zeit der Erstellung      : 10.09.2021 21:50:22| Herr; Hans; Nötig; 10.09.2021 21:49:15; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KE: Zeit der Erstellung      : 10.09.2021 21:50:28| Herr; Hans; Nötig; 10.09.2021 21:50:27; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+LE: Zeit der Erstellung      : 10.09.2021 21:54:17| 146; Herr; Maxx; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Mechanik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 21:53:08; 10; Mech Maschinenführer; 0; 3; 7
+-----
+ME: Zeit der Erstellung      : 10.09.2021 22:00:27| 147; Herr; Max ; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Mechanik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 22:00:24; 10; Mech Maschinenführer; 0
+-----
+KE: Zeit der Erstellung      : 10.09.2021 22:10:50| Herr; Hans; Nötig; 10.09.2021 22:09:58; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KE: Zeit der Erstellung      : 10.09.2021 22:11:04| Herr; Hans; Nötig; 10.09.2021 22:11:01; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+LE: Zeit der Erstellung      : 10.09.2021 22:12:19| 148; Herr; Maxjh; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Mechanik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 22:12:06; 10; Mech Maschinenführer; 0; ; 
+-----
+MG: Zeit der Löschung        : 10.09.2021 22:12:31| 136; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 13:27:56; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 10.09.2021 22:12:34| 137; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 0764567896hiu; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 13:39:07; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 10.09.2021 22:12:37| 138; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 19:04:47; 80; IT Service Desk; 0
+-----
+MG: Zeit der Löschung        : 10.09.2021 22:12:39| 140; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Informatik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 19:33:47; 80; IT Service Desk; 0
+-----
+KE: Zeit der Erstellung      : 10.09.2021 22:15:15| Herr; Hans; Nötig; 10.09.2021 22:14:18; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KE: Zeit der Erstellung      : 10.09.2021 22:28:21| Herr; Hans; Nötig; 10.09.2021 22:28:18; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+ME: Zeit der Erstellung      : 10.09.2021 22:41:03| 149; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Mechanik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 22:41:01; 10; Mech Maschinenführer; 0
+-----
+ME: Zeit der Erstellung      : 10.09.2021 22:41:07| 150; Herr; Max; Muster; 26.08.1990 13:54:00; männlich; Dr.; 071456789; 0716123456; Musterstrasse 20a; 8570; Musterhausen; 076456789; 076456789; max.muster@gail.com; True; Mechanik; 123.123.123; Schweizer; 26.01.2021 13:54:00; 10.09.2021 22:41:06; 10; Mech Maschinenführer; 0
+-----
+KE: Zeit der Erstellung      : 10.09.2021 22:45:01| Herr; Hans; Nötig; 10.09.2021 22:44:52; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KE: Zeit der Erstellung      : 10.09.2021 22:45:07| Herr; Hans; Nötig; 10.09.2021 22:45:06; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KE: Zeit der Erstellung      : 10.09.2021 22:53:20| Herr; Hans; Nötig; 10.09.2021 22:53:13; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KE: Zeit der Erstellung      : 10.09.2021 22:53:23| Herr; Hans; Nötig; 10.09.2021 22:53:22; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KE: Zeit der Erstellung      : 10.09.2021 22:54:36| Herr; Hans; Nötig; 13.05.2021 00:00:00; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KE: Zeit der Erstellung      : 10.09.2021 22:55:07| Herr; Hans; Nötig; 15.07.2021 00:00:00; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KG: Zeit der Löschung        : 10.09.2021 22:56:42| Herr; Hans; Nötig; 08.09.2021 19:31:29; andere; Professor; ; ; ; ; ; ; ; ; True; ; ; 
+-----
+KG: Zeit der Löschung        : 10.09.2021 22:56:45| Herr; Sack; Laus; 08.09.2021 19:31:51; andere; Professor; ; ; ; ; ; ; ; ; True; ; ; 
+-----
+KG: Zeit der Löschung        : 10.09.2021 22:56:47| Herr; Kei; Ahnig; 08.09.2021 19:32:32; andere; Professor; ; ; ; ; ; ; ; ; False; ; ; 
+-----
+KG: Zeit der Löschung        : 10.09.2021 22:56:49| Herr; Nöd; Aktiv; 08.09.2021 19:32:52; andere; Professor; ; ; ; ; ; ; ; ; False; ; ; 
+-----
+KG: Zeit der Löschung        : 10.09.2021 22:56:52| Herr; Hans; Nötig; 09.09.2021 12:50:34; andere; Professor; ; ; ; ; ; ; ; ; True; ; ; 
+-----
+KG: Zeit der Löschung        : 10.09.2021 22:56:54| Herra; Hans; Nötig; 10.09.2021 20:00:32; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KG: Zeit der Löschung        : 10.09.2021 22:56:58| Herr; Hans; Nötig; 10.09.2021 20:01:34; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KG: Zeit der Löschung        : 10.09.2021 22:57:00| Herr; Hans; Nötig; 10.09.2021 21:49:15; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KG: Zeit der Löschung        : 10.09.2021 22:57:03| Herr; Hans; Nötig; 10.09.2021 21:50:27; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KG: Zeit der Löschung        : 10.09.2021 22:57:05| Herr; Hans; Nötig; 10.09.2021 22:09:58; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KG: Zeit der Löschung        : 10.09.2021 22:57:07| Herr; Hans; Nötig; 10.09.2021 22:11:01; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KG: Zeit der Löschung        : 10.09.2021 22:57:09| Herr; Hans; Nötig; 10.09.2021 22:14:18; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KG: Zeit der Löschung        : 10.09.2021 22:57:11| Herr; Hans; Nötig; 10.09.2021 22:28:18; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KG: Zeit der Löschung        : 10.09.2021 22:57:13| Herr; Hans; Nötig; 10.09.2021 22:44:52; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KG: Zeit der Löschung        : 10.09.2021 22:57:14| Herr; Hans; Nötig; 10.09.2021 22:45:06; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KE: Zeit der Erstellung      : 10.09.2021 22:57:34| Herr; Salli; Mitenand; 13.05.2021 00:00:00; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KE: Zeit der Erstellung      : 10.09.2021 22:57:44| ; salli; mitenand; 13.05.2021 00:00:00; männlich; ; ; ; ; ; ; ; ; ; True; ; ; A
+-----
+KE: Zeit der Erstellung      : 10.09.2021 22:58:06| ; salli; MitEnand; 13.05.2021 00:00:00; männlich; ; ; ; ; ; ; ; ; ; True; ; ; A
+-----
+KE: Zeit der Erstellung      : 10.09.2021 22:58:34| ; hans; nötig; 13.05.2021 00:00:00; männlich; ; ; ; ; ; ; ; ; ; True; ; ; A
+-----

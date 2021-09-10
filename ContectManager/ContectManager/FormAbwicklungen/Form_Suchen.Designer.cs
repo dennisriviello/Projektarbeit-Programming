@@ -309,9 +309,9 @@ namespace ContectManager
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label2.Location = new System.Drawing.Point(265, 216);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(323, 17);
+            this.label2.Size = new System.Drawing.Size(411, 21);
             this.label2.TabIndex = 28;
-            this.label2.Text = "Hinweis bei Kunde/Lehring ensteht nur bei \'Active\'";
+            this.label2.Text = "\'Hinweis\' bei Kunde/Lehring ensteht nur bei \'Active\'";
             // 
             // Form_Suche
             // 

@@ -409,6 +409,102 @@ namespace ContectManager
 
         }
 
+        public static bool CheckString(string eingabe, TextBox t)
+        {
+            if (eingabe.Any(char.IsDigit))
+            {
+                t.BackColor = Color.Red;
+                return true;
+            }
+            else
+            {
+                t.BackColor = Color.White;
+                return false;
+            }
+        }
+        public static bool CheckInt(string eingabe, TextBox t)
+        {
+            char[] check = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+                             'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+            bool temp = false;
+            for (int e = 0; e < eingabe.Length; e++)
+            {
+                for (int b = 0; b < check.Length; b++)
+                {
+                    if (eingabe[e].Equals(check[b]))
+                        temp = true;
+                }
+            }
+            if (temp == true)
+            {
+                t.BackColor = Color.Red;
+                return true;
+            }
+            else
+            {
+                t.BackColor = Color.White;
+                return false;
+            }
+
+        }
+
+        // Überprüft auf Vorname, Nachname und Geburtsdatum ob dieser Mitarbeiter in der Liste Employee bereits vorhanden ist
+        public static bool EqualsEmployee(string firstname, string lastname, DateTime birthday)
+        {
+            bool temp = false;;
+            firstname = firstname.ToLower();
+            lastname = lastname.ToLower();
+            foreach (var Mitarbeiter in Model.Mitarbeiter)
+            {
+                if (Mitarbeiter.Firstname.ToLower().Equals(firstname) && Mitarbeiter.Lastname.ToLower().Equals(lastname) &&
+                    Mitarbeiter.Birthday.Equals(birthday))
+                {
+                    temp = true;
+                } 
+            }
+            if (temp == true)
+                return true;
+            else
+                return false;
+        }
+        public static bool EqualsCustomer(string firstname, string lastname, DateTime birthday)
+        {
+            bool temp = false;
+            firstname = firstname.ToLower();
+            lastname = lastname.ToLower();
+            foreach (var Customer in Model.Kunden)
+            {
+                if (Customer.Firstname.ToLower().Equals(firstname) && Customer.Lastname.ToLower().Equals(lastname) && 
+                    Customer.Birthday.Equals(birthday))
+                {
+                    temp = true;
+                }
+            }
+            if (temp == true)
+                return true;
+            else
+                return false;
+        }
+        public static bool EqualsTrainee(string firstname, string lastname, DateTime birthday)
+        {
+            bool temp = false;
+            firstname = firstname.ToLower();
+            lastname = lastname.ToLower();
+            foreach (var Trainee in Model.Lehrlinge)
+            {
+                if (Trainee.Firstname.ToLower().Equals(firstname) && Trainee.Lastname.ToLower().Equals(lastname) &&
+                    Trainee.Birthday.Equals(birthday))
+                {
+                    temp = true;
+                }
+            }
+            if (temp == true)
+                return true;
+            else
+                return false;
+        }
+
+
 
 
 

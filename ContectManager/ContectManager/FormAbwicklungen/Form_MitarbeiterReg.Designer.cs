@@ -132,7 +132,7 @@
             // TxtResidence
             // 
             this.TxtResidence.Location = new System.Drawing.Point(520, 128);
-            this.TxtResidence.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtResidence.Margin = new System.Windows.Forms.Padding(4);
             this.TxtResidence.Name = "TxtResidence";
             this.TxtResidence.Size = new System.Drawing.Size(223, 26);
             this.TxtResidence.TabIndex = 15;
@@ -152,7 +152,7 @@
             // TxtZipcode
             // 
             this.TxtZipcode.Location = new System.Drawing.Point(519, 62);
-            this.TxtZipcode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtZipcode.Margin = new System.Windows.Forms.Padding(4);
             this.TxtZipcode.Name = "TxtZipcode";
             this.TxtZipcode.Size = new System.Drawing.Size(224, 26);
             this.TxtZipcode.TabIndex = 13;
@@ -172,7 +172,7 @@
             // TxtAdress
             // 
             this.TxtAdress.Location = new System.Drawing.Point(519, 94);
-            this.TxtAdress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtAdress.Margin = new System.Windows.Forms.Padding(4);
             this.TxtAdress.Name = "TxtAdress";
             this.TxtAdress.Size = new System.Drawing.Size(224, 26);
             this.TxtAdress.TabIndex = 14;
@@ -182,7 +182,7 @@
             // TxtEMail
             // 
             this.TxtEMail.Location = new System.Drawing.Point(519, 160);
-            this.TxtEMail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtEMail.Margin = new System.Windows.Forms.Padding(4);
             this.TxtEMail.Name = "TxtEMail";
             this.TxtEMail.Size = new System.Drawing.Size(224, 26);
             this.TxtEMail.TabIndex = 16;
@@ -192,7 +192,7 @@
             // TxtFaxWork
             // 
             this.TxtFaxWork.Location = new System.Drawing.Point(169, 364);
-            this.TxtFaxWork.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtFaxWork.Margin = new System.Windows.Forms.Padding(4);
             this.TxtFaxWork.Name = "TxtFaxWork";
             this.TxtFaxWork.Size = new System.Drawing.Size(132, 26);
             this.TxtFaxWork.TabIndex = 10;
@@ -221,6 +221,8 @@
             // 
             // CmbGender
             // 
+            this.CmbGender.DisplayMember = "0";
+            this.CmbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CmbGender.FormattingEnabled = true;
             this.CmbGender.Items.AddRange(new object[] {
             "männlich",
@@ -231,7 +233,6 @@
             this.CmbGender.Name = "CmbGender";
             this.CmbGender.Size = new System.Drawing.Size(132, 28);
             this.CmbGender.TabIndex = 5;
-            this.CmbGender.Text = "männlich";
             // 
             // LblGeschlecht
             // 
@@ -256,7 +257,7 @@
             // TxtSalutation
             // 
             this.TxtSalutation.Location = new System.Drawing.Point(169, 96);
-            this.TxtSalutation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtSalutation.Margin = new System.Windows.Forms.Padding(4);
             this.TxtSalutation.Name = "TxtSalutation";
             this.TxtSalutation.Size = new System.Drawing.Size(132, 26);
             this.TxtSalutation.TabIndex = 2;
@@ -306,7 +307,7 @@
             // TxtTitle
             // 
             this.TxtTitle.Location = new System.Drawing.Point(169, 66);
-            this.TxtTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtTitle.Margin = new System.Windows.Forms.Padding(4);
             this.TxtTitle.Name = "TxtTitle";
             this.TxtTitle.Size = new System.Drawing.Size(132, 26);
             this.TxtTitle.TabIndex = 1;
@@ -316,7 +317,7 @@
             // TxtTelMobile
             // 
             this.TxtTelMobile.Location = new System.Drawing.Point(169, 329);
-            this.TxtTelMobile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtTelMobile.Margin = new System.Windows.Forms.Padding(4);
             this.TxtTelMobile.Name = "TxtTelMobile";
             this.TxtTelMobile.Size = new System.Drawing.Size(132, 26);
             this.TxtTelMobile.TabIndex = 9;
@@ -326,7 +327,7 @@
             // TxtTelPrivate
             // 
             this.TxtTelPrivate.Location = new System.Drawing.Point(169, 262);
-            this.TxtTelPrivate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtTelPrivate.Margin = new System.Windows.Forms.Padding(4);
             this.TxtTelPrivate.Name = "TxtTelPrivate";
             this.TxtTelPrivate.Size = new System.Drawing.Size(132, 26);
             this.TxtTelPrivate.TabIndex = 7;
@@ -336,7 +337,7 @@
             // TxtTelWork
             // 
             this.TxtTelWork.Location = new System.Drawing.Point(169, 294);
-            this.TxtTelWork.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtTelWork.Margin = new System.Windows.Forms.Padding(4);
             this.TxtTelWork.Name = "TxtTelWork";
             this.TxtTelWork.Size = new System.Drawing.Size(132, 26);
             this.TxtTelWork.TabIndex = 8;
@@ -366,7 +367,7 @@
             // TxtLastname
             // 
             this.TxtLastname.Location = new System.Drawing.Point(169, 164);
-            this.TxtLastname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtLastname.Margin = new System.Windows.Forms.Padding(4);
             this.TxtLastname.Name = "TxtLastname";
             this.TxtLastname.Size = new System.Drawing.Size(132, 26);
             this.TxtLastname.TabIndex = 4;
@@ -376,7 +377,7 @@
             // TxtFirstname
             // 
             this.TxtFirstname.Location = new System.Drawing.Point(169, 128);
-            this.TxtFirstname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtFirstname.Margin = new System.Windows.Forms.Padding(4);
             this.TxtFirstname.Name = "TxtFirstname";
             this.TxtFirstname.Size = new System.Drawing.Size(132, 26);
             this.TxtFirstname.TabIndex = 3;
@@ -426,7 +427,7 @@
             // TxtAhvNr
             // 
             this.TxtAhvNr.Location = new System.Drawing.Point(169, 400);
-            this.TxtAhvNr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtAhvNr.Margin = new System.Windows.Forms.Padding(4);
             this.TxtAhvNr.Name = "TxtAhvNr";
             this.TxtAhvNr.Size = new System.Drawing.Size(132, 26);
             this.TxtAhvNr.TabIndex = 11;
@@ -446,7 +447,7 @@
             // TxtNationalaty
             // 
             this.TxtNationalaty.Location = new System.Drawing.Point(519, 198);
-            this.TxtNationalaty.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtNationalaty.Margin = new System.Windows.Forms.Padding(4);
             this.TxtNationalaty.Name = "TxtNationalaty";
             this.TxtNationalaty.Size = new System.Drawing.Size(224, 26);
             this.TxtNationalaty.TabIndex = 17;
@@ -515,6 +516,7 @@
             // CmbEmploymentlevel
             // 
             this.CmbEmploymentlevel.AllowDrop = true;
+            this.CmbEmploymentlevel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CmbEmploymentlevel.FormattingEnabled = true;
             this.CmbEmploymentlevel.Items.AddRange(new object[] {
             "10",
@@ -535,11 +537,11 @@
             this.CmbEmploymentlevel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CmbEmploymentlevel.Size = new System.Drawing.Size(224, 28);
             this.CmbEmploymentlevel.TabIndex = 19;
-            this.CmbEmploymentlevel.Text = "80";
             // 
             // CmbRole
             // 
             this.CmbRole.AllowDrop = true;
+            this.CmbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CmbRole.FormattingEnabled = true;
             this.CmbRole.Items.AddRange(new object[] {
             "Mech Maschinenführer",
@@ -558,7 +560,6 @@
             this.CmbRole.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CmbRole.Size = new System.Drawing.Size(224, 28);
             this.CmbRole.TabIndex = 20;
-            this.CmbRole.Text = "IT Service Desk";
             // 
             // CmdAddEmployee
             // 
@@ -583,6 +584,7 @@
             // 
             // CmbDepartment
             // 
+            this.CmbDepartment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CmbDepartment.FormattingEnabled = true;
             this.CmbDepartment.ItemHeight = 20;
             this.CmbDepartment.Items.AddRange(new object[] {
@@ -597,7 +599,6 @@
             this.CmbDepartment.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CmbDepartment.Size = new System.Drawing.Size(224, 28);
             this.CmbDepartment.TabIndex = 8;
-            this.CmbDepartment.Text = "Informatik";
             // 
             // CmdDelEmployee
             // 
@@ -641,7 +642,7 @@
             this.LsbOutputMA.FormattingEnabled = true;
             this.LsbOutputMA.ItemHeight = 20;
             this.LsbOutputMA.Location = new System.Drawing.Point(30, 595);
-            this.LsbOutputMA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LsbOutputMA.Margin = new System.Windows.Forms.Padding(4);
             this.LsbOutputMA.Name = "LsbOutputMA";
             this.LsbOutputMA.Size = new System.Drawing.Size(766, 144);
             this.LsbOutputMA.TabIndex = 28;
@@ -736,9 +737,9 @@
             this.grpBoxMa.Controls.Add(this.TxtZipcode);
             this.grpBoxMa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBoxMa.Location = new System.Drawing.Point(30, 14);
-            this.grpBoxMa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpBoxMa.Margin = new System.Windows.Forms.Padding(4);
             this.grpBoxMa.Name = "grpBoxMa";
-            this.grpBoxMa.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpBoxMa.Padding = new System.Windows.Forms.Padding(4);
             this.grpBoxMa.Size = new System.Drawing.Size(766, 482);
             this.grpBoxMa.TabIndex = 125;
             this.grpBoxMa.TabStop = false;
@@ -769,7 +770,7 @@
             // TxtCurrentYear
             // 
             this.TxtCurrentYear.Location = new System.Drawing.Point(520, 438);
-            this.TxtCurrentYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtCurrentYear.Margin = new System.Windows.Forms.Padding(4);
             this.TxtCurrentYear.Name = "TxtCurrentYear";
             this.TxtCurrentYear.Size = new System.Drawing.Size(116, 26);
             this.TxtCurrentYear.TabIndex = 127;
@@ -779,7 +780,7 @@
             // TxtApprenticeYears
             // 
             this.TxtApprenticeYears.Location = new System.Drawing.Point(169, 438);
-            this.TxtApprenticeYears.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtApprenticeYears.Margin = new System.Windows.Forms.Padding(4);
             this.TxtApprenticeYears.Name = "TxtApprenticeYears";
             this.TxtApprenticeYears.Size = new System.Drawing.Size(132, 26);
             this.TxtApprenticeYears.TabIndex = 126;
@@ -790,7 +791,7 @@
             // 
             this.ChkTrainee.AutoSize = true;
             this.ChkTrainee.Location = new System.Drawing.Point(655, 440);
-            this.ChkTrainee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChkTrainee.Margin = new System.Windows.Forms.Padding(4);
             this.ChkTrainee.Name = "ChkTrainee";
             this.ChkTrainee.Size = new System.Drawing.Size(98, 24);
             this.ChkTrainee.TabIndex = 125;

@@ -18,6 +18,8 @@ namespace ContectManager
 {
     public partial class Form_MitarbeiterReg : Form
     {
+        public string fehlermeldung = "";
+        
         public Form_MitarbeiterReg()
         {
             InitializeComponent();
@@ -30,210 +32,272 @@ namespace ContectManager
             MaListToLsbOutput();
 
             //MitarbeiterID in Textfeld der Form laden
-            
             TxtMitarbeiterID.Text = Controller.MitarbeiterID.ToString();
+
+            //Das etwas schon vorselektiert ist
+            CmbDepartment.SelectedIndex = 0;
+            CmbEmploymentlevel.SelectedIndex = 0;
+            CmbGender.SelectedIndex = 0;
+            CmbRole.SelectedIndex = 0;
 
         }
 
-        //Variable "ausgewählter Mitarbeiter" initialisieren damit sie in Form abgeändert werden kann
+        // Variable "ausgewählter Mitarbeiter" initialisieren damit sie in Form abgeändert werden kann
         private int SelectedMA;
+        // Stattet fast jedes Textfeld mit boolean aus für CheckInt oder CheckString 
+        bool titel= false; bool salutation=false; bool firstname = false; bool lastname = false; bool telprivate = false;
+        bool telwork = false; bool telmobile = false; bool fax = false; bool zipcode = false; bool residence = false;
+        bool nationalaty = false; bool apprenticeyears = false; bool currentyear = false;
 
         private void AddEmployeeOrTrainee(string type)
         {
-            if(type == "Mitarbeiter")
+
+            if (type == "Mitarbeiter")
             {
-                //Alle Textfelder werden in die Liste Mitarbeiter eingepflegt
-                Model.Mitarbeiter.Add(new Employee(
-                    TxtSalutation.Text,
-                    TxtFirstname.Text,
-                    TxtLastname.Text,
-                    DtpBirthday.Value,
-                    CmbGender.Text,
-                    TxtTitle.Text,
-                    TxtTelWork.Text,
-                    TxtFaxWork.Text,
-                    TxtAdress.Text,
-                    TxtZipcode.Text,
-                    TxtResidence.Text,
-                    TxtTelPrivate.Text,
-                    TxtTelMobile.Text,
-                    TxtEMail.Text,
-                    ChkActive.Checked,
-                    Controller.MitarbeiterID,
-                    CmbDepartment.Text,
-                    TxtAhvNr.Text,
-                    TxtNationalaty.Text,
-                    DtpEntrydate.Value,
-                    DtpQuitdate.Value,
-                    CmbEmploymentlevel.Text,
-                    CmbRole.Text,
-                    Convert.ToInt32(NumManagementLevel.Value))
-                    );
+                // Fast jedes Textfeld durchläuft CheckInt oder  CheckString Methode im Controller. Wenn fehlerhaft -> true
+                titel = Controller.CheckString(TxtTitle.Text.Trim(), TxtTitle);
+                salutation = Controller.CheckString(TxtSalutation.Text.Trim(), TxtSalutation);
+                firstname= Controller.CheckString(TxtFirstname.Text.Trim(), TxtFirstname);
+                lastname = Controller.CheckString(TxtLastname.Text.Trim(), TxtLastname);
+                telprivate = Controller.CheckInt(TxtTelPrivate.Text.Trim(), TxtTelPrivate);
+                telwork = Controller.CheckInt(TxtTelWork.Text.Trim(), TxtTelWork);
+                telmobile = Controller.CheckInt(TxtTelMobile.Text.Trim(), TxtTelMobile);
+                fax = Controller.CheckInt(TxtFaxWork.Text.Trim(), TxtFaxWork);
+                zipcode = Controller.CheckInt(TxtZipcode.Text.Trim(), TxtZipcode);
+                residence = Controller.CheckString(TxtResidence.Text.Trim(), TxtResidence);
+                nationalaty = Controller.CheckString(TxtNationalaty.Text.Trim(), TxtNationalaty);
+
+                // Überprüft ob ein Textfeld fehlerhaft ist
+                if (titel == true || salutation == true || firstname == true || lastname == true || telprivate == true || telwork == true ||
+                    telmobile == true || fax == true || zipcode == true || residence == true || nationalaty == true)
+                {
+                    titel = false; salutation = false; firstname = false; lastname = false; telprivate = false; telwork = false;
+                    telmobile = false; fax = false; zipcode = false; residence = false; nationalaty = false;
+                    MessageBox.Show("Ups! Sie haben einen unzulässigen Wert eingegeben", "Eingabefehler", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                }
+                // Überprüft ob Person bereits existiert
+                else if (Controller.EqualsEmployee(TxtFirstname.Text.Trim(), TxtLastname.Text.Trim(), DtpBirthday.Value))
+                {
+                    MessageBox.Show("Mitarbeiter bereits registriert", "Achtung", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+                else
+                {
+                    //Alle Textfelder werden in die Liste Mitarbeiter eingepflegt
+                    Model.Mitarbeiter.Add(new Employee(
+                        TxtSalutation.Text.Trim(),
+                        TxtFirstname.Text.Trim(),
+                        TxtLastname.Text.Trim(),
+                        DtpBirthday.Value,
+                        CmbGender.Text,
+                        TxtTitle.Text.Trim(),
+                        TxtTelWork.Text.Trim(),
+                        TxtFaxWork.Text.Trim(),
+                        TxtAdress.Text.Trim(),
+                        TxtZipcode.Text.Trim(),
+                        TxtResidence.Text.Trim(),
+                        TxtTelPrivate.Text.Trim(),
+                        TxtTelMobile.Text.Trim(),
+                        TxtEMail.Text.Trim(),
+                        ChkActive.Checked,
+                        Controller.MitarbeiterID,
+                        CmbDepartment.Text,
+                        TxtAhvNr.Text.Trim(),
+                        TxtNationalaty.Text.Trim(),
+                        DtpEntrydate.Value,
+                        DtpQuitdate.Value,
+                        CmbEmploymentlevel.Text,
+                        CmbRole.Text,
+                        Convert.ToInt32(NumManagementLevel.Value))
+                        );
+
+                    TxtMitarbeiterID.Text = Controller.MitarbeiterID.ToString();
 
 
-               
-             
-                TxtMitarbeiterID.Text = Controller.MitarbeiterID.ToString();
+                    //Speichern bzw. serialisieren ins .dat-File der List Employee nicht der Listbox!
+                    Controller.WriteDataMa();
 
+                    //Schreibt Counter in counter.txt
+                    Controller.ExportCounter();
 
-                //Speichern bzw. serialisieren ins .dat-File der List Employee nicht der Listbox!
-                Controller.WriteDataMa();
+                    // Eine Art Vorschau um Mitarbeiter auszuwählen - Alle Daten wären too much!
+                    // Man hätte keine Übersicht mehr
+                    MaListToLsbOutput();
 
+                    //Variable für History erstellen
+                    Controller.HistoryNew =
+                    "ME: " +
+                    "Zeit der Erstellung      : " +
+                    DateTime.Now.ToString() + "| " +
+                        Controller.MitarbeiterID + "; " +
+                        TxtSalutation.Text + "; " +
+                        TxtFirstname.Text + "; " +
+                        TxtLastname.Text + "; " +
+                        DtpBirthday.Value + "; " +
+                        CmbGender.Text + "; " +
+                        TxtTitle.Text + "; " +
+                        TxtTelWork.Text + "; " +
+                        TxtFaxWork.Text + "; " +
+                        TxtAdress.Text + "; " +
+                        TxtZipcode.Text + "; " +
+                        TxtResidence.Text + "; " +
+                        TxtTelPrivate.Text + "; " +
+                        TxtTelMobile.Text + "; " +
+                        TxtEMail.Text + "; " +
+                        ChkActive.Checked + "; " +
+                        CmbDepartment.Text + "; " +
+                        TxtAhvNr.Text + "; " +
+                        TxtNationalaty.Text + "; " +
+                        DtpEntrydate.Value + "; " +
+                        DtpQuitdate.Value + "; " +
+                        CmbEmploymentlevel.Text + "; " +
+                        CmbRole.Text + "; " +
+                        NumManagementLevel.Value;
 
+                    Controller.WriteLog("MaErstellt");
 
-                //Schreibt Counter in counter.txt
-                Controller.ExportCounter();
+                    //Counter ums eins erhöhen, da der Mitarbeiter nun ja im .dat-File mit dem richtigen Counter
+                    // bzw. Kunden-ID eingetragen ist
+                    //Extra nicht in der Methode SaveEmployeDB da sonst beim zurückkehren ins Menu
+                    //z.B. der Counter auch erhöht wird
+                    Controller.MitarbeiterID++;
 
-                // Eine Art Vorschau um Mitarbeiter auszuwählen - Alle Daten wären too much!
-                // Man hätte keine Übersicht mehr
-                MaListToLsbOutput();
-
-                //Variable für History erstellen
-                Controller.HistoryNew =
-                "ME: " +
-                "Zeit der Erstellung      : " +
-                DateTime.Now.ToString() + "| " +
-                    Controller.MitarbeiterID + "; " +
-                    TxtSalutation.Text + "; " +
-                    TxtFirstname.Text + "; " +
-                    TxtLastname.Text + "; " +
-                    DtpBirthday.Value + "; " +
-                    CmbGender.Text + "; " +
-                    TxtTitle.Text + "; " +
-                    TxtTelWork.Text + "; " +
-                    TxtFaxWork.Text + "; " +
-                    TxtAdress.Text + "; " +
-                    TxtZipcode.Text + "; " +
-                    TxtResidence.Text + "; " +
-                    TxtTelPrivate.Text + "; " +
-                    TxtTelMobile.Text + "; " +
-                    TxtEMail.Text + "; " +
-                    ChkActive.Checked + "; " +
-                    CmbDepartment.Text + "; " +
-                    TxtAhvNr.Text + "; " +
-                    TxtNationalaty.Text + "; " +
-                    DtpEntrydate.Value + "; " +
-                    DtpQuitdate.Value + "; " +
-                    CmbEmploymentlevel.Text + "; " +
-                    CmbRole.Text + "; " +
-                    NumManagementLevel.Value;
-
-                Controller.WriteLog("MaErstellt");
-
-                //Counter ums eins erhöhen, da der Mitarbeiter nun ja im .dat-File mit dem richtigen Counter
-                // bzw. Kunden-ID eingetragen ist
-                //Extra nicht in der Methode SaveEmployeDB da sonst beim zurückkehren ins Menu
-                //z.B. der Counter auch erhöht wird
-                Controller.MitarbeiterID++;
-
-                ClearForm();
+                    ClearForm();
+                }
             }
-            if(type == "Lehrling")
+            else if (type == "Lehrling")
             {
-                //Alle Textfelder werden in die Liste Lehrlinge eingepflegt
-                Model.Lehrlinge.Add(new Trainee
-                    (
-                    TxtSalutation.Text,
-                    TxtFirstname.Text,
-                    TxtLastname.Text,
-                    DtpBirthday.Value,
-                    CmbGender.Text,
-                    TxtTitle.Text,
-                    TxtTelWork.Text,
-                    TxtFaxWork.Text,
-                    TxtAdress.Text,
-                    TxtZipcode.Text,
-                    TxtResidence.Text,
-                    TxtTelPrivate.Text,
-                    TxtTelMobile.Text,
-                    TxtEMail.Text,
-                    ChkActive.Checked,
-                    Controller.MitarbeiterID,
-                    CmbDepartment.Text,
-                    TxtAhvNr.Text,
-                    TxtNationalaty.Text,
-                    DtpEntrydate.Value,
-                    DtpQuitdate.Value,
-                    CmbEmploymentlevel.Text,
-                    CmbRole.Text,
-                    Convert.ToInt32(NumManagementLevel.Value),
-                    TxtApprenticeYears.Text,
-                    TxtCurrentYear.Text)
-                    );
+                // Fast jedes Textfeld durchläuft CheckInt oder  CheckString Methode im Controller. Wenn fehlerhaft -> true
+                titel = Controller.CheckString(TxtTitle.Text.Trim(), TxtTitle);
+                salutation = Controller.CheckString(TxtSalutation.Text.Trim(), TxtSalutation);
+                firstname = Controller.CheckString(TxtFirstname.Text.Trim(), TxtFirstname);
+                lastname = Controller.CheckString(TxtLastname.Text.Trim(), TxtLastname);
+                telprivate = Controller.CheckInt(TxtTelPrivate.Text.Trim(), TxtTelPrivate);
+                telwork = Controller.CheckInt(TxtTelWork.Text.Trim(), TxtTelWork);
+                telmobile = Controller.CheckInt(TxtTelMobile.Text.Trim(), TxtTelMobile);
+                fax = Controller.CheckInt(TxtFaxWork.Text.Trim(), TxtFaxWork);
+                // ahv = CheckInt(TxtAhvNr.Text, TxtAhvNr);                              // Eingabe muss mit '.' folgen 
+                zipcode = Controller.CheckInt(TxtZipcode.Text.Trim(), TxtZipcode);
+                residence = Controller.CheckString(TxtResidence.Text.Trim(), TxtResidence);
+                nationalaty = Controller.CheckString(TxtNationalaty.Text.Trim(), TxtNationalaty);
+                apprenticeyears = Controller.CheckInt(TxtApprenticeYears.Text.Trim(), TxtApprenticeYears);
+                currentyear = Controller.CheckInt(TxtCurrentYear.Text.Trim(), TxtCurrentYear);
+
+                // Überprüft ob ein Textfeld fehlerhaft ist
+                if (titel == true || salutation == true || firstname == true || lastname == true || telprivate == true || telwork == true ||
+                    telmobile == true || fax == true || zipcode == true || residence == true || nationalaty == true || apprenticeyears == true ||
+                    currentyear == true )
+                {
+                    titel = false; salutation = false; firstname = false; lastname = false; telprivate = false; telwork = false;
+                    telmobile = false; fax = false; zipcode = false; residence = false; nationalaty = false; apprenticeyears = false; currentyear = false; ;
+                    MessageBox.Show("Ups! Sie haben einen unzulässigen Wert eingegeben", "Eingabefehler", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                }
+                // Überprüft ob Person bereits existiert
+                else if (Controller.EqualsTrainee(TxtFirstname.Text.Trim(), TxtLastname.Text.Trim(), DtpBirthday.Value))
+                {
+                    MessageBox.Show("Lehrling bereits registriert", "Achtung", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
+                }
+                else
+                {
+                    //Alle Textfelder werden in die Liste Lehrlinge eingepflegt
+                    Model.Lehrlinge.Add(new Trainee
+                        (
+                        TxtSalutation.Text.Trim(),
+                        TxtFirstname.Text.Trim(),
+                        TxtLastname.Text.Trim(),
+                        DtpBirthday.Value,
+                        CmbGender.Text,
+                        TxtTitle.Text.Trim(),
+                        TxtTelWork.Text,
+                        TxtFaxWork.Text,
+                        TxtAdress.Text,
+                        TxtZipcode.Text,
+                        TxtResidence.Text.Trim(),
+                        TxtTelPrivate.Text,
+                        TxtTelMobile.Text,
+                        TxtEMail.Text.Trim(),
+                        ChkActive.Checked,
+                        Controller.MitarbeiterID,
+                        CmbDepartment.Text,
+                        TxtAhvNr.Text.Trim(),
+                        TxtNationalaty.Text.Trim(),
+                        DtpEntrydate.Value,
+                        DtpQuitdate.Value,
+                        CmbEmploymentlevel.Text,
+                        CmbRole.Text,
+                        Convert.ToInt32(NumManagementLevel.Value),
+                        TxtApprenticeYears.Text,
+                        TxtCurrentYear.Text)
+                        );
+
+                    TxtMitarbeiterID.Text = Controller.MitarbeiterID.ToString();
+
+                    //Speichern bzw. serialisieren ins .dat-File der List Employee nicht der Listbox!
+                    Controller.WriteDataTr();
 
 
-               
-                TxtMitarbeiterID.Text = Controller.MitarbeiterID.ToString();
+
+                    //Schreibt Counter in counter.txt
+                    Controller.ExportCounter();
+
+                    // Eine Art Vorschau um Mitarbeiter auszuwählen - Alle Daten wären too much!
+                    // Man hätte keine Übersicht mehr
+                    MaListToLsbOutput();
+
+                    //Variable für History erstellen
+                    Controller.HistoryNew =
+                    "LE: " +
+                    "Zeit der Erstellung      : " +
+                    DateTime.Now.ToString() + "| " +
+                        Controller.MitarbeiterID + "; " +
+                        TxtSalutation.Text + "; " +
+                        TxtFirstname.Text + "; " +
+                        TxtLastname.Text + "; " +
+                        DtpBirthday.Value + "; " +
+                        CmbGender.Text + "; " +
+                        TxtTitle.Text + "; " +
+                        TxtTelWork.Text + "; " +
+                        TxtFaxWork.Text + "; " +
+                        TxtAdress.Text + "; " +
+                        TxtZipcode.Text + "; " +
+                        TxtResidence.Text + "; " +
+                        TxtTelPrivate.Text + "; " +
+                        TxtTelMobile.Text + "; " +
+                        TxtEMail.Text + "; " +
+                        ChkActive.Checked + "; " +
+                        CmbDepartment.Text + "; " +
+                        TxtAhvNr.Text + "; " +
+                        TxtNationalaty.Text + "; " +
+                        DtpEntrydate.Value + "; " +
+                        DtpQuitdate.Value + "; " +
+                        CmbEmploymentlevel.Text + "; " +
+                        CmbRole.Text + "; " +
+                        NumManagementLevel.Value + "; " +
+                        TxtApprenticeYears.Text + "; " +
+                        TxtCurrentYear.Text;
+
+                    Controller.WriteLog("TrErstellt");
 
 
-                //Speichern bzw. serialisieren ins .dat-File der List Employee nicht der Listbox!
-                Controller.WriteDataTr();
-
-               
-
-                //Schreibt Counter in counter.txt
-                Controller.ExportCounter();
-
-                // Eine Art Vorschau um Mitarbeiter auszuwählen - Alle Daten wären too much!
-                // Man hätte keine Übersicht mehr
-                MaListToLsbOutput();
-
-                //Variable für History erstellen
-                Controller.HistoryNew =
-                "LE: " +
-                "Zeit der Erstellung      : " +
-                DateTime.Now.ToString() + "| " +
-                    Controller.MitarbeiterID + "; " +
-                    TxtSalutation.Text + "; " +
-                    TxtFirstname.Text + "; " +
-                    TxtLastname.Text + "; " +
-                    DtpBirthday.Value + "; " +
-                    CmbGender.Text + "; " +
-                    TxtTitle.Text + "; " +
-                    TxtTelWork.Text + "; " +
-                    TxtFaxWork.Text + "; " +
-                    TxtAdress.Text + "; " +
-                    TxtZipcode.Text + "; " +
-                    TxtResidence.Text + "; " +
-                    TxtTelPrivate.Text + "; " +
-                    TxtTelMobile.Text + "; " +
-                    TxtEMail.Text + "; " +
-                    ChkActive.Checked + "; " +
-                    CmbDepartment.Text + "; " +
-                    TxtAhvNr.Text + "; " +
-                    TxtNationalaty.Text + "; " +
-                    DtpEntrydate.Value + "; " +
-                    DtpQuitdate.Value + "; " +
-                    CmbEmploymentlevel.Text + "; " +
-                    CmbRole.Text + "; " +
-                    NumManagementLevel.Value +"; " +
-                    TxtApprenticeYears.Text +"; " +
-                    TxtCurrentYear.Text;
-
-                Controller.WriteLog("TrErstellt");
-
-
-                //Counter ums eins erhöhen, da der Lehrling nun ja im .dat-File mit dem richtigen Counter
-                // bzw. Kunden-ID eingetragen ist
-                //Extra nicht in der Methode SaveEmployeDB da sonst beim zurückkehren ins Menu
-                //z.B. der Counter auch erhöht wird
-                Controller.MitarbeiterID++;
-                ClearForm();
+                    //Counter ums eins erhöhen, da der Lehrling nun ja im .dat-File mit dem richtigen Counter
+                    // bzw. Kunden-ID eingetragen ist
+                    //Extra nicht in der Methode SaveEmployeDB da sonst beim zurückkehren ins Menu
+                    //z.B. der Counter auch erhöht wird
+                    Controller.MitarbeiterID++;
+                    ClearForm();
+                }
             }
-           // return null;
         }
 
         private void CmdAddEmployee_Click(object sender, EventArgs e) // Beschreibung in der Methode
         {
           if(ChkTrainee.Checked == true)
-            {
                 AddEmployeeOrTrainee("Lehrling");
-            }
 
             if (ChkTrainee.Checked == false)
-            {
                 AddEmployeeOrTrainee("Mitarbeiter");
-            }
         }
        
         private void CmdEditEmployee_Click(object sender, EventArgs e)
@@ -285,10 +349,8 @@ namespace ContectManager
                     Model.Mitarbeiter[SelectedMA].Role = CmbRole.Text;
                     Model.Mitarbeiter[SelectedMA].ManagementLevel = Convert.ToInt32(NumManagementLevel.Value);
 
-
                     //Vorschau in Listbox generieren
                     MaListToLsbOutput();
-
 
                     //In File schreiben um Änderung anzupassen
                     Controller.WriteDataMa();
@@ -329,8 +391,7 @@ namespace ContectManager
                 Controller.WriteLog("MaBearbeitet");
 
                 //Textfelder leeren
-                ClearForm();
-                       
+                ClearForm();      
                 }
 
                 if(RadLehrling.Checked == true)
@@ -363,18 +424,14 @@ namespace ContectManager
                     Model.Lehrlinge[SelectedMA].ApprenticeshipYears = TxtApprenticeYears.Text;
                     Model.Lehrlinge[SelectedMA].CurrentYear = TxtCurrentYear.Text;
 
-
-
                     //Vorschau in Listbox generieren
                     MaListToLsbOutput();
-
 
                     //In File schreiben um Änderung anzupassen
                     Controller.WriteDataTr();
 
                     //Variable für History nach Bearbeitung erstellen
-                 
-                Controller.HistoryNew =
+              Controller.HistoryNew =
                     "LB: " +
                     "Endzeit der Bearbeitung  : " +
                     DateTime.Now.ToString() + "| " +
@@ -413,9 +470,6 @@ namespace ContectManager
                 ClearForm();
                    
                 }
-                
-
-
             }
             else //Erster Durchgang beim Bearbeiten des Mitarbeits
             {
@@ -491,12 +545,9 @@ namespace ContectManager
                             CmbEmploymentlevel.Text + ";" +
                             CmbRole.Text + ";" +
                             NumManagementLevel.Value.ToString();
-
                     }
                     else
-                    {
                         MessageBox.Show("Bitte Mitarbeiter auswählen!");
-                    }
                 }
                 if(RadLehrling.Checked == true)
                 {
@@ -574,7 +625,6 @@ namespace ContectManager
                             NumManagementLevel.Value.ToString() + ";" +
                             TxtApprenticeYears.Text + ";" +
                             TxtCurrentYear.Text;
-
                     }
                     else
                     {
@@ -601,7 +651,6 @@ namespace ContectManager
                     //ausgewählten Mitarbeiter aus Liste Mitarbeiter löschen
                     Controller.DeleteSelected("Mitarbeiter", SelectedMA);
 
-
                     Controller.WriteDataMa();
 
                     Controller.WriteLog("MaGeloescht");
@@ -626,7 +675,6 @@ namespace ContectManager
 
                     //ausgewählten Lehrling aus Liste Lehrlinge löschen
                     Controller.DeleteSelected("Lehrling", SelectedMA);
-
 
                     Controller.WriteDataTr();
 
@@ -700,10 +748,7 @@ namespace ContectManager
                 );
                     tempCounter++;
                 }
-            }
-
-            
-            
+            }         
         }
 
         private void ClearForm()
@@ -711,7 +756,7 @@ namespace ContectManager
             TxtSalutation.Text = "";
             TxtFirstname.Text = "";
             TxtLastname.Text = "";
-            CmbGender.Text = "";
+            CmbGender.SelectedIndex = 0;
             TxtTitle.Text = "";
             TxtTelWork.Text = "";
             TxtFaxWork.Text = "";
@@ -723,12 +768,16 @@ namespace ContectManager
             TxtEMail.Text = "";
             ChkActive.Checked = true;
             TxtMitarbeiterID.Text = "";
-            CmbDepartment.Text = "";
+            CmbDepartment.SelectedIndex=0 ;
             TxtAhvNr.Text = "";
             TxtNationalaty.Text = "";
-            CmbEmploymentlevel.Text = "";
-            CmbRole.Text = "";
+            CmbEmploymentlevel.SelectedIndex = 11;
+            CmbRole.SelectedIndex = 0;
             TxtMitarbeiterID.Text = Controller.MitarbeiterID.ToString();
+            TxtApprenticeYears.Text = "";
+            TxtCurrentYear.Text = "";
+            
+
         }
 
         private void ChkTrainee_CheckedChanged(object sender, EventArgs e)
@@ -746,8 +795,7 @@ namespace ContectManager
                 LblApprenticeYears.Visible = false;
                 TxtApprenticeYears.Visible = false;
                 TxtCurrentYear.Visible = false;
-            }
-            
+            }          
         }
 
         private void RadMitarbeiter_CheckedChanged(object sender, EventArgs e)
@@ -756,8 +804,7 @@ namespace ContectManager
             {
                 MaListToLsbOutput();
                 ChkTrainee.Checked = false;
-            }
-            
+            }          
         }
 
         private void RadLehrling_CheckedChanged(object sender, EventArgs e)
@@ -767,10 +814,6 @@ namespace ContectManager
                 MaListToLsbOutput();
                 ChkTrainee.Checked = true;
             }
-
         }
-
-    }
-
-    
+    }  
 }
