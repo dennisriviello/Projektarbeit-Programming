@@ -76,8 +76,10 @@ namespace ContectManager
             Application.Exit();
         }
 
-        private void TxtPassword_TextChanged(object sender, EventArgs e)
+        private void TxtPassword_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Enter)
+                LoginCheck();
         }
     }
 }

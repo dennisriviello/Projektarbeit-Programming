@@ -20,5 +20,14 @@ Fast alle Optionale funktionale Anforderungen funktionieren!
 Was funktioniert (noch) nicht?
 -----------------------------
 ▪ Import von Kontakten im CSV oder VCard Format
- 
+
+
+Login Daten
+-----------------------------
+User: admin / Passwort: admin
+User: dennis / Passwort: dennis
+User: fabian / Passwort: fabian
+User: daniel / Passwort: daniel
+User: joel / Passwort: joel
+
 

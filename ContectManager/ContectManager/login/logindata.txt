@@ -1,3 +1,5 @@
 admin;admin
 dennis;dennis
-sepp;ueli
+fabian;fabian
+joel;joel
+daniel;daniel

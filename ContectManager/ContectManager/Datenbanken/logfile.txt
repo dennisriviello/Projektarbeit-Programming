@@ -336,3 +336,27 @@ KB: Endzeit der Bearbeitung  : 11.09.2021 11:49:13| Herr;Hans-doppelt;Nötig;13.
 KB: Startzeit der Bearbeitung: 11.09.2021 11:49:19| Herr;Hans-doppelt;Nötig;13.05.2021 00:00:00;männlich;Professor;0782222222;0784444444;Hansstrasse 50;9240;Hanshausen;0781111111;0783333333;hans.nötig@gmail.com;True;Hansling;Hansstrasse 50;A; aaaaaaaaaaaaabcdfghijkldddd
 KB: Endzeit der Bearbeitung  : 11.09.2021 11:49:20| Herr;Hans-doppelt;Nötig;13.05.2021 00:00:00;männlich;Professor;0782222222;0784444444;Hansstrasse 50;9240;Hanshausen;0781111111;0783333333;hans.nötig@gmail.com;True;Hansling;Hansstrasse 50;A; aaaaaaaaaaaaabcdfghijkldddd
 -----
+KG: Zeit der Löschung        : 11.09.2021 12:47:19| Herr; Hans; Nötig; 10.09.2021 22:53:22; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KG: Zeit der Löschung        : 11.09.2021 12:47:21| Herr; Hans; Nötig; 13.05.2021 00:00:00; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KG: Zeit der Löschung        : 11.09.2021 12:47:24| Herr; Hans; Nötig; 15.07.2021 00:00:00; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KG: Zeit der Löschung        : 11.09.2021 13:09:41| ; salli; mitenand; 13.05.2021 00:00:00; männlich; ; ; ; ; ; ; ; ; ; True; ; ; A
+-----
+KG: Zeit der Löschung        : 11.09.2021 13:09:45| Herr; Hans; Nötig; 10.09.2021 22:53:13; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; False; Hansling; Hansstrasse 50; A
+-----
+KG: Zeit der Löschung        : 11.09.2021 13:09:47| Herr; Salli; Mitenand; 13.05.2021 00:00:00; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; False; Hansling; Hansstrasse 50; A
+-----
+KG: Zeit der Löschung        : 11.09.2021 13:09:50| ; salli; MitEnand; 13.05.2021 00:00:00; männlich; ; ; ; ; ; ; ; ; ; True; ; ; A
+-----
+KG: Zeit der Löschung        : 11.09.2021 13:09:52| ; hans; nötig; 13.05.2021 00:00:00; männlich; ; ; ; ; ; ; ; ; ; True; ; ; A
+-----
+KG: Zeit der Löschung        : 11.09.2021 13:09:56| Herr; Hans-doppelt; Nötig; 13.05.2021 00:00:00; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A
+-----
+KE: Zeit der Erstellung      : 11.09.2021 13:11:42| Herr; Fritz; Fischer; 15.06.1990 00:00:00; männlich; Dr.; 0717651080; 0717502222; Staatsstrasse 50; 8850; Schlieren; 0717502290; 0765485590; fischersfritz@gmail.com; True; Fischerei Fritz; Angelstrasse 12; C; 
+-----
+KE: Zeit der Erstellung      : 11.09.2021 13:14:43| Frau; Anna; Bolika; 22.12.1994 00:00:00; weiblich; ; 0717901030; 0717901010; Musterstrasse 10; 9410; Landquart; 0711405020; 0787881048; annabolika@gmail.com; True; Pumper Taxi; Eichenweg 5; B; 
+-----
+KE: Zeit der Erstellung      : 11.09.2021 13:17:18| Herr; Hans; Nötig; 14.05.1996 00:00:00; männlich; ; 0715552210; 0714504500; Scherbenweg 4; 7692; Altstetten; 0714504580; 0798823265; hans.noetig45@gmail.com; True; Nötig Metallbau AG; Im Werkhof 88; D; 
+-----
