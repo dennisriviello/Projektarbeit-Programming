@@ -79,7 +79,8 @@ namespace ContectManager
                     ChkActive.Checked,
                     TxtCompanyName.Text.Trim(),
                     TxtCompanyAdress.Text.Trim(),
-                    CmbCustomerType.Text
+                    CmbCustomerType.Text,
+                    TxtCustomerNote.Text
                     ));
 
                 //serialisiert Liste Kunden in .dat-File
@@ -110,7 +111,8 @@ namespace ContectManager
                     ChkActive.Checked + "; " +
                     TxtCompanyName.Text + "; " +
                     TxtCompanyAdress.Text + "; " +
-                    CmbCustomerType.Text;
+                    CmbCustomerType.Text + "; " +
+                    TxtCustomerNote.Text;
 
                 Controller.WriteLog("CuErstellt");
 
@@ -157,6 +159,7 @@ namespace ContectManager
                 Model.Kunden[SelectedCu].CompanyName = TxtCompanyName.Text;
                 Model.Kunden[SelectedCu].CompanyAdress = TxtCompanyAdress.Text;
                 Model.Kunden[SelectedCu].CustomerType = CmbCustomerType.Text;
+                Model.Kunden[SelectedCu].CustomerNote = TxtCustomerNote.Text;
 
                 //Vorschau in Listbox generieren
                 CuListToLsbOutput();
@@ -186,7 +189,8 @@ namespace ContectManager
                 ChkActive.Checked + ";" +
                 TxtCompanyName.Text + ";" +
                 TxtCompanyAdress.Text + ";" +
-                CmbCustomerType.Text;
+                CmbCustomerType.Text + "; " +
+                TxtCustomerNote.Text;
 
                 //Kundenbearbeitung ins Log schreiben
                 Controller.WriteLog("CuBearbeitet");
@@ -231,6 +235,7 @@ namespace ContectManager
                     TxtCompanyName.Text = Model.Kunden[SelectedCu].CompanyName;
                     TxtCompanyAdress.Text = Model.Kunden[SelectedCu].CompanyAdress;
                     CmbCustomerType.Text = Model.Kunden[SelectedCu].CustomerType;
+                    TxtCustomerNote.Text = Model.Kunden[SelectedCu].CustomerNote;
 
 
                     //Variable für History vor Bearbeitung erstellen
@@ -255,7 +260,8 @@ namespace ContectManager
                     ChkActive.Checked + ";" +
                     TxtCompanyName.Text + ";" +
                     TxtCompanyAdress.Text + ";" +
-                    CmbCustomerType.Text;
+                    CmbCustomerType.Text + "; " +
+                    TxtCustomerNote.Text;
 
                 }
 
@@ -341,6 +347,7 @@ namespace ContectManager
             TxtCompanyName.Text = "";
             TxtCompanyAdress.Text = "";
             CmbCustomerType.Text = "";
+            TxtCustomerNote.Text = "";
 
 
         }

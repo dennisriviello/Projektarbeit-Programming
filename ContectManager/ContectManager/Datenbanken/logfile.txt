@@ -319,3 +319,8 @@ KE: Zeit der Erstellung      : 10.09.2021 22:58:06| ; salli; MitEnand; 13.05.202
 -----
 KE: Zeit der Erstellung      : 10.09.2021 22:58:34| ; hans; nötig; 13.05.2021 00:00:00; männlich; ; ; ; ; ; ; ; ; ; True; ; ; A
 -----
+KE: Zeit der Erstellung      : 11.09.2021 11:17:22| Herr; Hans-doppelt; Nötig; 13.05.2021 00:00:00; männlich; Professor; 0782222222; 0784444444; Hansstrasse 50; 9240; Hanshausen; 0781111111; 0783333333; hans.nötig@gmail.com; True; Hansling; Hansstrasse 50; A; aaaaaaaaaaaaabcde
+-----
+KB: Startzeit der Bearbeitung: 11.09.2021 11:17:58| Herr;Hans-doppelt;Nötig;13.05.2021 00:00:00;männlich;Professor;0782222222;0784444444;Hansstrasse 50;9240;Hanshausen;0781111111;0783333333;hans.nötig@gmail.com;True;Hansling;Hansstrasse 50;A; aaaaaaaaaaaaabcde
+KB: Endzeit der Bearbeitung  : 11.09.2021 11:18:05| Herr;Hans-doppelt;Nötig;13.05.2021 00:00:00;männlich;Professor;0782222222;0784444444;Hansstrasse 50;9240;Hanshausen;0781111111;0783333333;hans.nötig@gmail.com;True;Hansling;Hansstrasse 50;A; aaaaaaaaaaaaabcdfghijkl
+-----
