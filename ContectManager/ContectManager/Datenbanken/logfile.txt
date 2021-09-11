@@ -324,3 +324,15 @@ KE: Zeit der Erstellung      : 11.09.2021 11:17:22| Herr; Hans-doppelt; Nötig; 
 KB: Startzeit der Bearbeitung: 11.09.2021 11:17:58| Herr;Hans-doppelt;Nötig;13.05.2021 00:00:00;männlich;Professor;0782222222;0784444444;Hansstrasse 50;9240;Hanshausen;0781111111;0783333333;hans.nötig@gmail.com;True;Hansling;Hansstrasse 50;A; aaaaaaaaaaaaabcde
 KB: Endzeit der Bearbeitung  : 11.09.2021 11:18:05| Herr;Hans-doppelt;Nötig;13.05.2021 00:00:00;männlich;Professor;0782222222;0784444444;Hansstrasse 50;9240;Hanshausen;0781111111;0783333333;hans.nötig@gmail.com;True;Hansling;Hansstrasse 50;A; aaaaaaaaaaaaabcdfghijkl
 -----
+KB: Startzeit der Bearbeitung: 11.09.2021 11:48:27| Herr;Salli;Mitenand;13.05.2021 00:00:00;männlich;Professor;0782222222;0784444444;Hansstrasse 50;9240;Hanshausen;0781111111;0783333333;hans.nötig@gmail.com;True;Hansling;Hansstrasse 50;A; 
+KB: Endzeit der Bearbeitung  : 11.09.2021 11:48:29| Herr;Salli;Mitenand;13.05.2021 00:00:00;männlich;Professor;0782222222;0784444444;Hansstrasse 50;9240;Hanshausen;0781111111;0783333333;hans.nötig@gmail.com;False;Hansling;Hansstrasse 50;A; 
+-----
+KB: Startzeit der Bearbeitung: 11.09.2021 11:48:31| Herr;Hans;Nötig;10.09.2021 22:53:13;männlich;Professor;0782222222;0784444444;Hansstrasse 50;9240;Hanshausen;0781111111;0783333333;hans.nötig@gmail.com;True;Hansling;Hansstrasse 50;A; 
+KB: Endzeit der Bearbeitung  : 11.09.2021 11:48:32| Herr;Hans;Nötig;10.09.2021 22:53:13;männlich;Professor;0782222222;0784444444;Hansstrasse 50;9240;Hanshausen;0781111111;0783333333;hans.nötig@gmail.com;False;Hansling;Hansstrasse 50;A; 
+-----
+KB: Startzeit der Bearbeitung: 11.09.2021 11:49:09| Herr;Hans-doppelt;Nötig;13.05.2021 00:00:00;männlich;Professor;0782222222;0784444444;Hansstrasse 50;9240;Hanshausen;0781111111;0783333333;hans.nötig@gmail.com;True;Hansling;Hansstrasse 50;A; aaaaaaaaaaaaabcdfghijkl
+KB: Endzeit der Bearbeitung  : 11.09.2021 11:49:13| Herr;Hans-doppelt;Nötig;13.05.2021 00:00:00;männlich;Professor;0782222222;0784444444;Hansstrasse 50;9240;Hanshausen;0781111111;0783333333;hans.nötig@gmail.com;True;Hansling;Hansstrasse 50;A; aaaaaaaaaaaaabcdfghijkldddd
+-----
+KB: Startzeit der Bearbeitung: 11.09.2021 11:49:19| Herr;Hans-doppelt;Nötig;13.05.2021 00:00:00;männlich;Professor;0782222222;0784444444;Hansstrasse 50;9240;Hanshausen;0781111111;0783333333;hans.nötig@gmail.com;True;Hansling;Hansstrasse 50;A; aaaaaaaaaaaaabcdfghijkldddd
+KB: Endzeit der Bearbeitung  : 11.09.2021 11:49:20| Herr;Hans-doppelt;Nötig;13.05.2021 00:00:00;männlich;Professor;0782222222;0784444444;Hansstrasse 50;9240;Hanshausen;0781111111;0783333333;hans.nötig@gmail.com;True;Hansling;Hansstrasse 50;A; aaaaaaaaaaaaabcdfghijkldddd
+-----

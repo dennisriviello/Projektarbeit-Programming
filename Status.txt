@@ -1,9 +1,24 @@
-Was funktioniert noch nicht?
---------------------------------
-- Suche bei Lehrlingen!
-- Eingabevalidierungen
-- Dashboard View (grob aufgebaut, funktioniert noch nicht)
+Was funktioniert?
+-----------------------------
+Alle Funktionale Anforderungen!
+▪ Erfassung von Mitarbeitern und Kunden 
+▪ Mutieren von Mitarbeitern und Kunden
+▪ Aktivieren und deaktivieren von Mitarbeitern und Kunden
+▪ Löschen von Mitarbeitern und Kunden
+▪ Automatische Vergabe von Mitarbeiternummern
+▪ Protokollieren von Notizen in Kundenkontakten inkl. Historie
+▪ Suchmöglichkeiten über alle gespeicherten Informationen
+▪ Automatisches Speichern des Datenstamms auf Festplatte
 
-- Import von Kontakten im CSV oder VCard Format
+
+Fast alle Optionale funktionale Anforderungen funktionieren!
+▪ Mutationshistorie von Kontaktdaten
+▪ Login
+▪ Dashboard-View
+
+
+Was funktioniert (noch) nicht?
+-----------------------------
+▪ Import von Kontakten im CSV oder VCard Format
  
 

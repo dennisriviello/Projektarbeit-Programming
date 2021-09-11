@@ -12,6 +12,7 @@ using System.Xml.Serialization;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 
+
 namespace ContectManager
 {
     public partial class Form_Dashboard : Form
@@ -32,9 +33,38 @@ namespace ContectManager
         {
             ImportCostumer();
             ImportEmployee();
-            ImportTrainee(); 
+            ImportTrainee();
+            SetDashboard();
         }
 
+        private void SetDashboard()
+        {
+
+            //Dashboard für die Kunden dynamisch anpassen
+            int KundenTotal = Convert.ToInt32(LblKundenTotal.Text);
+            int KundenAktiv = Convert.ToInt32(LblKundenAktiv.Text);
+            int KundenInaktiv = Convert.ToInt32(LblKundenInaktiv.Text);
+
+            PnlAktivKunden.Width = 100 / KundenTotal * KundenAktiv;
+            PnlInaktivKunden.Width = 100 / KundenTotal * KundenInaktiv;
+
+            //Dashboard für die Mitarbeiter dynamisch anpassen
+            int MitarbeiterTotal = Convert.ToInt32(LblMitarbeiterTotal.Text);
+            int MitarbeiterAktiv = Convert.ToInt32(LblMitarbeiterAktiv.Text);
+            int MitarbeiterInaktiv = Convert.ToInt32(LblMitarbeiterInaktiv.Text);
+
+            PnlAktivMitarbeiter.Width = 100 / MitarbeiterTotal * MitarbeiterAktiv;
+            PnlInaktivMitarbeiter.Width = 100 / MitarbeiterTotal * MitarbeiterInaktiv;
+
+            //Dashboard für die Lehrlinge dynamisch anpassen
+            int LehrlingeTotal = Convert.ToInt32(LblLehrlingTotal.Text);
+            int LehrlingeAktiv = Convert.ToInt32(LblLehrlingAktiv.Text);
+            int LehrlingeInaktiv = Convert.ToInt32(LblLehrlingInaktiv.Text);
+
+            PnlAktivLehrlinge.Width = 100 / LehrlingeTotal * LehrlingeAktiv;
+            PnlInaktivLehrlinge.Width = 100 / LehrlingeTotal * LehrlingeInaktiv;
+
+        }
 
         private void ImportCostumer()
         {
@@ -114,18 +144,20 @@ namespace ContectManager
             Total = CounterActiv + CounterInactiv;
             LblLehrlingTotal.Text = Total.ToString();
         }
-        
-        private void CmdMenue_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form_Menue fMenue = new Form_Menue();
-            fMenue.ShowDialog();
-        }
+
+
 
         private void CmdOpenLogFile_Click(object sender, EventArgs e)
         {
             // öffnet das Logfile im Standart-Texteditor
             System.Diagnostics.Process.Start(Controller.LogFile);
+        }
+
+        private void CmdMenue_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form_Menue fMenue = new Form_Menue();
+            fMenue.ShowDialog();
         }
     }
 }
