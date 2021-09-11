@@ -45,9 +45,10 @@ namespace ContectManager
             // cmd_KundenMenue
             // 
             this.cmd_KundenMenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmd_KundenMenue.Location = new System.Drawing.Point(96, 115);
+            this.cmd_KundenMenue.Location = new System.Drawing.Point(128, 142);
+            this.cmd_KundenMenue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmd_KundenMenue.Name = "cmd_KundenMenue";
-            this.cmd_KundenMenue.Size = new System.Drawing.Size(186, 39);
+            this.cmd_KundenMenue.Size = new System.Drawing.Size(248, 48);
             this.cmd_KundenMenue.TabIndex = 0;
             this.cmd_KundenMenue.Text = "Kunden verwalten";
             this.cmd_KundenMenue.UseVisualStyleBackColor = true;
@@ -56,9 +57,10 @@ namespace ContectManager
             // cmd_MitarbeiterMenue
             // 
             this.cmd_MitarbeiterMenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmd_MitarbeiterMenue.Location = new System.Drawing.Point(96, 180);
+            this.cmd_MitarbeiterMenue.Location = new System.Drawing.Point(128, 222);
+            this.cmd_MitarbeiterMenue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmd_MitarbeiterMenue.Name = "cmd_MitarbeiterMenue";
-            this.cmd_MitarbeiterMenue.Size = new System.Drawing.Size(186, 39);
+            this.cmd_MitarbeiterMenue.Size = new System.Drawing.Size(248, 48);
             this.cmd_MitarbeiterMenue.TabIndex = 1;
             this.cmd_MitarbeiterMenue.Text = "Mitarbeiter verwalten";
             this.cmd_MitarbeiterMenue.UseVisualStyleBackColor = true;
@@ -67,9 +69,10 @@ namespace ContectManager
             // cmd_InformationenMenue
             // 
             this.cmd_InformationenMenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmd_InformationenMenue.Location = new System.Drawing.Point(96, 245);
+            this.cmd_InformationenMenue.Location = new System.Drawing.Point(128, 302);
+            this.cmd_InformationenMenue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmd_InformationenMenue.Name = "cmd_InformationenMenue";
-            this.cmd_InformationenMenue.Size = new System.Drawing.Size(186, 39);
+            this.cmd_InformationenMenue.Size = new System.Drawing.Size(248, 48);
             this.cmd_InformationenMenue.TabIndex = 2;
             this.cmd_InformationenMenue.Text = "Suchen / Filtern";
             this.cmd_InformationenMenue.UseVisualStyleBackColor = true;
@@ -77,9 +80,10 @@ namespace ContectManager
             // 
             // CmdLogout
             // 
-            this.CmdLogout.Location = new System.Drawing.Point(188, 9);
+            this.CmdLogout.Location = new System.Drawing.Point(251, 11);
+            this.CmdLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CmdLogout.Name = "CmdLogout";
-            this.CmdLogout.Size = new System.Drawing.Size(110, 25);
+            this.CmdLogout.Size = new System.Drawing.Size(147, 31);
             this.CmdLogout.TabIndex = 10;
             this.CmdLogout.Text = "Benutzer wechseln";
             this.CmdLogout.UseVisualStyleBackColor = true;
@@ -88,9 +92,10 @@ namespace ContectManager
             // LblNamen
             // 
             this.LblNamen.AutoSize = true;
-            this.LblNamen.Location = new System.Drawing.Point(43, 387);
+            this.LblNamen.Location = new System.Drawing.Point(57, 476);
+            this.LblNamen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblNamen.Name = "LblNamen";
-            this.LblNamen.Size = new System.Drawing.Size(285, 13);
+            this.LblNamen.Size = new System.Drawing.Size(379, 17);
             this.LblNamen.TabIndex = 4;
             this.LblNamen.Text = "Fabian Tavani, Joel Schlegel, Daniel Zoller, Dennis Riviello";
             // 
@@ -98,18 +103,20 @@ namespace ContectManager
             // 
             this.LblContactManager.AutoSize = true;
             this.LblContactManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblContactManager.Location = new System.Drawing.Point(107, 45);
+            this.LblContactManager.Location = new System.Drawing.Point(147, 63);
+            this.LblContactManager.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblContactManager.Name = "LblContactManager";
-            this.LblContactManager.Size = new System.Drawing.Size(162, 24);
+            this.LblContactManager.Size = new System.Drawing.Size(203, 29);
             this.LblContactManager.TabIndex = 5;
             this.LblContactManager.Text = "ContactManager";
             // 
             // cmd_DashboardMenue
             // 
             this.cmd_DashboardMenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmd_DashboardMenue.Location = new System.Drawing.Point(96, 310);
+            this.cmd_DashboardMenue.Location = new System.Drawing.Point(128, 382);
+            this.cmd_DashboardMenue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmd_DashboardMenue.Name = "cmd_DashboardMenue";
-            this.cmd_DashboardMenue.Size = new System.Drawing.Size(186, 39);
+            this.cmd_DashboardMenue.Size = new System.Drawing.Size(248, 48);
             this.cmd_DashboardMenue.TabIndex = 3;
             this.cmd_DashboardMenue.Text = "Dashboard";
             this.cmd_DashboardMenue.UseVisualStyleBackColor = true;
@@ -117,10 +124,10 @@ namespace ContectManager
             // 
             // cmdClose
             // 
-            this.cmdClose.Location = new System.Drawing.Point(306, 9);
-            this.cmdClose.Margin = new System.Windows.Forms.Padding(2);
+            this.cmdClose.Location = new System.Drawing.Point(408, 11);
+            this.cmdClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdClose.Name = "cmdClose";
-            this.cmdClose.Size = new System.Drawing.Size(70, 25);
+            this.cmdClose.Size = new System.Drawing.Size(93, 31);
             this.cmdClose.TabIndex = 11;
             this.cmdClose.Text = "Exit";
             this.cmdClose.UseVisualStyleBackColor = true;
@@ -129,18 +136,18 @@ namespace ContectManager
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(11, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(15, 14);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(75, 88);
+            this.pictureBox1.Size = new System.Drawing.Size(100, 108);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
             // Form_Menue
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 411);
+            this.ClientSize = new System.Drawing.Size(512, 506);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cmdClose);
             this.Controls.Add(this.cmd_DashboardMenue);
@@ -150,6 +157,7 @@ namespace ContectManager
             this.Controls.Add(this.cmd_InformationenMenue);
             this.Controls.Add(this.cmd_MitarbeiterMenue);
             this.Controls.Add(this.cmd_KundenMenue);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form_Menue";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hauptmenü";
