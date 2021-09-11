@@ -12,6 +12,7 @@ using System.Xml.Serialization;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 
+
 namespace ContectManager
 {
     public partial class Form_Suche : Form
@@ -65,9 +66,9 @@ namespace ContectManager
                             SetSelectedEmployee(CmbEmployee.Text, TxtEmployee.Text, exist);
                         }
                     }
-                   else if (CmbEmployee.SelectedIndex == 1 || CmbEmployee.SelectedIndex == 2 || CmbEmployee.SelectedIndex == 3 || CmbEmployee.SelectedIndex == 4 || CmbEmployee.SelectedIndex == 5 ||
-                              CmbEmployee.SelectedIndex == 10 || CmbEmployee.SelectedIndex == 15 || CmbEmployee.SelectedIndex == 17 || CmbEmployee.SelectedIndex == 19)
-                   {          
+                    else if (CmbEmployee.SelectedIndex == 1 || CmbEmployee.SelectedIndex == 2 || CmbEmployee.SelectedIndex == 3 || CmbEmployee.SelectedIndex == 4 || CmbEmployee.SelectedIndex == 5 ||
+                               CmbEmployee.SelectedIndex == 10 || CmbEmployee.SelectedIndex == 15 || CmbEmployee.SelectedIndex == 17 || CmbEmployee.SelectedIndex == 19)
+                    {
                         if (Controller.CheckString(TxtEmployee.Text, TxtEmployee) == true)
                             MessageBox.Show("'" + TxtEmployee.Text + "' Ist kein gültiger Wert", "Falsche Eingabe!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         else
@@ -103,7 +104,7 @@ namespace ContectManager
                         else
                         {
                             LstOutput.Items.Clear();
-                            SetSelectedEmployee(CmbCustomer.Text, TxtCustomer.Text, exist);
+                            SetSelectedCustomer(CmbCustomer.Text, TxtCustomer.Text, exist);
                         }
                     }
                     else
@@ -111,7 +112,7 @@ namespace ContectManager
                         LstOutput.Items.Clear();
                         SetSelectedCustomer(CmbCustomer.Text, TxtCustomer.Text, exist);
                     }
-                    
+
                 }
                 else if (RadTrainee.Checked)
                 {
@@ -132,11 +133,11 @@ namespace ContectManager
                         if (Controller.CheckString(TxtTrainee.Text, TxtTrainee) == true)
                             MessageBox.Show("'" + TxtTrainee.Text + "' Ist kein gültiger Wert", "Falsche Eingabe!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         else
-                         {
+                        {
                             LstOutput.Items.Clear();
                             SetSelectedEmployee(CmbTrainee.Text, TxtTrainee.Text, exist);
                         }
-                    
+
                     }
                     else
                     {
@@ -209,23 +210,23 @@ namespace ContectManager
 
         public string SetSelectedEmployee(string cat, string value, bool exist)
         {
-            
-                switch (cat)
-                {
 
-                    case "EmployeeID":
-                        foreach (var mitarbeiter in Model.Mitarbeiter)
+            switch (cat)
+            {
+
+                case "EmployeeID":
+                    foreach (var mitarbeiter in Model.Mitarbeiter)
+                    {
+
+                        if (mitarbeiter.MitarbeiterID == Convert.ToInt32(value))
                         {
-                            
-                            if (mitarbeiter.MitarbeiterID == Convert.ToInt32(value)) 
-                            {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname + mitarbeiter.EntryDate + mitarbeiter.QuitDate);
                             exist = true;
-                            }  
                         }
+                    }
                     if (exist == false)
                         MessageBox.Show("Kein Mitarbeiter mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        break;
+                    break;
 
 
                 case "Salutation":
@@ -244,28 +245,28 @@ namespace ContectManager
 
 
                 case "Firstname":
-                        foreach (var mitarbeiter in Model.Mitarbeiter)
+                    foreach (var mitarbeiter in Model.Mitarbeiter)
+                    {
+                        if (mitarbeiter.Firstname.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
-                            if (mitarbeiter.Firstname.Equals(value, StringComparison.InvariantCultureIgnoreCase))
-                            {
-                                LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
-                                exist = true;
-                            }
+                            LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
+                    }
                     if (exist == false)
                         MessageBox.Show("Kein Mitarbeiter mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
-                    case "Lastname":
-                        foreach (var mitarbeiter in Model.Mitarbeiter)
+                case "Lastname":
+                    foreach (var mitarbeiter in Model.Mitarbeiter)
+                    {
+                        if (mitarbeiter.Lastname.Equals(value, StringComparison.InvariantCultureIgnoreCase))
                         {
-                            if (mitarbeiter.Lastname.Equals(value, StringComparison.InvariantCultureIgnoreCase))
-                            {
-                                LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
-                                exist = true;
-                            }
+                            LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname);
+                            exist = true;
                         }
+                    }
                     if (exist == false)
                         MessageBox.Show("Kein Mitarbeiter '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
@@ -504,9 +505,9 @@ namespace ContectManager
                     break;
 
                 default:
-                        Console.WriteLine("Nothing");
-                        break;
-                }
+                    Console.WriteLine("Nothing");
+                    break;
+            }
 
             return null;
         }
@@ -524,10 +525,10 @@ namespace ContectManager
                             LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
                             exist = true;
                         }
-                        
+
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Kunde mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Kunde mit '" + TxtCustomer.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -541,7 +542,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Kunde mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Kunde mit '" + TxtCustomer.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -555,7 +556,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Kunde mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Kunde mit '" + TxtCustomer.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -570,7 +571,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Kunde mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Kunde mit '" + TxtCustomer.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
                 case "Title":
@@ -582,6 +583,8 @@ namespace ContectManager
                             exist = true;
                         }
                     }
+                    if (exist == false)
+                        MessageBox.Show("Kein Kunde mit '" + TxtCustomer.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
                 case "Telwork":
@@ -594,7 +597,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Kunde mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Kunde mit '" + TxtCustomer.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -608,7 +611,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Kunde mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Kunde mit '" + TxtCustomer.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -623,7 +626,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Kunde mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Kunde mit '" + TxtCustomer.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -637,7 +640,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Kunde mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Kunde mit '" + TxtCustomer.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
                 case "Residence":
@@ -650,7 +653,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Kunde mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Kunde mit '" + TxtCustomer.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
                 case "Telprivate":
@@ -663,7 +666,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Kunde mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Kunde mit '" + TxtCustomer.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
                 case "Telmobile":
@@ -676,7 +679,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Kunde mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Kunde mit '" + TxtCustomer.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -690,7 +693,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Kunde mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Kunde mit '" + TxtCustomer.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
                 case "Active":
@@ -703,7 +706,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Kunde mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Kunde mit '" + TxtCustomer.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -717,7 +720,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Kunde mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Kunde mit '" + TxtCustomer.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -731,7 +734,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Kunde mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Kunde mit '" + TxtCustomer.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
                 case "Customertype":
@@ -744,7 +747,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Kunde mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Kunde mit '" + TxtCustomer.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -771,7 +774,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -785,7 +788,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -799,7 +802,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -813,7 +816,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -828,7 +831,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
                 case "Title":
@@ -841,7 +844,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
                 case "Telwork":
@@ -854,7 +857,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -868,7 +871,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -883,7 +886,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -897,7 +900,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
                 case "Residence":
@@ -910,7 +913,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
                 case "Telprivate":
@@ -923,7 +926,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
                 case "Telmobile":
@@ -936,7 +939,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -950,7 +953,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
                 case "Active":
@@ -963,7 +966,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
                 case "Department":
@@ -976,7 +979,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -990,7 +993,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -1005,7 +1008,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -1019,7 +1022,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
 
@@ -1033,7 +1036,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
                 case "Managementlevel":
@@ -1046,7 +1049,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
                 case "Apprenticeshipyears":
@@ -1059,7 +1062,7 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
 
                 case "Currentyear":
@@ -1072,9 +1075,9 @@ namespace ContectManager
                         }
                     }
                     if (exist == false)
-                        MessageBox.Show("Kein Lehrling mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Kein Lehrling mit '" + TxtTrainee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
-              
+
 
                 default:
                     Console.WriteLine("Nothing");
@@ -1083,10 +1086,10 @@ namespace ContectManager
             return null;
         }
 
-        
+
         private void CmbEmployee_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if      (CmbEmployee.SelectedIndex == 0)
+            if (CmbEmployee.SelectedIndex == 0)
                 LblEmployee.Text = hinweis[0];
             else if (CmbEmployee.SelectedIndex == 1)
                 LblEmployee.Text = hinweis[1];
@@ -1119,7 +1122,7 @@ namespace ContectManager
             else if (CmbEmployee.SelectedIndex == 15)
                 LblEmployee.Text = hinweis[0];
             else if (CmbEmployee.SelectedIndex == 16)
-                LblEmployee.Text =  "Zahlen und Punkte erlaubt";
+                LblEmployee.Text = "Zahlen und Punkte erlaubt";
             else if (CmbEmployee.SelectedIndex == 17)
                 LblEmployee.Text = hinweis[0];
             else if (CmbEmployee.SelectedIndex == 18)
@@ -1154,6 +1157,6 @@ namespace ContectManager
                 LblTrainee.Visible = false;
         }
 
-       
+
     }
 }
