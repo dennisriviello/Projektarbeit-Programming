@@ -35,6 +35,9 @@ namespace ContectManager
         public static string KundenDB;
         public static string LehrlingDB;
         public static string LogFile;
+        public static string SelectedImportPath;
+        public static bool ImportedCustomer = false;
+        public static string[] KundenImportDaten;
 
 
         public static void FirstUseCheck() //Kommentar in Funktion

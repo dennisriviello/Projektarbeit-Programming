@@ -360,3 +360,25 @@ KE: Zeit der Erstellung      : 11.09.2021 13:14:43| Frau; Anna; Bolika; 22.12.19
 -----
 KE: Zeit der Erstellung      : 11.09.2021 13:17:18| Herr; Hans; Nötig; 14.05.1996 00:00:00; männlich; ; 0715552210; 0714504500; Scherbenweg 4; 7692; Altstetten; 0714504580; 0798823265; hans.noetig45@gmail.com; True; Nötig Metallbau AG; Im Werkhof 88; D; 
 -----
+KB: Startzeit der Bearbeitung: 13.09.2021 10:10:43| Herr;Hans;Nötig;14.05.1996 00:00:00;männlich;;0715552210;0714504500;Scherbenweg 4;7692;Altstetten;0714504580;0798823265;hans.noetig45@gmail.com;True;Nötig Metallbau AG;Im Werkhof 88;D; 
+KB: Endzeit der Bearbeitung  : 13.09.2021 10:10:47| Herr;Hans;Nötig;14.05.1996 00:00:00;männlich;;0715552210;0714504500;Scherbenweg 4;7692;Altstetten;0714504580;0798823265;hans.noetig45@gmail.com;True;Nötig Metallbau AG;Im Werkhof 88;D; 
+-----
+KB: Startzeit der Bearbeitung: 13.09.2021 11:05:32| Herr;Hans;Nötig;14.05.1996 00:00:00;männlich;;0715552210;0714504500;Scherbenweg 4;7692;Altstetten;0714504580;0798823265;hans.noetig45@gmail.com;True;Nötig Metallbau AG;Im Werkhof 88;D; 
+KB: Endzeit der Bearbeitung  : 13.09.2021 11:05:38| Herr;Hans;Nötig;14.05.1996 00:00:00;männlich;Dr.;0715552210;0714504500;Scherbenweg 4;7692;Altstetten;0714504580;0798823265;hans.noetig45@gmail.com;True;Nötig Metallbau AG;Im Werkhof 88;D; 
+-----
+KB: Startzeit der Bearbeitung: 13.09.2021 11:05:39| Herr;Hans;Nötig;14.05.1996 00:00:00;männlich;Dr.;0715552210;0714504500;Scherbenweg 4;7692;Altstetten;0714504580;0798823265;hans.noetig45@gmail.com;True;Nötig Metallbau AG;Im Werkhof 88;D; 
+KB: Endzeit der Bearbeitung  : 13.09.2021 11:05:46| Herr;Hans;Nötig;14.05.1996 00:00:00;männlich;Dr.;0715552210;0714504500;Scherbenweg 4;7692;Altstetten;0714504580;0798823265;hans.noetig45@gmail.com;True;Nötig Metallbau AG;Im Werkhof 88;D; Test
+-----
+KE: Zeit der Erstellung      : 13.09.2021 11:10:14| ; ; ; 01.01.1996 00:00:00; männlich; ; ; ; ; ; ; ; ; ; True; ; ; A; 
+-----
+KE: Zeit der Erstellung      : 13.09.2021 14:19:56| test; test; ; 01.01.1996 00:00:00; männlich; ; ; ; ; ; ; ; ; ; True; ; ; A; 
+-----
+KB: Startzeit der Bearbeitung: 13.09.2021 20:57:42| Herr;Max2;Muster;01.01.1996 00:00:00;männlich;Dr.;071123123;071321321;Strasse 20;8570;Weinfelden;076123456;079987456;abc@def.ch;True;Firmaname;Firmaadresse;A; BlaBla-Notiz
+KB: Endzeit der Bearbeitung  : 13.09.2021 20:57:46| Herr;Max3;Muster;01.01.1996 00:00:00;männlich;Dr.;071123123;071321321;Strasse 20;8570;Weinfelden;076123456;079987456;abc@def.ch;True;Firmaname;Firmaadresse;A; BlaBla-Notiz
+-----
+KB: Startzeit der Bearbeitung: 13.09.2021 20:57:51| Herr;Max3;Muster;01.01.1996 00:00:00;männlich;Dr.;071123123;071321321;Strasse 20;8570;Weinfelden;076123456;079987456;abc@def.ch;True;Firmaname;Firmaadresse;A; BlaBla-Notiz
+KB: Endzeit der Bearbeitung  : 13.09.2021 20:57:55| Herr;Max4;Muster;01.01.1996 00:00:00;männlich;Dr.;071123123;071321321;Strasse 20;8570;Weinfelden;076123456;079987456;abc@def.ch;True;Firmaname;Firmaadresse;A; BlaBla-Notiz
+-----
+KB: Startzeit der Bearbeitung: 13.09.2021 21:00:56| Herr;Max1;Muster;01.01.1996 00:00:00;männlich;Dr.;071123123;071321321;Strasse 20;8570;Weinfelden;ABC123;079987456;abc@def.ch;True;Firmaname;Firmaadresse;A; BlaBla-Notiz
+KB: Endzeit der Bearbeitung  : 13.09.2021 21:01:17| Herr;Max1;Muster;01.01.1996 00:00:00;männlich;Dr.;071123123;071321321;Strasse 20;8570;Weinfelden;ABC123;079987456;abc@def.ch;True;Firmaname;Firmaadresse;A; BlaBla-Notiz
+-----

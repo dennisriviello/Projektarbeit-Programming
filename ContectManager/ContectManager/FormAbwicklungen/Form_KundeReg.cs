@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Windows.Forms;
 
 
@@ -33,96 +36,14 @@ namespace ContectManager
         bool telwork = false; bool telmobile = false; bool fax = false; bool zipcode = false; bool residence = false;
         private void CmdAddCustomer_Click(object sender, EventArgs e)
         {
-            // Fast jedes Textfeld durchläuft CheckInt oder  CheckString Methode im Controller. Wenn fehlerhaft -> true
-            titel = Controller.CheckString(TxtTitle.Text.Trim(), TxtTitle);
-            salutation = Controller.CheckString(TxtSalutation.Text.Trim(), TxtSalutation);
-            firstname = Controller.CheckString(TxtFirstname.Text.Trim(), TxtFirstname);
-            lastname = Controller.CheckString(TxtLastname.Text.Trim(), TxtLastname);
-            telprivate = Controller.CheckInt(TxtTelPrivate.Text.Trim(), TxtTelPrivate);
-            telwork = Controller.CheckInt(TxtTelWork.Text.Trim(), TxtTelWork);
-            telmobile = Controller.CheckInt(TxtTelMobile.Text.Trim(), TxtTelMobile);
-            fax = Controller.CheckInt(TxtFaxWork.Text.Trim(), TxtFaxWork);
-            zipcode = Controller.CheckInt(TxtZipcode.Text.Trim(), TxtZipcode);
-            residence = Controller.CheckString(TxtResidence.Text.Trim(), TxtResidence);
-
-            // Überprüft ob ein Textfeld fehlerhaft ist
-            if (titel == true || salutation == true || firstname == true || lastname == true || telprivate == true || telwork == true ||
-                telmobile == true || fax == true || zipcode == true || residence == true )
-            {
-                titel = false; salutation = false; firstname = false; lastname = false; telprivate = false; telwork = false;
-                telmobile = false; fax = false; zipcode = false; residence = false;
-                MessageBox.Show("Ups! Sie haben einen unzulässigen Wert eingegeben", "Eingabefehler", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            // Überprüft ob Person bereits existiert
-            else if (Controller.EqualsCustomer(TxtFirstname.Text.Trim(), TxtLastname.Text.Trim(), DtpBirthday.Value.Date))
-            {
-                MessageBox.Show("Kunde bereits registriert", "Achtung", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                //erzeugt neuen Customer
-                Model.Kunden.Add(new Customer(
-                    TxtSalutation.Text.Trim(),
-                    TxtFirstname.Text.Trim(),
-                    TxtLastname.Text.Trim(),
-                    DtpBirthday.Value,
-                    CmbGender.Text,
-                    TxtTitle.Text.Trim(),
-                    TxtTelWork.Text.Trim(),
-                    TxtFaxWork.Text.Trim(),
-                    TxtAdress.Text,
-                    TxtZipcode.Text.Trim(),
-                    TxtResidence.Text.Trim(),
-                    TxtTelPrivate.Text.Trim(),
-                    TxtTelMobile.Text.Trim(),
-                    TxtEMail.Text.Trim(),
-                    ChkActive.Checked,
-                    TxtCompanyName.Text.Trim(),
-                    TxtCompanyAdress.Text.Trim(),
-                    CmbCustomerType.Text,
-                    TxtCustomerNote.Text
-                    ));
-
-                //serialisiert Liste Kunden in .dat-File
-                Controller.WriteDataCu();
-
-                // generiert Vorschau in LsbOutputKu
-                CuListToLsbOutput();
-
-                //Variable für History erstellen
-                Controller.HistoryNew =
-                "KE: " +
-                "Zeit der Erstellung      : " +
-                DateTime.Now.ToString() + "| " +
-                TxtSalutation.Text + "; " +
-                    TxtFirstname.Text + "; " +
-                    TxtLastname.Text + "; " +
-                    DtpBirthday.Value + "; " +
-                    CmbGender.Text + "; " +
-                    TxtTitle.Text + "; " +
-                    TxtTelWork.Text + "; " +
-                    TxtFaxWork.Text + "; " +
-                    TxtAdress.Text + "; " +
-                    TxtZipcode.Text + "; " +
-                    TxtResidence.Text + "; " +
-                    TxtTelPrivate.Text + "; " +
-                    TxtTelMobile.Text + "; " +
-                    TxtEMail.Text + "; " +
-                    ChkActive.Checked + "; " +
-                    TxtCompanyName.Text + "; " +
-                    TxtCompanyAdress.Text + "; " +
-                    CmbCustomerType.Text + "; " +
-                    TxtCustomerNote.Text;
-
-                Controller.WriteLog("CuErstellt");
-
-                //leert Textboxen
-                ClearForm();
-            }
+            Controller.ImportedCustomer = false;
+            NewCustomerGetValues();
         }
 
         private void CmdEditCustomer_Click(object sender, EventArgs e)
         {
+         
+
             //damit richtiger Kunde geladen wird
             SelectedCu = LsbOutputKU.SelectedIndex;
 
@@ -352,7 +273,191 @@ namespace ContectManager
 
         }
 
-      
+        private void CmdKundenImport_Click(object sender, EventArgs e)
+        {
+            Controller.ImportedCustomer = true;
+            GetImportPath();
+            ImportKunden();
+        }
+
+        private void GetImportPath()
+        {
+            using (OpenFileDialog openFileDialog1 = new OpenFileDialog())
+            {
+                //Set the initial property
+                openFileDialog1.InitialDirectory = "c:\\";
+                openFileDialog1.Filter = "csv files (*.csv)|*.csv";
+                openFileDialog1.FilterIndex = 2;
+                openFileDialog1.RestoreDirectory = true;
+                //Open the control calling the ShowDialog, wait for the OK press from the user and grab the file selected
+                
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    string fileSelected = openFileDialog1.FileName;
+                    //Console.WriteLine(fileSelected);
+                    Controller.SelectedImportPath = fileSelected;
+                }
+                
+            }
+        }
+
+        private void ImportKunden()
+        {
+            string CsvPath = Controller.SelectedImportPath;
+            // CsvPath = "C:\\NeuesProjekt\\ContectManager\\ContectManager\\Kontaktdaten-Beispiele\\Kunde.csv"; //Fürs Testen fixer Pfad
+
+            var reader = new StreamReader(File.OpenRead(CsvPath));
+            
+
+            if(CsvPath.Length == 0)
+            {
+                Console.WriteLine("t"+CsvPath.Length);
+            }
+            else
+            {
+                Console.WriteLine("f"+CsvPath.Length);
+            }
+          // Console.WriteLine(reader);
+
+            while (!reader.EndOfStream)
+                {
+                string Zeile = reader.ReadLine();
+             
+                Controller.KundenImportDaten = Zeile.Split(';');
+                NewCustomerGetValues();
+                }
+
+              
+        }
+
+
+        private void NewCustomerGetValues()
+        {
+            if(Controller.ImportedCustomer == true)
+            {
+                Model.Kunden.Add(new Customer
+                     (
+                        Controller.KundenImportDaten[0],
+                        Controller.KundenImportDaten[1],
+                        Controller.KundenImportDaten[2],
+                        // DateTime.ParseExact(Controller.KundenImportDaten[3], "dd.MM.yyyy: HH:mm:tt", System.Globalization.CultureInfo.InvariantCulture), //01.01.1996 00:00:00
+                        DateTime.Parse(Controller.KundenImportDaten[3]), //01.01.1996 00:00:00
+                        Controller.KundenImportDaten[4],
+                        Controller.KundenImportDaten[5],
+                        Controller.KundenImportDaten[6],
+                        Controller.KundenImportDaten[7],
+                        Controller.KundenImportDaten[8],
+                        Controller.KundenImportDaten[9],
+                        Controller.KundenImportDaten[10],
+                        Controller.KundenImportDaten[11],
+                        Controller.KundenImportDaten[12],
+                        Controller.KundenImportDaten[13],
+                        bool.Parse(Controller.KundenImportDaten[14]),
+                        Controller.KundenImportDaten[15],
+                        Controller.KundenImportDaten[16],
+                        Controller.KundenImportDaten[17],
+                        Controller.KundenImportDaten[18]
+                        ));
+
+                // generiert Vorschau in LsbOutputKu
+                CuListToLsbOutput();
+            }
+
+            if(Controller.ImportedCustomer == false)
+            {
+                // Fast jedes Textfeld durchläuft CheckInt oder  CheckString Methode im Controller. Wenn fehlerhaft -> true
+                titel = Controller.CheckString(TxtTitle.Text.Trim(), TxtTitle);
+                salutation = Controller.CheckString(TxtSalutation.Text.Trim(), TxtSalutation);
+                firstname = Controller.CheckString(TxtFirstname.Text.Trim(), TxtFirstname);
+                lastname = Controller.CheckString(TxtLastname.Text.Trim(), TxtLastname);
+                telprivate = Controller.CheckInt(TxtTelPrivate.Text.Trim(), TxtTelPrivate);
+                telwork = Controller.CheckInt(TxtTelWork.Text.Trim(), TxtTelWork);
+                telmobile = Controller.CheckInt(TxtTelMobile.Text.Trim(), TxtTelMobile);
+                fax = Controller.CheckInt(TxtFaxWork.Text.Trim(), TxtFaxWork);
+                zipcode = Controller.CheckInt(TxtZipcode.Text.Trim(), TxtZipcode);
+                residence = Controller.CheckString(TxtResidence.Text.Trim(), TxtResidence);
+
+                // Überprüft ob ein Textfeld fehlerhaft ist
+                if (titel == true || salutation == true || firstname == true || lastname == true || telprivate == true || telwork == true ||
+                    telmobile == true || fax == true || zipcode == true || residence == true)
+                {
+                    titel = false; salutation = false; firstname = false; lastname = false; telprivate = false; telwork = false;
+                    telmobile = false; fax = false; zipcode = false; residence = false;
+                    MessageBox.Show("Ups! Sie haben einen unzulässigen Wert eingegeben", "Eingabefehler", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                // Überprüft ob Person bereits existiert
+                else if (Controller.EqualsCustomer(TxtFirstname.Text.Trim(), TxtLastname.Text.Trim(), DtpBirthday.Value.Date))
+                {
+                    MessageBox.Show("Kunde bereits registriert", "Achtung", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    //erzeugt neuen Customer
+                    Model.Kunden.Add(new Customer(
+                        TxtSalutation.Text.Trim(),
+                        TxtFirstname.Text.Trim(),
+                        TxtLastname.Text.Trim(),
+                        DtpBirthday.Value,
+                        CmbGender.Text,
+                        TxtTitle.Text.Trim(),
+                        TxtTelWork.Text.Trim(),
+                        TxtFaxWork.Text.Trim(),
+                        TxtAdress.Text,
+                        TxtZipcode.Text.Trim(),
+                        TxtResidence.Text.Trim(),
+                        TxtTelPrivate.Text.Trim(),
+                        TxtTelMobile.Text.Trim(),
+                        TxtEMail.Text.Trim(),
+                        ChkActive.Checked,
+                        TxtCompanyName.Text.Trim(),
+                        TxtCompanyAdress.Text.Trim(),
+                        CmbCustomerType.Text,
+                        TxtCustomerNote.Text
+                        ));
+                    // Console.WriteLine(DtpBirthday.Value.ToString());
+                    //serialisiert Liste Kunden in .dat-File
+                    Controller.WriteDataCu();
+
+                    // generiert Vorschau in LsbOutputKu
+                    CuListToLsbOutput();
+
+                    //Variable für History erstellen
+                    Controller.HistoryNew =
+                    "KE: " +
+                    "Zeit der Erstellung      : " +
+                    DateTime.Now.ToString() + "| " +
+                    TxtSalutation.Text + "; " +
+                        TxtFirstname.Text + "; " +
+                        TxtLastname.Text + "; " +
+                        DtpBirthday.Value + "; " +
+                        CmbGender.Text + "; " +
+                        TxtTitle.Text + "; " +
+                        TxtTelWork.Text + "; " +
+                        TxtFaxWork.Text + "; " +
+                        TxtAdress.Text + "; " +
+                        TxtZipcode.Text + "; " +
+                        TxtResidence.Text + "; " +
+                        TxtTelPrivate.Text + "; " +
+                        TxtTelMobile.Text + "; " +
+                        TxtEMail.Text + "; " +
+                        ChkActive.Checked + "; " +
+                        TxtCompanyName.Text + "; " +
+                        TxtCompanyAdress.Text + "; " +
+                        CmbCustomerType.Text + "; " +
+                        TxtCustomerNote.Text;
+
+                    Controller.WriteLog("CuErstellt");
+
+
+                    //leert Textboxen
+                    ClearForm();
+                }
+            }
+         
+
+        }
+
+       
     }
 
 
