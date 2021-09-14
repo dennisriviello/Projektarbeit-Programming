@@ -372,6 +372,33 @@ namespace ContectManager
 
                     //serialisiert Liste Kunden in .dat-File
                     Controller.WriteDataCu();
+
+                    //Variable für History erstellen
+                    Controller.HistoryNew =
+                    "KE: " +
+                    "Zeit der Erstellung      : " +
+                    DateTime.Now.ToString() + "| " +
+                    Controller.KundenImportDaten[0] + "; " +
+                    Controller.KundenImportDaten[1] + "; " +
+                    Controller.KundenImportDaten[2] + "; " +
+                    DateTime.Parse(Controller.KundenImportDaten[3]) + "; " +//01.01.1996 00:00:00
+                    Controller.KundenImportDaten[4] + "; " +
+                    Controller.KundenImportDaten[5] + "; " +
+                    Controller.KundenImportDaten[6] + "; " +
+                    Controller.KundenImportDaten[7] + "; " +
+                    Controller.KundenImportDaten[8] + "; " +
+                    Controller.KundenImportDaten[9] + "; " +
+                    Controller.KundenImportDaten[10] + "; " +
+                    Controller.KundenImportDaten[11] + "; " +
+                    Controller.KundenImportDaten[12] + "; " +
+                    Controller.KundenImportDaten[13] + "; " +
+                    bool.Parse(Controller.KundenImportDaten[14]) + "; " +
+                    Controller.KundenImportDaten[15] + "; " +
+                    Controller.KundenImportDaten[16] + "; " +
+                    Controller.KundenImportDaten[17] + "; " +
+                    Controller.KundenImportDaten[18];
+
+                    Controller.WriteLog("CuErstellt");
                 }
                 catch //Falls wir im catch landen, ist die aktuelle Zeile Defekt
                 {
