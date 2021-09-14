@@ -382,3 +382,11 @@ KB: Endzeit der Bearbeitung  : 13.09.2021 20:57:55| Herr;Max4;Muster;01.01.1996 
 KB: Startzeit der Bearbeitung: 13.09.2021 21:00:56| Herr;Max1;Muster;01.01.1996 00:00:00;männlich;Dr.;071123123;071321321;Strasse 20;8570;Weinfelden;ABC123;079987456;abc@def.ch;True;Firmaname;Firmaadresse;A; BlaBla-Notiz
 KB: Endzeit der Bearbeitung  : 13.09.2021 21:01:17| Herr;Max1;Muster;01.01.1996 00:00:00;männlich;Dr.;071123123;071321321;Strasse 20;8570;Weinfelden;ABC123;079987456;abc@def.ch;True;Firmaname;Firmaadresse;A; BlaBla-Notiz
 -----
+KE: Zeit der Erstellung      : 14.09.2021 14:50:29| asfdasd; asdasd; ; 01.01.1996 00:00:00; männlich; ; ; ; ; ; ; ; ; ; True; ; ; A; 
+-----
+KE: Zeit der Erstellung      : 14.09.2021 15:20:38| testtest; testtest; ; 01.01.1996 00:00:00; männlich; ; ; ; ; ; ; ; ; ; True; ; ; A; 
+-----
+KE: Zeit der Erstellung      : 14.09.2021 15:27:32| dsacsdfasdf; dd; ddd; 01.01.1996 00:00:00; männlich; ; ; ; ; ; ; ; ; ; True; ; ; A; 
+-----
+KE: Zeit der Erstellung      : 14.09.2021 15:29:35| ; Fabian; ; 01.01.1996 00:00:00; männlich; ; ; ; ; ; ; ; ; ; True; ; ; A; 
+-----

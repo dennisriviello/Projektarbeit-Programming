@@ -275,27 +275,25 @@ namespace ContectManager
 
         private void CmdKundenImport_Click(object sender, EventArgs e)
         {
-            Controller.ImportedCustomer = true;
-            GetImportPath();
-            ImportKunden();
+            Controller.ImportedCustomer = true; // ImportedCustomer wird auf true gesetzt, da es ja ein importierter Kunde ist (Für Abfrage später)
+            GetImportPath(); //CSV-Pfad herholen
+            ImportKunden(); //Kunden importieren
         }
 
-        private void GetImportPath()
+        private void GetImportPath() //Pfad des angegebenen CSV-File in Controller.SelectedImportPath schreiben
         {
             using (OpenFileDialog openFileDialog1 = new OpenFileDialog())
             {
-                //Set the initial property
+                //Setzt die Initalwerte für den File-Explorer fest  (nur CSV-Dateien!)
                 openFileDialog1.InitialDirectory = "c:\\";
                 openFileDialog1.Filter = "csv files (*.csv)|*.csv";
                 openFileDialog1.FilterIndex = 2;
                 openFileDialog1.RestoreDirectory = true;
-                //Open the control calling the ShowDialog, wait for the OK press from the user and grab the file selected
                 
+                //Öffnet File-Explorer und setzt den Pfad auf Controller.SelectedImportPath
                 if (openFileDialog1.ShowDialog() == DialogResult.OK)
                 {
-                    string fileSelected = openFileDialog1.FileName;
-                    //Console.WriteLine(fileSelected);
-                    Controller.SelectedImportPath = fileSelected;
+                    Controller.SelectedImportPath = openFileDialog1.FileName;
                 }
                 
             }
@@ -303,64 +301,83 @@ namespace ContectManager
 
         private void ImportKunden()
         {
+            //Variable um Code leserlicher zu machen
             string CsvPath = Controller.SelectedImportPath;
-            // CsvPath = "C:\\NeuesProjekt\\ContectManager\\ContectManager\\Kontaktdaten-Beispiele\\Kunde.csv"; //Fürs Testen fixer Pfad
 
+            //Variable Reader öffnet das selectierte  CSV-File
             var reader = new StreamReader(File.OpenRead(CsvPath));
             
+            int counter = 0; // Counter initialisieren um Anzahl Kunden dem Benutzer auszugeben
+            Controller.CounterImportedCostumer = 0; //Auf 0 setzen, da wir mehrere Imports machen können und der Counter sonst nicht stimmt
+            while (!reader.EndOfStream) //While solange true bis eine leere Zeile kommt
+                {
+                string Zeile = reader.ReadLine(); // Variabel Zeile wird vereinfacht dargestellt
+                
+                // KundenImportDaten ist ein Array, welcher mit den einzelnen Werten der Zeile die
+                //durch ; getrennt sind einspeichert
+                Controller.KundenImportDaten = Zeile.Split(';');
 
-            if(CsvPath.Length == 0)
+                NewCustomerGetValues();
+                counter++;
+                }
+            if(counter == 0)
             {
-                Console.WriteLine("t"+CsvPath.Length);
+                MessageBox.Show("CSV-File ist leer!");
+
             }
             else
             {
-                Console.WriteLine("f"+CsvPath.Length);
+                counter = counter - Controller.CounterImportedCostumer;
+                MessageBox.Show(counter + " Kunden wurden importiert");
+
             }
-          // Console.WriteLine(reader);
 
-            while (!reader.EndOfStream)
-                {
-                string Zeile = reader.ReadLine();
-             
-                Controller.KundenImportDaten = Zeile.Split(';');
-                NewCustomerGetValues();
-                }
 
-              
         }
 
 
-        private void NewCustomerGetValues()
+        private void NewCustomerGetValues() //Um Daten aus dem Importieren CSV-File oder aus den Textboxen zu lesen
         {
+            //Falls es ein importierter Kunde ist bekommt er die Daten aus dem Array
             if(Controller.ImportedCustomer == true)
             {
-                Model.Kunden.Add(new Customer
-                     (
-                        Controller.KundenImportDaten[0],
-                        Controller.KundenImportDaten[1],
-                        Controller.KundenImportDaten[2],
-                        // DateTime.ParseExact(Controller.KundenImportDaten[3], "dd.MM.yyyy: HH:mm:tt", System.Globalization.CultureInfo.InvariantCulture), //01.01.1996 00:00:00
-                        DateTime.Parse(Controller.KundenImportDaten[3]), //01.01.1996 00:00:00
-                        Controller.KundenImportDaten[4],
-                        Controller.KundenImportDaten[5],
-                        Controller.KundenImportDaten[6],
-                        Controller.KundenImportDaten[7],
-                        Controller.KundenImportDaten[8],
-                        Controller.KundenImportDaten[9],
-                        Controller.KundenImportDaten[10],
-                        Controller.KundenImportDaten[11],
-                        Controller.KundenImportDaten[12],
-                        Controller.KundenImportDaten[13],
-                        bool.Parse(Controller.KundenImportDaten[14]),
-                        Controller.KundenImportDaten[15],
-                        Controller.KundenImportDaten[16],
-                        Controller.KundenImportDaten[17],
-                        Controller.KundenImportDaten[18]
-                        ));
+                try //Falls CSV-File korrekt aufgebaut ist fügt er es hinzu, ansonsten geht er ins catch
+                {
+                    Model.Kunden.Add(new Customer
+                   (
+                      Controller.KundenImportDaten[0],
+                      Controller.KundenImportDaten[1],
+                      Controller.KundenImportDaten[2],
+                      // DateTime.ParseExact(Controller.KundenImportDaten[3], "dd.MM.yyyy: HH:mm:tt", System.Globalization.CultureInfo.InvariantCulture), //01.01.1996 00:00:00
+                      DateTime.Parse(Controller.KundenImportDaten[3]), //01.01.1996 00:00:00
+                      Controller.KundenImportDaten[4],
+                      Controller.KundenImportDaten[5],
+                      Controller.KundenImportDaten[6],
+                      Controller.KundenImportDaten[7],
+                      Controller.KundenImportDaten[8],
+                      Controller.KundenImportDaten[9],
+                      Controller.KundenImportDaten[10],
+                      Controller.KundenImportDaten[11],
+                      Controller.KundenImportDaten[12],
+                      Controller.KundenImportDaten[13],
+                      bool.Parse(Controller.KundenImportDaten[14]),
+                      Controller.KundenImportDaten[15],
+                      Controller.KundenImportDaten[16],
+                      Controller.KundenImportDaten[17],
+                      Controller.KundenImportDaten[18]
+                      ));
 
-                // generiert Vorschau in LsbOutputKu
-                CuListToLsbOutput();
+                    // generiert Vorschau in LsbOutputKu
+                    CuListToLsbOutput();
+
+                    //serialisiert Liste Kunden in .dat-File
+                    Controller.WriteDataCu();
+                }
+                catch //Falls wir im catch landen, ist die aktuelle Zeile Defekt
+                {
+                    MessageBox.Show("CSV-File enthält korrupte Daten");
+                    Controller.CounterImportedCostumer++;
+                }
             }
 
             if(Controller.ImportedCustomer == false)

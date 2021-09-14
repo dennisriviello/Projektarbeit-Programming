@@ -38,6 +38,7 @@ namespace ContectManager
         public static string SelectedImportPath;
         public static bool ImportedCustomer = false;
         public static string[] KundenImportDaten;
+        public static int CounterImportedCostumer = 0;
 
 
         public static void FirstUseCheck() //Kommentar in Funktion
