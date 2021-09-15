@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
-//using System.Runtime.Serialization.Formatters.Soap;
+
 
 namespace ContectManager
 {
@@ -74,15 +67,6 @@ namespace ContectManager
 
              
         }
-
-       /* public string getXMLDirectory(string path)
-        {
-            string sCurrentDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            string sFile = System.IO.Path.Combine(sCurrentDirectory + "Datenbanken");
-            string sFilePath = Path.GetFullPath(sFile);
-            return sFilePath;
-        }
-       */
         
     }
 

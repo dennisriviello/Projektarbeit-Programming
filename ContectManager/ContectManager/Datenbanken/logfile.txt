@@ -145,3 +145,49 @@ KB: Endzeit der Bearbeitung  : 15.09.2021 18:39:45| Frau;Anna;Bolika;01.01.1996 
 KB: Startzeit der Bearbeitung: 15.09.2021 18:39:54| Herr;Hans;Nötig;06.01.1996 00:00:00;männlich;Dr.;0764444444;0768888888;Langstrasse 42;4545;Spitz;0715555555;0715555555;hans.noetig69@gmail.com;False;Erotik Shop AG;Escortstrasse 69;B; Dieser Kunde muss von Damen bedient werden -> mehr Verkäufe!!
 KB: Endzeit der Bearbeitung  : 15.09.2021 18:39:56| Herr;Hans;Nötig;06.01.1996 00:00:00;männlich;Dr.;0764444444;0768888888;Langstrasse 42;4545;Spitz;0715555555;0715555555;hans.noetig69@gmail.com;False;Erotik Shop AG;Escortstrasse 69;B; Dieser Kunde muss von Damen bedient werden -> mehr Verkäufe!!
 -----
+KE: Zeit der Erstellung      : 15.09.2021 19:59:46| Herr; Max1; Muster; 01.01.1996 00:00:00; Albaner; Dr.; 071123123; 071321321; Strasse 20; 8570; Weinfelden; ABC123; 079987456; abc@def.ch; True; Firmaname; Firmaadresse; A; BlaBla-Notiz
+-----
+KE: Zeit der Erstellung      : 15.09.2021 19:59:46| Herr; Max2; Muster; 01.01.1996 00:00:00; Albaner; Dr.; 071123123; 071321321; Strasse 20; 8570; Weinfelden; ABC123; 079987456; abc@def.ch; True; Firmaname; Firmaadresse; A; BlaBla-Notiz
+-----
+KE: Zeit der Erstellung      : 15.09.2021 19:59:46| Herr; Max3; Muster; 01.01.1996 00:00:00; Albaner; Dr.; 071123123; 071321321; Strasse 20; 8570; Weinfelden; ABC123; 079987456; abc@def.ch; True; Firmaname; Firmaadresse; A; BlaBla-Notiz
+-----
+KE: Zeit der Erstellung      : 15.09.2021 19:59:46| Herr; Max4; Muster; 01.01.1996 00:00:00; Albaner; Dr.; 071123123; 071321321; Strasse 20; 8570; Weinfelden; ABC123; 079987456; abc@def.ch; True; Firmaname; Firmaadresse; A; BlaBla-Notiz
+-----
+ME: Zeit der Erstellung      : 15.09.2021 20:11:45| 114; Herr; Fabian1; Tavani; 01.01.1989 00:00:00; Männlich; Dr.; 123; 123; adresse; zipcode; residence; 123; 123; asd@asd.com; true; department; 123; Schweizer; 01.01.1989 00:00:00; 01.01.1989 00:00:00; 50; CEO; 3
+-----
+ME: Zeit der Erstellung      : 15.09.2021 20:11:45| 115; Herr; Fabian2; Tavani; 01.01.1989 00:00:00; Männlich; Dr.; 123; 123; adresse; zipcode; residence; 123; 123; asd@asd.com; true; department; 123; Schweizer; 01.01.1989 00:00:00; 01.01.1989 00:00:00; 50; CEO; 3
+-----
+ME: Zeit der Erstellung      : 15.09.2021 20:11:45| 116; Herr; Fabian3; Tavani; 01.01.1989 00:00:00; Männlich; Dr.; 123; 123; adresse; zipcode; residence; 123; 123; asd@asd.com; true; department; 123; Schweizer; 01.01.1989 00:00:00; 01.01.1989 00:00:00; 50; CEO; 3
+-----
+ME: Zeit der Erstellung      : 15.09.2021 20:11:45| 117; Herr; Fabian4; Tavani; 01.01.1989 00:00:00; Männlich; Dr.; 123; 123; adresse; zipcode; residence; 123; 123; asd@asd.com; true; department; 123; Schweizer; 01.01.1989 00:00:00; 01.01.1989 00:00:00; 50; CEO; 3
+-----
+KB: Startzeit der Bearbeitung: 15.09.2021 20:15:18| Frau;Anna;Bolika;01.01.1996 00:00:00;weiblich;Dr.;0712222222;0714444444;Frauenfelderstrasse 70a;8570;Weinfelden;0761111111;0763333333;anna.bolika@gmail.com;True;Natural AG;Testosteronstrasse 50;B; Sehr muskulöse Kundin (Kein Mann!!!)
+KB: Endzeit der Bearbeitung  : 15.09.2021 20:15:28| Frau;Anna;Bolika;01.01.1996 00:00:00;weiblich;Dr.;0712222222;0714444444;Frauenfelderstrasse 70a;8570;Weinfelden;0761111111;0763333333;anna.bolika@gmail.com;True;Natural AG;Testosteronstrasse 50;B; Sehr muskulöse Kundin (Kein Mann!!!)
+-----
+KB: Startzeit der Bearbeitung: 15.09.2021 20:15:31| Herr;Max4;Muster;01.01.1996 00:00:00;weiblich;Dr.;071123123;071321321;Strasse 20;8570;Weinfelden;ABC123;079987456;abc@def.ch;True;Firmaname;Firmaadresse;A; BlaBla-Notiz
+KB: Endzeit der Bearbeitung  : 15.09.2021 20:15:37| Herr;Max4;Muster;01.01.1996 00:00:00;weiblich;Dr.;071123123;071321321;Strasse 20;8570;Weinfelden;ABC123;079987456;abc@def.ch;True;Firmaname;Firmaadresse;A; BlaBla-Notiz
+-----
+KB: Startzeit der Bearbeitung: 15.09.2021 20:15:39| Herr;Sehr;Klug;17.09.1999 00:00:00;männlich;Master Dr.;0765555555;0769999999;Binärstrasse 10;1010;SSD;0714444444;0712222222;sehr.klug@gmail.com;True;Bit Reiniger AG;Nullstrasse 1;D; Es muss ein Techniker dabei sein (Kunde="Besserwisser")
+KB: Endzeit der Bearbeitung  : 15.09.2021 20:16:03| Herr;Sehr;Klug;17.09.1999 00:00:00;männlich;Master Dr.;0765555555;0769999999;Binärstrasse 10;1010;SSD;0714444444;0712222222;sehr.klug@gmail.com;True;Bit Reiniger AG;Nullstrasse 1;D; Es muss ein Techniker dabei sein (Kunde="Besserwisser")
+-----
+KB: Startzeit der Bearbeitung: 15.09.2021 20:16:04| Herr;Hans;Nötig;06.01.1996 00:00:00;männlich;Dr.;0764444444;0768888888;Langstrasse 42;4545;Spitz;0715555555;0715555555;hans.noetig69@gmail.com;False;Erotik Shop AG;Escortstrasse 69;B; Dieser Kunde muss von Damen bedient werden -> mehr Verkäufe!!
+KB: Endzeit der Bearbeitung  : 15.09.2021 20:16:38| Herr;Hans;Nötig;06.01.1996 00:00:00;männlich;Dr.;0764444444;0768888888;Langstrasse 42;4545;Spitz;0715555555;0715555555;hans.noetig69@gmail.com;False;Erotik Shop AG;Escortstrasse 69;B; Dieser Kunde muss von Damen bedient werden -> mehr Verkäufe!!
+-----
+KB: Startzeit der Bearbeitung: 15.09.2021 20:16:40| Herr;Sehr;Klug;17.09.1999 00:00:00;männlich;Master Dr.;0765555555;0769999999;Binärstrasse 10;1010;SSD;0714444444;0712222222;sehr.klug@gmail.com;True;Bit Reiniger AG;Nullstrasse 1;D; Es muss ein Techniker dabei sein (Kunde="Besserwisser")
+KB: Endzeit der Bearbeitung  : 15.09.2021 20:16:49| Herr;Sehr;Klug;17.09.1999 00:00:00;männlich;Master Dr.;0765555555;0769999999;Binärstrasse 10;1010;SSD;0714444444;0712222222;sehr.klug@gmail.com;True;Bit Reiniger AG;Nullstrasse 1;D; Es muss ein Techniker dabei sein (Kunde="Besserwisser")
+-----
+KE: Zeit der Erstellung      : 15.09.2021 20:30:26| ; ; ; 01.01.1996 00:00:00; männlich; ; ; ; ; ; ; ; ; ; True; ; ; C; 
+-----
+MB: Startzeit der Bearbeitung: 15.09.2021 20:30:57| 114:Herr;Fabian1;Tavani;01.01.1989 00:00:00;männlich;Dr.;123;123;adresse;zipcode;residence;123;123;asd@asd.com;True;114;Mechanik;123;Schweizer;01.01.1989 00:00:00;01.01.1989 00:00:00;50;Mech Maschinenführer;3
+MB: Endzeit der Bearbeitung  : 15.09.2021 20:31:02| 114:Herr;Fabian1;Tavani;01.01.1989 00:00:00;männlich;Dr.;123;123;adresse;zipcode;residence;123;123;asd@asd.com;True;114;Mechanik;123;Schweizer;01.01.1989 00:00:00;01.01.1989 00:00:00;50;Mech Maschinenführer;4
+-----
+MB: Startzeit der Bearbeitung: 15.09.2021 20:31:19| 107:Frau;Laura;Stern;01.01.1996 00:00:00;weiblich;Dr.;0716227897;0716227897;adresse;5555;ort;0716227897;0716227897;laura.stern@gmail.com;False;107;Verkauf;123.345.645;Deutsche;01.01.2021 00:00:00;08.09.2023 12:56:53;100;HR Mitarbeiter;0
+MB: Endzeit der Bearbeitung  : 15.09.2021 20:31:26| 107:Frau;Laura;Stern;01.01.1996 00:00:00;weiblich;Dr.;0716227897;0716227897;adresse;5555;ort;0716227897;0716227897;laura.stern@gmail.com;False;107;Informatik;123.345.645;Deutsche;01.01.2021 00:00:00;08.09.2023 12:56:53;100;HR Mitarbeiter;0
+-----
+MB: Startzeit der Bearbeitung: 15.09.2021 20:31:33| 102:Herr;Daniel;Zoller;01.01.1996 00:00:00;männlich;Dr.;0716224545;0716224545;Strasse;4564;Ort;0716224545;0716224545;daniel.zoller@gmail.com;True;102;Mechanik;123.123.123;Schweizer;01.01.2021 00:00:00;15.09.2021 12:56:53;100;Mech Maschinenführer;5
+MB: Endzeit der Bearbeitung  : 15.09.2021 20:31:35| 102:Herr;Daniel;Zoller;01.01.1996 00:00:00;männlich;Dr.;0716224545;0716224545;Strasse;4564;Ort;0716224545;0716224545;daniel.zoller@gmail.com;True;102;Mechanik;123.123.123;Schweizer;01.01.2021 00:00:00;15.09.2021 12:56:53;100;Mech Maschinenführer;5
+-----
+KG: Zeit der Löschung        : 15.09.2021 20:40:06| Herr; Max2; Muster; 01.01.1996 00:00:00; Albaner; Dr.; 071123123; 071321321; Strasse 20; 8570; Weinfelden; ABC123; 079987456; abc@def.ch; True; Firmaname; Firmaadresse; A
+-----
+KG: Zeit der Löschung        : 15.09.2021 20:40:06| Herr; Max2; Muster; 01.01.1996 00:00:00; Albaner; Dr.; 071123123; 071321321; Strasse 20; 8570; Weinfelden; ABC123; 079987456; abc@def.ch; True; Firmaname; Firmaadresse; A
+-----

@@ -1,42 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
-using System.Xml.Serialization;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
 
 
 namespace ContectManager
 {
     public partial class Form_Suche : Form
     {
+        // String - Array für Hinweis Label
         private string[] hinweis = { "Nur Zahlen zur Eingabe erlaubt", "Nur Buchstaben erlaubt", "Zahlen und Buchstaben erlaubt", "' true ' oder ' false ' eingeben" };
         public Form_Suche()
         {
             InitializeComponent();
             Controller.FirstUseCheck();
         }
-
+        // Zurück zum Menu
         private void cmd_Menue_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form_Menue fMenue = new Form_Menue();
             fMenue.ShowDialog();
         }
-
+        
         private void CmdSuchen_Click(object sender, EventArgs e)
         {
             Filtern();
         }
         private void Keydown(object sender, KeyEventArgs e)
         {
+            // Auch mit Enter ausführbar
             if (e.KeyCode == Keys.Enter)
             {
                 Filtern();
@@ -45,6 +36,7 @@ namespace ContectManager
 
         private void Filtern()
         {
+            // Überprüft ob Textfelder nicht leer sind
             if (TxtEmployee.Text != "" || TxtCustomer.Text != "" || TxtTrainee.Text != "")
             {
 
@@ -55,9 +47,11 @@ namespace ContectManager
 
                 if (RadEmployee.Checked)
                 {
+                    // Prüft alle Cmb Indexes die einen Integer erwarten
                     if (CmbEmployee.SelectedIndex == 0 || CmbEmployee.SelectedIndex == 6 || CmbEmployee.SelectedIndex == 7 || CmbEmployee.SelectedIndex == 9 || CmbEmployee.SelectedIndex == 11 ||
                     CmbEmployee.SelectedIndex == 12 || CmbEmployee.SelectedIndex == 18 || CmbEmployee.SelectedIndex == 20)
                     {
+                        // Überprüft Text auf Buchstaben 
                         if (Controller.CheckInt(TxtEmployee.Text, TxtEmployee) == true)
                         {
                             MessageBox.Show("'" + TxtEmployee.Text + "' Ist kein gültiger Wert", "Falsche Eingabe!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -71,9 +65,11 @@ namespace ContectManager
                             SetSelectedEmployee(CmbEmployee.Text, TxtEmployee.Text, exist);
                         }
                     }
+                    // Prüft alle Cmb Indexes auf String 
                     else if (CmbEmployee.SelectedIndex == 1 || CmbEmployee.SelectedIndex == 2 || CmbEmployee.SelectedIndex == 3 || CmbEmployee.SelectedIndex == 4 || CmbEmployee.SelectedIndex == 5 ||
                                CmbEmployee.SelectedIndex == 10 || CmbEmployee.SelectedIndex == 15 || CmbEmployee.SelectedIndex == 17 || CmbEmployee.SelectedIndex == 19)
                     {
+                        // Prüft ob Text eine Zahl enthält
                         if (Controller.CheckString(TxtEmployee.Text, TxtEmployee) == true)
                         {
                             LblEmployee.Visible = true;
@@ -97,8 +93,10 @@ namespace ContectManager
 
                 else if (RadCustomer.Checked)
                 {
+                    // Prüft alle Cmb Indexes die einen Integer erwarten
                     if (CmbCustomer.SelectedIndex == 5 || CmbCustomer.SelectedIndex == 6 || CmbCustomer.SelectedIndex == 8 || CmbCustomer.SelectedIndex == 10 || CmbCustomer.SelectedIndex == 11)
                     {
+                        // Überprüft Text auf Buchstaben 
                         if (Controller.CheckInt(TxtCustomer.Text, TxtCustomer) == true)
                         {
                             MessageBox.Show("'" + TxtCustomer.Text + "' Ist kein gültiger Wert", "Falsche Eingabe!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -112,9 +110,11 @@ namespace ContectManager
                             SetSelectedCustomer(CmbCustomer.Text, TxtCustomer.Text, exist);
                         }
                     }
+                    // Prüft alle Cmb Indexes auf String 
                     else if (CmbCustomer.SelectedIndex == 0 || CmbCustomer.SelectedIndex == 1 || CmbCustomer.SelectedIndex == 2 || CmbCustomer.SelectedIndex == 3 || CmbCustomer.SelectedIndex == 4 ||
                             CmbCustomer.SelectedIndex == 9 || CmbCustomer.SelectedIndex == 14 || CmbCustomer.SelectedIndex == 16)
                     {
+                        // Prüft ob Text eine Zahl enthält
                         if (Controller.CheckString(TxtCustomer.Text, TxtCustomer) == true)
                         {
                             LblCustomer.Visible = true;
@@ -138,9 +138,11 @@ namespace ContectManager
                 }
                 else if (RadTrainee.Checked)
                 {
+                    // Prüft alle Cmb Indexes die einen Integer erwarten
                     if (CmbTrainee.SelectedIndex == 0 || CmbTrainee.SelectedIndex == 6 || CmbTrainee.SelectedIndex == 7 || CmbTrainee.SelectedIndex == 9 || CmbTrainee.SelectedIndex == 11 ||
                     CmbTrainee.SelectedIndex == 12 || CmbTrainee.SelectedIndex == 18 || CmbTrainee.SelectedIndex == 20 || CmbTrainee.SelectedIndex == 21)
                     {
+                        // Überprüft Text auf Buchstaben 
                         if (Controller.CheckInt(TxtTrainee.Text, TxtTrainee) == true)
                         {
                             LblTrainee.Visible = true;
@@ -154,9 +156,11 @@ namespace ContectManager
                             SetSelectedTrainee(CmbTrainee.Text, TxtTrainee.Text, exist);
                         }
                     }
+                    // Prüft alle Cmb Indexes auf String 
                     else if (CmbTrainee.SelectedIndex == 1 || CmbTrainee.SelectedIndex == 2 || CmbTrainee.SelectedIndex == 3 || CmbTrainee.SelectedIndex == 4 || CmbTrainee.SelectedIndex == 5 ||
                             CmbTrainee.SelectedIndex == 10 || CmbTrainee.SelectedIndex == 15 || CmbTrainee.SelectedIndex == 17 || CmbTrainee.SelectedIndex == 19)
                     {
+                        // Prüft ob Text eine Zahl enthält
                         if (Controller.CheckString(TxtTrainee.Text, TxtTrainee) == true)
                         {
                             LblTrainee.Visible = true;
@@ -186,6 +190,7 @@ namespace ContectManager
 
 
         }
+        // Standart Werte
         private void RadEmployee_CheckedChanged(object sender, EventArgs e)
         {
             TxtEmployee.Text = "";
@@ -240,7 +245,7 @@ namespace ContectManager
             TxtTrainee.Visible = true;
             
         }
-
+        // Switch Case Eigenschaften abfangen
         public string SetSelectedEmployee(string cat, string value, bool exist)
         {
 
@@ -250,13 +255,14 @@ namespace ContectManager
                 case "EmployeeID":
                     foreach (var mitarbeiter in Model.Mitarbeiter)
                     {
-
+                        // Beispiel falls MitarbeiterID in Dropdown ausgewählt wurde, mach ->
                         if (mitarbeiter.MitarbeiterID == Convert.ToInt32(value))
                         {
                             LstOutput.Items.Add(mitarbeiter.MitarbeiterID + ": " + mitarbeiter.Firstname + " " + mitarbeiter.Lastname + mitarbeiter.EntryDate + mitarbeiter.QuitDate);
                             exist = true;
                         }
                     }
+                    // Kein Eintrag vorhanden
                     if (exist == false)
                         MessageBox.Show("Kein Mitarbeiter mit '" + TxtEmployee.Text + "' gefunden!", "Nicht in der Datenbank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
@@ -746,7 +752,7 @@ namespace ContectManager
                 case "Companyname":
                     foreach (var kunde in Model.Kunden)
                     {
-                        if (kunde.CompanyName.Equals(value, StringComparison.InvariantCultureIgnoreCase))
+                        if (kunde.CompanyName.Contains(value))
                         {
                             LstOutput.Items.Add(kunde.Firstname + " " + kunde.Lastname + ": " + kunde.CompanyName);
                             exist = true;
@@ -1122,6 +1128,7 @@ namespace ContectManager
 
         private void CmbEmployee_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // Hinweis Label immer per CmbIndex für den richtigen Text überschrieben
             if (CmbEmployee.SelectedIndex == 0)
                 LblEmployee.Text = hinweis[0];
             else if (CmbEmployee.SelectedIndex == 1)
@@ -1210,8 +1217,6 @@ namespace ContectManager
 
         private void CmbTrainee_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-
             if (CmbTrainee.SelectedIndex == 0)
                 LblTrainee.Text = hinweis[0];
             else if (CmbTrainee.SelectedIndex == 1)

@@ -1,16 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.IO;
-using System.Xml.Serialization;
-using System.Runtime.Serialization;
+using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Windows.Forms;
 
 namespace ContectManager
 {
@@ -24,7 +18,6 @@ namespace ContectManager
         public static string HistoryNew;
         private static string Trennzeichen = "-----";
         private static string HistoryExport;
-        //public static string MutationsTyp;
         private static string GeloeschterMitarbeiter;
         private static string GeloeschterKunde;
         private static string GeloeschterLehrling;
@@ -74,7 +67,7 @@ namespace ContectManager
                 //Erstellt den Ordner Datenbanken
                 DirectoryInfo di = Directory.CreateDirectory(sFilePath);
 
-                //Erstellt 4 Files - Counter - MitarbeiterDB - KundenDB - LogFile
+                //Erstellt 5 Files - Counter - MitarbeiterDB - KundenDB - LogFile - LehrlingDB
                 using (StreamWriter w = File.AppendText(Counter)) ;
                 using (StreamWriter w = File.AppendText(MitarbeiterDB)) ;
                 using (StreamWriter w = File.AppendText(KundenDB)) ;
@@ -95,21 +88,15 @@ namespace ContectManager
 
                 //Counter mit der MitarbeiterID 100 wird importiert und ins Textfeld geschrieben
                 ImportCounter();
-                // TxtMitarbeiterID.Text = MitarbeiterID.ToString();
-                // geht leider nicht, da TxtMitarbeiterID nicht verfügbar ist!
             }
             else
             {
-        
-
-
                 //Lädt das mitarbeiter.dat-File in die Liste (Employee) Mitarbeiter
                 // wenn das File Daten enthält
                 if (new FileInfo(MitarbeiterDB).Length >0)
                 {
                     LoadDataMa();
                 }
-
                
                 //Lädt das kunden.dat-File in die Liste (Customer) Kunden
                 // wenn das File Daten enthält
@@ -131,8 +118,6 @@ namespace ContectManager
                 {
                     ImportCounter();
                 }
-
-
             }
         }
         
@@ -143,7 +128,7 @@ namespace ContectManager
                 //Variable MitarbeiterID wird beim Laden des Formulars gesetzt(ausgelesen) falls vorhanden
                 MitarbeiterID = Convert.ToInt32(file.ReadLine());
                 file.Close(); // Zugriff auf File schliessen
-                MitarbeiterID = MitarbeiterID + 1;                            // Hier von Joel geändert für MitarbeiterID 2/2
+                MitarbeiterID = MitarbeiterID + 1;                            
             }
         }
         
@@ -199,10 +184,6 @@ namespace ContectManager
             formatter.Serialize(stream, Model.Lehrlinge);
             stream.Close();
         }
-
-        //public static System.IO.FileStream OpenFileFromPath(string path, System.IO.FileMode mode);
-
-        //public static System.IO.Stream OpenFile();
 
         public static void WriteLog(string typ) //In der Funktion beschrieben
         {
@@ -277,8 +258,6 @@ namespace ContectManager
                 DialogResult dialogResult = MessageBox.Show("Sind Sie sicher?", "Kunde löschen", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
-
-
                     GeloeschterKunde = "KG: " +
                     "Zeit der Löschung        : " +
                     DateTime.Now.ToString() + "| " +
@@ -362,8 +341,6 @@ namespace ContectManager
                 {
                     MessageBox.Show("Mitarbeiter nicht gelöscht!");
                 }
-
-
             }
 
             if (Typ == "Lehrling")
@@ -414,13 +391,10 @@ namespace ContectManager
                 {
                     MessageBox.Show("Lehrling nicht gelöscht!");
                 }
-
-
             }
-
-
         }
 
+        // Überprüft übergebener Text auf Zahlen
         public static bool CheckString(string eingabe, TextBox t)
         {
             if (eingabe.Any(char.IsDigit))
@@ -434,8 +408,10 @@ namespace ContectManager
                 return false;
             }
         }
+        // Überprüft übergebenen Text auf Buchstaben
         public static bool CheckInt(string eingabe, TextBox t)
         {
+            
             char[] check = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
                              'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
             bool temp = false;
@@ -460,7 +436,7 @@ namespace ContectManager
 
         }
 
-        // Überprüft auf Vorname, Nachname und Geburtsdatum ob dieser Mitarbeiter in der Liste Employee bereits vorhanden ist
+        // Überprüft Mitarbeiterliste ob bereits vorhanden
         public static bool EqualsEmployee(string firstname, string lastname, DateTime birthday)
         {
             bool temp = false;;
@@ -479,6 +455,7 @@ namespace ContectManager
             else
                 return false;
         }
+        // Überprüft Customerliste ob bereits vorhanden
         public static bool EqualsCustomer(string firstname, string lastname, DateTime birthday)
         {
             bool temp = false;
@@ -497,6 +474,7 @@ namespace ContectManager
             else
                 return false;
         }
+        // Überprüft Traineeliste ob bereits vorhanden
         public static bool EqualsTrainee(string firstname, string lastname, DateTime birthday)
         {
             bool temp = false;

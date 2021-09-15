@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 
@@ -181,9 +179,7 @@ namespace ContectManager
                     TxtCompanyAdress.Text + ";" +
                     CmbCustomerType.Text + "; " +
                     TxtCustomerNote.Text;
-
                 }
-
                 else
                 {
                     MessageBox.Show("Bitte Kunde auswählen!");
@@ -243,7 +239,6 @@ namespace ContectManager
                 );
                 tempCounter++;
             }
-
         }
 
         private void ClearForm()
@@ -267,8 +262,6 @@ namespace ContectManager
             TxtCompanyAdress.Text = "";
             CmbCustomerType.Text = "A";
             TxtCustomerNote.Text = "";
-
-
         }
 
         private void CmdKundenImport_Click(object sender, EventArgs e)
@@ -292,8 +285,7 @@ namespace ContectManager
                 if (openFileDialog1.ShowDialog() == DialogResult.OK)
                 {
                     Controller.SelectedImportPath = openFileDialog1.FileName;
-                }
-                
+                }  
             }
         }
 

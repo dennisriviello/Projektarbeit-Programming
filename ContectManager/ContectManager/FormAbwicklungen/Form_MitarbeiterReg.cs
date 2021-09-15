@@ -1,18 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.IO;
-using System.Xml.Serialization;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
-
-using System.Xml;
+using System.Windows.Forms;
 
 namespace ContectManager
 {
@@ -239,8 +227,6 @@ namespace ContectManager
                                     //Speichern bzw. serialisieren ins .dat-File der List Employee nicht der Listbox!
                                     Controller.WriteDataTr();
 
-
-
                                     //Schreibt Counter in counter.txt
                                     Controller.ExportCounter();
 
@@ -282,11 +268,9 @@ namespace ContectManager
 
                                     Controller.WriteLog("TrErstellt");
 
-
                                     //Counter ums eins erhöhen, da der Lehrling nun ja im .dat-File mit dem richtigen Counter
                                     // bzw. Kunden-ID eingetragen ist
-                                    //Extra nicht in der Methode SaveEmployeDB da sonst beim zurückkehren ins Menu
-                                    //z.B. der Counter auch erhöht wird
+
                                     Controller.MitarbeiterID++;
                                     ClearForm();
                                 }
@@ -306,7 +290,6 @@ namespace ContectManager
                                 MessageBox.Show("CSV-File enthält korrupte Datensätze(Korrekte werden importiert!)");
                             }
                             Controller.CounterImportedEmployeeOrTrainee++;
-
                         }
                         else
                         {
@@ -384,15 +367,9 @@ namespace ContectManager
 
                                 //Counter ums eins erhöhen, da der Mitarbeiter nun ja im .dat-File mit dem richtigen Counter
                                 // bzw. Kunden-ID eingetragen ist
-                                //Extra nicht in der Methode SaveEmployeDB da sonst beim zurückkehren ins Menu
-                                //z.B. der Counter auch erhöht wird
                                 Controller.MitarbeiterID++;
-
-                        
-                    
-
+                        }
                     }
-                }
                 catch
                 {
                     MessageBox.Show("CSV-File enthält korrupte Daten");
@@ -400,8 +377,6 @@ namespace ContectManager
                 }
 
             }
-
-
 
                 if (type == "Lehrling")
                     {
@@ -452,8 +427,6 @@ namespace ContectManager
                             //Speichern bzw. serialisieren ins .dat-File der List Employee nicht der Listbox!
                             Controller.WriteDataTr();
 
-
-
                             //Schreibt Counter in counter.txt
                             Controller.ExportCounter();
 
@@ -498,24 +471,17 @@ namespace ContectManager
 
                             //Counter ums eins erhöhen, da der Lehrling nun ja im .dat-File mit dem richtigen Counter
                             // bzw. Kunden-ID eingetragen ist
-                            //Extra nicht in der Methode SaveEmployeDB da sonst beim zurückkehren ins Menu
-                            //z.B. der Counter auch erhöht wird
                             Controller.MitarbeiterID++;
                             ClearForm();
                         }
-
-
                         }
                         catch
                         {
-
+                            MessageBox.Show("CSV-File enthält korrupte Daten");
+                            Controller.CounterImportedEmployeeOrTrainee++;
                         }
-                }
-               
-               
-            }
-
-            
+                } 
+            }  
         }
 
         private void CmdAddEmployee_Click(object sender, EventArgs e) 
@@ -876,10 +842,7 @@ namespace ContectManager
                 if (LsbOutputMA.SelectedItem != null)
                 {
                     //zu löschenden Mitarbeiter in Variable schreiben
-                    SelectedMA = LsbOutputMA.SelectedIndex;
-
-                    //aktuellene Mitarbeiternummer exportieren
-                    //Controller.ExportCounter();                          //Hier von Joel geändert für MitarbeiterID   1/2
+                    SelectedMA = LsbOutputMA.SelectedIndex;                         
 
                     //ausgewählten Mitarbeiter aus Liste Mitarbeiter löschen
                     Controller.DeleteSelected("Mitarbeiter", SelectedMA);
@@ -1061,7 +1024,7 @@ namespace ContectManager
         {
             Controller.ImportedEmployee = true;
             GetImportPath(); //CSV-Pfad herholen
-            //Controller.SelectedImportPath = "C:\\NeuesProjekt\\ContectManager\\ContectManager\\Kontaktdaten-Beispiele\\Lehrlinge\\3Lehrlinge1Korrupt.csv";
+            
 
             ImportMitarbeiter();
         }
