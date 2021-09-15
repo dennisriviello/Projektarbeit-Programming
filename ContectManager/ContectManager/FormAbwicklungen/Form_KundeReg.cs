@@ -268,7 +268,12 @@ namespace ContectManager
         {
             Controller.ImportedCustomer = true; // ImportedCustomer wird auf true gesetzt, da es ja ein importierter Kunde ist (Für Abfrage später)
             GetImportPath(); //CSV-Pfad herholen
-            ImportKunden(); //Kunden importieren
+            if(Controller.SelectedImportPath != null)
+            {
+                ImportKunden(); //Kunden importieren
+
+            }
+            Controller.SelectedImportPath = null;
         }
 
         private void GetImportPath() //Pfad des angegebenen CSV-File in Controller.SelectedImportPath schreiben
@@ -280,12 +285,15 @@ namespace ContectManager
                 openFileDialog1.Filter = "csv files (*.csv)|*.csv";
                 openFileDialog1.FilterIndex = 2;
                 openFileDialog1.RestoreDirectory = true;
-                
+
                 //Öffnet File-Explorer und setzt den Pfad auf Controller.SelectedImportPath
-                if (openFileDialog1.ShowDialog() == DialogResult.OK)
-                {
-                    Controller.SelectedImportPath = openFileDialog1.FileName;
-                }  
+              
+                    if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                    {
+                        Controller.SelectedImportPath = openFileDialog1.FileName;
+                    }
+             
+                  
             }
         }
 

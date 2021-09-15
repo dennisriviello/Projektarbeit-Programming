@@ -1025,8 +1025,11 @@ namespace ContectManager
             Controller.ImportedEmployee = true;
             GetImportPath(); //CSV-Pfad herholen
             
-
-            ImportMitarbeiter();
+            if(Controller.SelectedImportPath != null)
+            {
+                ImportMitarbeiter();
+            }
+            Controller.SelectedImportPath = null;
         }
         private void ImportMitarbeiter()
         {

@@ -1,25 +1,22 @@
 Was funktioniert?
 -----------------------------
 Alle Funktionale Anforderungen!
-▪ Erfassung von Mitarbeitern und Kunden 
-▪ Mutieren von Mitarbeitern und Kunden
-▪ Aktivieren und deaktivieren von Mitarbeitern und Kunden
-▪ Löschen von Mitarbeitern und Kunden
-▪ Automatische Vergabe von Mitarbeiternummern
-▪ Protokollieren von Notizen in Kundenkontakten inkl. Historie
-▪ Suchmöglichkeiten über alle gespeicherten Informationen
-▪ Automatisches Speichern des Datenstamms auf Festplatte
+▪ Erfassung von Mitarbeitern, Lehrlingen und Kunden (Fehleingaben und doppelte Einträge werden berücksichtigt bzw. abgefangen)
+▪ Mutieren von Mitarbeitern, Lehrlingen und Kunden (Wird im Logfile detailliert dokumentiert)
+▪ Aktivieren und deaktivieren von Mitarbeitern, Lehrlingen Kunden (Wird im Logfile dokumentiert)
+▪ Löschen von Mitarbeitern, Lehrlingen und Kunden (Wird im Logfile detailliert dokumentiert)
+▪ Automatische Vergabe von Mitarbeiternummern (Auch den Lehrlingen -> Da auch Mitarbeiter!)
+▪ Protokollieren von Notizen in Kundenkontakten inkl. Historie (Ist zusätzlich bei Änderungen im Logfile)
+▪ Suchmöglichkeiten über alle gespeicherten Informationen (Fehlereingaben z.B. falscher Datentyp werden abgefangen und hingewisen/ Gross,-Kleinschreibung wird abgefangen)
+▪ Automatisches Speichern des Datenstamms auf Festplatte (In binären Files - Pro Liste ein File)
 
 
-Fast alle Optionale funktionale Anforderungen funktionieren!
-▪ Mutationshistorie von Kontaktdaten
-▪ Login
-▪ Dashboard-View
-
-
-Was funktioniert (noch) nicht?
------------------------------
-▪ Import von Kontakten im CSV oder VCard Format
+Alle Optionale funktionale Anforderungen funktionieren!
+▪ Mutationshistorie von Kontaktdaten (Erstellen, Bearbeiten oder Löschen werden strukturiert im Logfile mit Timestamp notiert von -> Mitarbeitern, Lehrlingen und Kunden) 
+▪ Login (Multiuser-Login -> Logins aus File ausgelesen)
+▪ Dashboard-View (Aktive - Inaktiv - Total -> Mitarbeitern, Lehrlingen und Kunden -> inkl. Grafik
+▪ Import von Kontakten im CSV (Einzelne/Mehrere Mitarbeitern, Lehrlingen 
+  und Kunden Import mit Abfangen der Fehler (Leeres File oder korrupte Daten(korrupte Datensätze werden übersprungen und gemeldet)))
 
 
 Login Daten
