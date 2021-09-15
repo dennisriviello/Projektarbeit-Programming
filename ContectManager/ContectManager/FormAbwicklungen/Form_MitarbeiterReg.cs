@@ -1004,7 +1004,8 @@ namespace ContectManager
             CmbDepartment.SelectedIndex=0 ;
             TxtAhvNr.Text = "";
             TxtNationalaty.Text = "";
-            CmbEmploymentlevel.SelectedIndex = 5;
+            NumManagementLevel.Value = 0;
+            CmbEmploymentlevel.SelectedIndex = 0;
             CmbRole.SelectedIndex = 0;
             TxtMitarbeiterID.Text = Controller.MitarbeiterID.ToString();
             TxtApprenticeYears.Text = "";

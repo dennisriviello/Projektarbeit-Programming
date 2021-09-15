@@ -265,7 +265,7 @@ namespace ContectManager
             ChkActive.Checked = true;
             TxtCompanyName.Text = "";
             TxtCompanyAdress.Text = "";
-            CmbCustomerType.Text = "";
+            CmbCustomerType.Text = "A";
             TxtCustomerNote.Text = "";
 
 

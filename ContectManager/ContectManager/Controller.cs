@@ -30,10 +30,10 @@ namespace ContectManager
         private static string GeloeschterLehrling;
 
         //Variabeln für Pfäde
-        public static string Counter;
-        public static string MitarbeiterDB;
-        public static string KundenDB;
-        public static string LehrlingDB;
+        private static string Counter;
+        private static string MitarbeiterDB;
+        private static string KundenDB;
+        private static string LehrlingDB;
         public static string LogFile;
 
         //Variabeln für Import aus CSV
