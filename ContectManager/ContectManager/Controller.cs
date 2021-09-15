@@ -211,7 +211,7 @@ namespace ContectManager
             //Mitarbeiter Logfile Types
             if (Typ == "MaErstellt")
             {
-                HistoryExport = HistoryNew + "\r\n" + Trennzeichen;
+                HistoryExport = Controller.HistoryNew + "\r\n" + Trennzeichen;
             }
 
             if (Typ == "MaGeloescht")
@@ -228,7 +228,7 @@ namespace ContectManager
             //Kunde Logfile Types
             if (Typ == "CuErstellt")
             {
-                HistoryExport = HistoryNew + "\r\n" + Trennzeichen;
+                HistoryExport = Controller.HistoryNew + "\r\n" + Trennzeichen;
             }
 
             if (Typ == "CuGeloescht")
@@ -247,7 +247,7 @@ namespace ContectManager
 
             if (Typ == "TrErstellt")
             {
-                HistoryExport = HistoryNew + "\r\n" + Trennzeichen;
+                HistoryExport = Controller.HistoryNew + "\r\n" + Trennzeichen;
             }
 
             if (Typ == "TrGeloescht")
@@ -258,7 +258,7 @@ namespace ContectManager
 
             if (Typ == "TrBearbeitet")
             {
-                HistoryExport = History + "\r\n" + HistoryNew + "\r\n" + Trennzeichen;
+                HistoryExport = Controller.History + "\r\n" + HistoryNew + "\r\n" + Trennzeichen;
 
             }
 
