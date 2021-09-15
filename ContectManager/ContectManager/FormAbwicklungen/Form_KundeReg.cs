@@ -11,8 +11,6 @@ namespace ContectManager
 {
     public partial class Form_KundeReg : Form
     {
-
-
         public Form_KundeReg()
         {
             InitializeComponent();
@@ -335,7 +333,6 @@ namespace ContectManager
 
         }
 
-
         private void NewCustomerGetValues() //Um Daten aus dem Importieren CSV-File oder aus den Textboxen zu lesen
         {
             //Falls es ein importierter Kunde ist bekommt er die Daten aus dem Array
@@ -343,9 +340,12 @@ namespace ContectManager
             {
                 try //Falls CSV-File korrekt aufgebaut ist fügt er es hinzu, ansonsten geht er ins catch
                 {
-                    if(Controller.KundenImportDaten.Length > 19) //Würde heissen falsches CSV -> Mitarbeiter/Lehrling(oder korruptes) statt Kunden ausgewählt
+                    if(Controller.KundenImportDaten.Length > 19 || Controller.KundenImportDaten.Length < 19) //Würde heissen falsches CSV -> Mitarbeiter/Lehrling(oder korruptes) statt Kunden ausgewählt
                     {
-                        MessageBox.Show("Error: Der Kunde hat zu viele Eigenschaften!");
+                        if(Controller.CounterImportedCustomer == 0)
+                        {
+                            MessageBox.Show("CSV-File enthält korrupte Datensätze(Korrekte werden importiert!)");
+                        }
                         Controller.CounterImportedCustomer++;
                     }
                     else
@@ -508,10 +508,6 @@ namespace ContectManager
          
 
         }
-
-       
     }
-
-
 }
 

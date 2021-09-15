@@ -49,7 +49,6 @@ namespace ContectManager
 
         public static int CounterImportedEmployeeOrTrainee = 0;
 
-
         public static void FirstUseCheck() //Kommentar in Funktion
         {
             //Sicherheitsabfrage
@@ -516,12 +515,5 @@ namespace ContectManager
             else
                 return false;
         }
-
-
-
-
-
     }
-
-
 }

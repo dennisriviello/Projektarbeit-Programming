@@ -45,24 +45,37 @@ namespace ContectManager
             int KundenAktiv = Convert.ToInt32(LblKundenAktiv.Text);
             int KundenInaktiv = Convert.ToInt32(LblKundenInaktiv.Text);
 
-            PnlAktivKunden.Width = 100 / KundenTotal * KundenAktiv;
-            PnlInaktivKunden.Width = 100 / KundenTotal * KundenInaktiv;
+            if(KundenTotal > 0)
+            {
+                PnlAktivKunden.Width = 100 / KundenTotal * KundenAktiv;
+                PnlInaktivKunden.Width = 100 / KundenTotal * KundenInaktiv;
+            }
+            
 
             //Dashboard für die Mitarbeiter dynamisch anpassen
             int MitarbeiterTotal = Convert.ToInt32(LblMitarbeiterTotal.Text);
             int MitarbeiterAktiv = Convert.ToInt32(LblMitarbeiterAktiv.Text);
             int MitarbeiterInaktiv = Convert.ToInt32(LblMitarbeiterInaktiv.Text);
 
-            PnlAktivMitarbeiter.Width = 100 / MitarbeiterTotal * MitarbeiterAktiv;
-            PnlInaktivMitarbeiter.Width = 100 / MitarbeiterTotal * MitarbeiterInaktiv;
+            if(MitarbeiterTotal > 0) //Falls keine Mitarbeiter vorhanden sind
+            {
+                PnlAktivMitarbeiter.Width = 100 / MitarbeiterTotal * MitarbeiterAktiv;
+                PnlInaktivMitarbeiter.Width = 100 / MitarbeiterTotal * MitarbeiterInaktiv;
+            }
+            
 
             //Dashboard für die Lehrlinge dynamisch anpassen
             int LehrlingeTotal = Convert.ToInt32(LblLehrlingTotal.Text);
             int LehrlingeAktiv = Convert.ToInt32(LblLehrlingAktiv.Text);
             int LehrlingeInaktiv = Convert.ToInt32(LblLehrlingInaktiv.Text);
 
-            PnlAktivLehrlinge.Width = 100 / LehrlingeTotal * LehrlingeAktiv;
-            PnlInaktivLehrlinge.Width = 100 / LehrlingeTotal * LehrlingeInaktiv;
+            if(LehrlingeTotal > 0)
+            {
+                PnlAktivLehrlinge.Width = 100 / LehrlingeTotal * LehrlingeAktiv;
+                PnlInaktivLehrlinge.Width = 100 / LehrlingeTotal * LehrlingeInaktiv;
+            }
+
+            
 
         }
 
@@ -118,7 +131,6 @@ namespace ContectManager
             LblMitarbeiterTotal.Text = Total.ToString();
         }
 
-
         private void ImportTrainee()
         {
             int CounterActiv = 0;
@@ -144,15 +156,11 @@ namespace ContectManager
             Total = CounterActiv + CounterInactiv;
             LblLehrlingTotal.Text = Total.ToString();
         }
-
-
-
         private void CmdOpenLogFile_Click(object sender, EventArgs e)
         {
             // öffnet das Logfile im Standart-Texteditor
             System.Diagnostics.Process.Start(Controller.LogFile);
         }
-
         private void CmdMenue_Click(object sender, EventArgs e)
         {
             this.Hide();

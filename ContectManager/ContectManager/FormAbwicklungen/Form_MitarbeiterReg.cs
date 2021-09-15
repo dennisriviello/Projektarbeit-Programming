@@ -295,19 +295,21 @@ namespace ContectManager
 
             if (Controller.ImportedEmployee == true)
             {
-               
+                if (type == "Mitarbeiter")
+                {
                     try
-                    {
-                        if (Controller.EmployeeImportDaten.Length > 23) //Würde heissen falsches CSV -> Mitarbeiter/Lehrling(oder korruptes) statt Kunden ausgewählt
+                     {
+                        if (Controller.EmployeeImportDaten.Length > 23 || Controller.EmployeeImportDaten.Length < 23) //Würde heissen falsches CSV -> Mitarbeiter/Lehrling(oder korruptes) statt Kunden ausgewählt
                         {
-                            MessageBox.Show("Error: Der Mitarbeiter hat zu viele Eigenschaften!");
+                            if(Controller.CounterImportedEmployeeOrTrainee == 0)
+                            {
+                                MessageBox.Show("CSV-File enthält korrupte Datensätze(Korrekte werden importiert!)");
+                            }
                             Controller.CounterImportedEmployeeOrTrainee++;
+
                         }
                         else
                         {
-                            if (type == "Mitarbeiter")
-                            {
-
                                 //Alle Textfelder werden in die Liste Mitarbeiter eingepflegt
                                 Model.Mitarbeiter.Add(new Employee(
                                     Controller.EmployeeImportDaten[0],
@@ -386,27 +388,122 @@ namespace ContectManager
                                 //z.B. der Counter auch erhöht wird
                                 Controller.MitarbeiterID++;
 
-                            }
-                        }
                         
+                    
+
                     }
-                    catch //Falls wir im catch landen, ist die aktuelle Zeile Defekt
-                    {
-                        MessageBox.Show("CSV-File enthält korrupte Daten");
-                        Controller.CounterImportedEmployeeOrTrainee++;
-                    }
+                }
+                catch
+                {
+                    MessageBox.Show("CSV-File enthält korrupte Daten");
+                    Controller.CounterImportedEmployeeOrTrainee++;
+                }
+
+            }
 
 
 
-
-
-
-
-                
                 if (type == "Lehrling")
                     {
                         try
                         {
+                            if (Controller.TraineeImportDaten.Length > 25 || Controller.TraineeImportDaten.Length < 25) //Würde heissen falsches CSV -> Mitarbeiter/Lehrling(oder korruptes) statt Kunden ausgewählt
+                            {
+                                if (Controller.CounterImportedEmployeeOrTrainee == 0)
+                                {
+                                    MessageBox.Show("CSV-File enthält korrupte Datensätze(Korrekte werden importiert!)");
+                                }
+                                Controller.CounterImportedEmployeeOrTrainee++;
+                            }
+                        else
+                        {
+
+                            //Alle Textfelder werden in die Liste Mitarbeiter eingepflegt
+                            Model.Lehrlinge.Add(new Trainee(
+                                Controller.TraineeImportDaten[0],
+                                Controller.TraineeImportDaten[1],
+                                Controller.TraineeImportDaten[2],
+                                DateTime.Parse(Controller.TraineeImportDaten[3]), //Format: //01.01.1996 00:00:00,
+                                Controller.TraineeImportDaten[4],
+                                Controller.TraineeImportDaten[5],
+                                Controller.TraineeImportDaten[6],
+                                Controller.TraineeImportDaten[7],
+                                Controller.TraineeImportDaten[8],
+                                Controller.TraineeImportDaten[9],
+                                Controller.TraineeImportDaten[10],
+                                Controller.TraineeImportDaten[11],
+                                Controller.TraineeImportDaten[12],
+                                Controller.TraineeImportDaten[13],
+                                bool.Parse(Controller.TraineeImportDaten[14]),
+                                Controller.MitarbeiterID,
+                                Controller.TraineeImportDaten[15],
+                                Controller.TraineeImportDaten[16],
+                                Controller.TraineeImportDaten[17],
+                                DateTime.Parse(Controller.TraineeImportDaten[18]),
+                                DateTime.Parse(Controller.TraineeImportDaten[19]),
+                                Controller.TraineeImportDaten[20],
+                                Controller.TraineeImportDaten[21],
+                                Convert.ToInt32(Controller.TraineeImportDaten[22]),
+                                Controller.TraineeImportDaten[22],
+                                Controller.TraineeImportDaten[23]
+                                ));
+
+
+                            //Speichern bzw. serialisieren ins .dat-File der List Employee nicht der Listbox!
+                            Controller.WriteDataTr();
+
+
+
+                            //Schreibt Counter in counter.txt
+                            Controller.ExportCounter();
+
+                            // Eine Art Vorschau um Mitarbeiter auszuwählen - Alle Daten wären too much!
+                            // Man hätte keine Übersicht mehr
+                            MaListToLsbOutput();
+
+                            //Variable für History erstellen
+                            Controller.HistoryNew =
+                            "LE: " +
+                            "Zeit der Erstellung      : " +
+                            DateTime.Now.ToString() + "| " +
+                            Controller.MitarbeiterID + "; " +
+                            Controller.TraineeImportDaten[0] + "; " +
+                            Controller.TraineeImportDaten[1] + "; " +
+                            Controller.TraineeImportDaten[2] + "; " +
+                            Controller.TraineeImportDaten[3] + "; " +
+                            Controller.TraineeImportDaten[4] + "; " +
+                            Controller.TraineeImportDaten[5] + "; " +
+                            Controller.TraineeImportDaten[6] + "; " +
+                            Controller.TraineeImportDaten[7] + "; " +
+                            Controller.TraineeImportDaten[8] + "; " +
+                            Controller.TraineeImportDaten[9] + "; " +
+                            Controller.TraineeImportDaten[10] + "; " +
+                            Controller.TraineeImportDaten[11] + "; " +
+                            Controller.TraineeImportDaten[12] + "; " +
+                            Controller.TraineeImportDaten[13] + "; " +
+                            Controller.TraineeImportDaten[14] + "; " +
+                            Controller.TraineeImportDaten[15] + "; " +
+                            Controller.TraineeImportDaten[16] + "; " +
+                            Controller.TraineeImportDaten[17] + "; " +
+                            Controller.TraineeImportDaten[18] + "; " +
+                            Controller.TraineeImportDaten[19] + "; " +
+                            Controller.TraineeImportDaten[20] + "; " +
+                            Controller.TraineeImportDaten[21] + "; " +
+                            Controller.TraineeImportDaten[22] + "; " +
+                            Controller.TraineeImportDaten[23] + "; " +
+                            Controller.TraineeImportDaten[24];
+
+                            Controller.WriteLog("TrErstellt");
+
+
+                            //Counter ums eins erhöhen, da der Lehrling nun ja im .dat-File mit dem richtigen Counter
+                            // bzw. Kunden-ID eingetragen ist
+                            //Extra nicht in der Methode SaveEmployeDB da sonst beim zurückkehren ins Menu
+                            //z.B. der Counter auch erhöht wird
+                            Controller.MitarbeiterID++;
+                            ClearForm();
+                        }
+
 
                         }
                         catch
@@ -962,8 +1059,8 @@ namespace ContectManager
         private void CmdMitarbeiterImport_Click(object sender, EventArgs e)
         {
             Controller.ImportedEmployee = true;
-            //GetImportPath(); //CSV-Pfad herholen
-            Controller.SelectedImportPath = "C:\\NeuesProjekt\\ContectManager\\ContectManager\\Kontaktdaten-Beispiele\\Mitarbeiter\\MitarbeiterLeer.csv";
+            GetImportPath(); //CSV-Pfad herholen
+            //Controller.SelectedImportPath = "C:\\NeuesProjekt\\ContectManager\\ContectManager\\Kontaktdaten-Beispiele\\Lehrlinge\\3Lehrlinge1Korrupt.csv";
 
             ImportMitarbeiter();
         }
@@ -1043,17 +1140,6 @@ namespace ContectManager
                 }
 
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            foreach(var el in Model.Mitarbeiter)
-            {
-                Console.WriteLine(el.Birthday.ToString());
-                Console.WriteLine(el.EntryDate.ToString());
-                Console.WriteLine(el.QuitDate.ToString());
-            }
-            
         }
     }  
 }
