@@ -308,7 +308,7 @@ namespace ContectManager
             var reader = new StreamReader(File.OpenRead(CsvPath));
             
             int counter = 0; // Counter initialisieren um Anzahl Kunden dem Benutzer auszugeben
-            Controller.CounterImportedCostumer = 0; //Auf 0 setzen, da wir mehrere Imports machen können und der Counter sonst nicht stimmt
+            Controller.CounterImportedCustomer = 0; //Auf 0 setzen, da wir mehrere Imports machen können und der Counter sonst nicht stimmt
             while (!reader.EndOfStream) //While solange true bis eine leere Zeile kommt
                 {
                 string Zeile = reader.ReadLine(); // Variabel Zeile wird vereinfacht dargestellt
@@ -327,7 +327,7 @@ namespace ContectManager
             }
             else
             {
-                counter = counter - Controller.CounterImportedCostumer;
+                counter = counter - Controller.CounterImportedCustomer;
                 MessageBox.Show(counter + " Kunden wurden importiert");
 
             }
@@ -343,67 +343,75 @@ namespace ContectManager
             {
                 try //Falls CSV-File korrekt aufgebaut ist fügt er es hinzu, ansonsten geht er ins catch
                 {
-                    Model.Kunden.Add(new Customer
-                   (
-                      Controller.KundenImportDaten[0],
-                      Controller.KundenImportDaten[1],
-                      Controller.KundenImportDaten[2],
-                      // DateTime.ParseExact(Controller.KundenImportDaten[3], "dd.MM.yyyy: HH:mm:tt", System.Globalization.CultureInfo.InvariantCulture), //01.01.1996 00:00:00
-                      DateTime.Parse(Controller.KundenImportDaten[3]), //01.01.1996 00:00:00
-                      Controller.KundenImportDaten[4],
-                      Controller.KundenImportDaten[5],
-                      Controller.KundenImportDaten[6],
-                      Controller.KundenImportDaten[7],
-                      Controller.KundenImportDaten[8],
-                      Controller.KundenImportDaten[9],
-                      Controller.KundenImportDaten[10],
-                      Controller.KundenImportDaten[11],
-                      Controller.KundenImportDaten[12],
-                      Controller.KundenImportDaten[13],
-                      bool.Parse(Controller.KundenImportDaten[14]),
-                      Controller.KundenImportDaten[15],
-                      Controller.KundenImportDaten[16],
-                      Controller.KundenImportDaten[17],
-                      Controller.KundenImportDaten[18]
-                      ));
+                    if(Controller.KundenImportDaten.Length > 19) //Würde heissen falsches CSV -> Mitarbeiter/Lehrling(oder korruptes) statt Kunden ausgewählt
+                    {
+                        MessageBox.Show("Error: Der Kunde hat zu viele Eigenschaften!");
+                        Controller.CounterImportedCustomer++;
+                    }
+                    else
+                    {
+                        Model.Kunden.Add(new Customer
+                 (
+                    Controller.KundenImportDaten[0],
+                    Controller.KundenImportDaten[1],
+                    Controller.KundenImportDaten[2],
+                    DateTime.Parse(Controller.KundenImportDaten[3]), // Format: 01.01.1996 00:00:00
+                    Controller.KundenImportDaten[4],
+                    Controller.KundenImportDaten[5],
+                    Controller.KundenImportDaten[6],
+                    Controller.KundenImportDaten[7],
+                    Controller.KundenImportDaten[8],
+                    Controller.KundenImportDaten[9],
+                    Controller.KundenImportDaten[10],
+                    Controller.KundenImportDaten[11],
+                    Controller.KundenImportDaten[12],
+                    Controller.KundenImportDaten[13],
+                    bool.Parse(Controller.KundenImportDaten[14]),
+                    Controller.KundenImportDaten[15],
+                    Controller.KundenImportDaten[16],
+                    Controller.KundenImportDaten[17],
+                    Controller.KundenImportDaten[18]
+                    ));
 
-                    // generiert Vorschau in LsbOutputKu
-                    CuListToLsbOutput();
+                        // generiert Vorschau in LsbOutputKu
+                        CuListToLsbOutput();
 
-                    //serialisiert Liste Kunden in .dat-File
-                    Controller.WriteDataCu();
+                        //serialisiert Liste Kunden in .dat-File
+                        Controller.WriteDataCu();
 
-                    //Variable für History erstellen
-                    Controller.HistoryNew =
-                    "KE: " +
-                    "Zeit der Erstellung      : " +
-                    DateTime.Now.ToString() + "| " +
-                    Controller.KundenImportDaten[0] + "; " +
-                    Controller.KundenImportDaten[1] + "; " +
-                    Controller.KundenImportDaten[2] + "; " +
-                    DateTime.Parse(Controller.KundenImportDaten[3]) + "; " +//01.01.1996 00:00:00
-                    Controller.KundenImportDaten[4] + "; " +
-                    Controller.KundenImportDaten[5] + "; " +
-                    Controller.KundenImportDaten[6] + "; " +
-                    Controller.KundenImportDaten[7] + "; " +
-                    Controller.KundenImportDaten[8] + "; " +
-                    Controller.KundenImportDaten[9] + "; " +
-                    Controller.KundenImportDaten[10] + "; " +
-                    Controller.KundenImportDaten[11] + "; " +
-                    Controller.KundenImportDaten[12] + "; " +
-                    Controller.KundenImportDaten[13] + "; " +
-                    bool.Parse(Controller.KundenImportDaten[14]) + "; " +
-                    Controller.KundenImportDaten[15] + "; " +
-                    Controller.KundenImportDaten[16] + "; " +
-                    Controller.KundenImportDaten[17] + "; " +
-                    Controller.KundenImportDaten[18];
+                        //Variable für History erstellen
+                        Controller.HistoryNew =
+                        "KE: " +
+                        "Zeit der Erstellung      : " +
+                        DateTime.Now.ToString() + "| " +
+                        Controller.KundenImportDaten[0] + "; " +
+                        Controller.KundenImportDaten[1] + "; " +
+                        Controller.KundenImportDaten[2] + "; " +
+                        DateTime.Parse(Controller.KundenImportDaten[3]) + "; " +//01.01.1996 00:00:00
+                        Controller.KundenImportDaten[4] + "; " +
+                        Controller.KundenImportDaten[5] + "; " +
+                        Controller.KundenImportDaten[6] + "; " +
+                        Controller.KundenImportDaten[7] + "; " +
+                        Controller.KundenImportDaten[8] + "; " +
+                        Controller.KundenImportDaten[9] + "; " +
+                        Controller.KundenImportDaten[10] + "; " +
+                        Controller.KundenImportDaten[11] + "; " +
+                        Controller.KundenImportDaten[12] + "; " +
+                        Controller.KundenImportDaten[13] + "; " +
+                        bool.Parse(Controller.KundenImportDaten[14]) + "; " +
+                        Controller.KundenImportDaten[15] + "; " +
+                        Controller.KundenImportDaten[16] + "; " +
+                        Controller.KundenImportDaten[17] + "; " +
+                        Controller.KundenImportDaten[18];
 
-                    Controller.WriteLog("CuErstellt");
+                        Controller.WriteLog("CuErstellt");
+                    }
+                  
                 }
                 catch //Falls wir im catch landen, ist die aktuelle Zeile Defekt
                 {
                     MessageBox.Show("CSV-File enthält korrupte Daten");
-                    Controller.CounterImportedCostumer++;
+                    Controller.CounterImportedCustomer++;
                 }
             }
 

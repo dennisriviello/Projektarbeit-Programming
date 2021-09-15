@@ -35,10 +35,19 @@ namespace ContectManager
         public static string KundenDB;
         public static string LehrlingDB;
         public static string LogFile;
+
+        //Variabeln für Import aus CSV
         public static string SelectedImportPath;
+
         public static bool ImportedCustomer = false;
         public static string[] KundenImportDaten;
-        public static int CounterImportedCostumer = 0;
+        public static int CounterImportedCustomer = 0;
+
+        public static bool ImportedEmployee = false;
+        public static string[] EmployeeImportDaten;
+        public static string[] TraineeImportDaten;
+
+        public static int CounterImportedEmployeeOrTrainee = 0;
 
 
         public static void FirstUseCheck() //Kommentar in Funktion
